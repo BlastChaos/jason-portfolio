@@ -9,7 +9,7 @@ import {
   type HighlightItemProps,
   type HighlightProps,
 } from "@/components/utilities/highlight";
-import { getStrictContext } from "@/lib/get-strict-context";
+import { getStrictContext } from "@/components/utilities/get-strict-context";
 import { Slot, type WithAsChild } from "@/components/utilities/slot";
 
 type TabsContextType = {

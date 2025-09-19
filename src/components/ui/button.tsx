@@ -2,7 +2,7 @@
 
 import { cva, type VariantProps } from "class-variance-authority";
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/utilities/utils";
 import { Slot, WithAsChild } from "../utilities/slot";
 import { HTMLMotionProps, motion } from "motion/react";
 
