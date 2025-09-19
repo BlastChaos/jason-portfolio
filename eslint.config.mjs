@@ -20,5 +20,10 @@ export default defineConfig(
       "build/**",
       "next-env.d.ts",
     ],
+  },
+  {
+    rules: {
+      "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+    },
   }
 );
