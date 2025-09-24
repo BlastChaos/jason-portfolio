@@ -62,7 +62,10 @@ export const Typewriter: React.FC<Props> = (props: Props) => {
     <div
       className={`inline whitespace-pre-wrap tracking-tight ${props.className}`}
     >
-      <Typography type={"h2"} text={displayText} />
+      <Typography
+        type={"h2"}
+        text={displayText.length === 0 ? " " : displayText}
+      />
       <motion.span
         variants={{
           initial: { opacity: 0 },

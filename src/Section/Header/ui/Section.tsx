@@ -30,7 +30,7 @@ export const Section: React.FC<Props> = (props: Props) => {
       <Icons
         iconType={headerSections[props.section]}
         size="md"
-        ref={lottieRef}
+        lottieRef={lottieRef}
       />
       <Typography text={props.name} type="md" />
       <span

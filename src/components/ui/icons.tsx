@@ -25,7 +25,8 @@ type Info = InfoSimpleImage | InfoLottie;
 type Props = {
   iconType: IconsType;
   size: "sm" | "md" | "lg";
-  ref?: RefObject<LottieRefCurrentProps | null>;
+  lottieRef?: RefObject<LottieRefCurrentProps | null>;
+  className?: string;
 };
 
 export const Icons: React.FC<Props> = (props: Props) => {
@@ -50,7 +51,7 @@ export const Icons: React.FC<Props> = (props: Props) => {
     },
     me: {
       type: "img",
-      path: "/me.png",
+      path: "/me.jpeg",
       alt: "An image of me",
     },
   };
@@ -81,12 +82,13 @@ export const Icons: React.FC<Props> = (props: Props) => {
       <Image
         alt={icon.alt}
         src={icon.path}
-        width={100}
-        height={100}
+        width={9999}
+        height={9999}
         className={cn(
           props.size === "sm" && "w-4 h-4",
           props.size === "md" && "w-6 h-6",
-          props.size === "lg" && "w-24 h-24"
+          props.size === "lg" && "w-24 h-24",
+          props.className
         )}
       />
     );
@@ -102,7 +104,7 @@ export const Icons: React.FC<Props> = (props: Props) => {
         props.size === "md" && "w-6 h-6",
         props.size === "lg" && "w-24 h-24"
       )}
-      lottieRef={props.ref ?? lottieRef}
+      lottieRef={props.lottieRef ?? lottieRef}
       animationData={icon.animationData}
       loop={false}
     />

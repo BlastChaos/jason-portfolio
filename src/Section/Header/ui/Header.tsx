@@ -10,8 +10,8 @@ type Props = {
 export const Header: React.FC<Props> = async (props: Props) => {
   const { header } = await getDictionary(props.lang);
   return (
-    <div>
-      <Card className="hidden sticky top-0 md:flex flex-row h-14 gap-4">
+    <div className="hidden sticky md:flex top-0 z-10">
+      <Card className="flex flex-row h-14 gap-4 w-full">
         <div className="container mx-auto px-4 lg:px-8 flex flex-row items-center">
           <Typography text="＜JasonBrutus /＞" type="h3" />
           <div className="ml-auto flex  flex-row items-center gap-5  p-4">
