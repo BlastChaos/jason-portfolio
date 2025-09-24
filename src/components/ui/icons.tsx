@@ -1,10 +1,14 @@
 "use client";
 import suitCase from "@/components/utilities/lottie-suitcase.json";
+import folder from "@/components/utilities/lottie-folder.json";
+import mail from "@/components/utilities/lottie-mail.json";
+import avatar from "@/components/utilities/lottie-avatar.json";
+
 import { cn } from "@/utilities/utils";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import { RefObject, useRef } from "react";
 
-export type Icons = "suitcase";
+export type Icons = "suitcase" | "folder" | "mail" | "avatar";
 
 type Info = {
   type: "morph" | "hover";
@@ -24,6 +28,18 @@ export const Icons: React.FC<Props> = (props: Props) => {
     suitcase: {
       type: "morph",
       animationData: suitCase,
+    },
+    folder: {
+      type: "morph",
+      animationData: folder,
+    },
+    mail: {
+      animationData: mail,
+      type: "morph",
+    },
+    avatar: {
+      animationData: avatar,
+      type: "morph",
     },
   };
 
