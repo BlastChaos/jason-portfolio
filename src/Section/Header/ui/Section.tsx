@@ -5,6 +5,7 @@ import { LottieRefCurrentProps } from "lottie-react";
 import { useRef, useState } from "react";
 import { headerSections, Sections } from "../utilities/headerSection";
 import { Icons } from "@/components/ui/icons";
+import { Typography } from "@/components/ui/typography";
 
 type Props = {
   name: string;
@@ -31,7 +32,7 @@ export const Section: React.FC<Props> = (props: Props) => {
         size="md"
         ref={lottieRef}
       />
-      <span>{props.name}</span>
+      <Typography text={props.name} type="md" />
       <span
         className={cn(
           "absolute left-0 bottom-0 w-full h-0.5 bg-primary",
