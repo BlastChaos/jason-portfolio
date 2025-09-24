@@ -60,10 +60,11 @@ export const Typewriter: React.FC<Props> = (props: Props) => {
 
   return (
     <div
-      className={`inline whitespace-pre-wrap tracking-tight ${props.className}`}
+      className={`inline items-center whitespace-pre-wrap tracking-tight ${props.className}`}
     >
       <Typography
         type={"h2"}
+        className={"inline"}
         text={displayText.length === 0 ? " " : displayText}
       />
       <motion.span
@@ -79,7 +80,7 @@ export const Typewriter: React.FC<Props> = (props: Props) => {
             },
           },
         }}
-        className={"ml-1"}
+        className={"ml-1  text-5xl font-bold"}
         initial="initial"
         animate="animate"
       >
