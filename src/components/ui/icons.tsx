@@ -8,7 +8,7 @@ import { cn } from "@/utilities/utils";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import { RefObject, useRef } from "react";
 
-export type Icons = "suitcase" | "folder" | "mail" | "avatar";
+export type IconsType = "suitcase" | "folder" | "mail" | "avatar";
 
 type Info = {
   type: "morph" | "hover";
@@ -16,7 +16,7 @@ type Info = {
 };
 
 type Props = {
-  iconType: Icons;
+  iconType: IconsType;
   size: "sm" | "md" | "lg";
   ref?: RefObject<LottieRefCurrentProps | null>;
 };
@@ -24,7 +24,7 @@ type Props = {
 export const Icons: React.FC<Props> = (props: Props) => {
   const lottieRef = useRef<LottieRefCurrentProps>(null);
 
-  const icons: Record<Icons, Info> = {
+  const icons: Record<IconsType, Info> = {
     suitcase: {
       type: "morph",
       animationData: suitCase,

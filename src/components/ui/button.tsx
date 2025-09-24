@@ -2,9 +2,11 @@
 
 import { cva, type VariantProps } from "class-variance-authority";
 
-import { cn } from "@/utilities/utils";
 import { Slot, WithAsChild } from "../utilities/slot";
-import { HTMLMotionProps, motion } from "motion/react";
+import { type HTMLMotionProps, motion } from "motion/react";
+import { Typography } from "./typography";
+import { cn } from "@/utilities/utils";
+import { Icons, IconsType } from "./icons";
 
 type ButtonWithAsChild = WithAsChild<
   HTMLMotionProps<"button"> & {
@@ -70,4 +72,38 @@ function Button({
   );
 }
 
-export { Button, buttonVariants, type ButtonProps };
+type TextButtonProps = Omit<ButtonProps, "children" | "asChild"> & {
+  text: string;
+};
+
+function TextButton({ text, ...props }: TextButtonProps) {
+  return (
+    <Button {...props}>
+      <Typography type={"md"} text={text} />
+    </Button>
+  );
+}
+
+type TextIconButtonProps = Omit<ButtonProps, "children" | "asChild"> & {
+  text: string;
+  icon: IconsType;
+};
+
+function TextIconButton({ text, icon, ...props }: TextIconButtonProps) {
+  return (
+    <Button {...props}>
+      <Icons iconType={icon} size="md" />
+      <Typography type={"md"} text={text} />
+    </Button>
+  );
+}
+
+export {
+  Button,
+  buttonVariants,
+  TextButton,
+  TextIconButton,
+  type ButtonProps,
+  type TextButtonProps,
+  type TextIconButtonProps,
+};

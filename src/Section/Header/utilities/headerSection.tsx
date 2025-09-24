@@ -1,8 +1,8 @@
-import { Icons } from "@/components/ui/icons";
+import { IconsType } from "@/components/ui/icons";
 
-export type Sections = "about" | "projects" | "work" | "contact";
+export type SectionsType = "about" | "projects" | "work" | "contact";
 
-export const headerSections: Record<Sections, Icons> = {
+export const headerSections: Record<SectionsType, IconsType> = {
   projects: "folder",
   work: "suitcase",
   contact: "mail",

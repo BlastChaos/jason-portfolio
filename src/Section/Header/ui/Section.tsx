@@ -3,13 +3,13 @@ import { cn } from "@/utilities/utils";
 import { LottieRefCurrentProps } from "lottie-react";
 
 import { useRef, useState } from "react";
-import { headerSections, Sections } from "../utilities/headerSection";
+import { headerSections, SectionsType } from "../utilities/headerSection";
 import { Icons } from "@/components/ui/icons";
 import { Typography } from "@/components/ui/typography";
 
 type Props = {
   name: string;
-  section: Sections;
+  section: SectionsType;
   inSection: boolean;
 };
 
