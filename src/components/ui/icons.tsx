@@ -3,17 +3,24 @@ import suitCase from "@/components/utilities/lottie-suitcase.json";
 import folder from "@/components/utilities/lottie-folder.json";
 import mail from "@/components/utilities/lottie-mail.json";
 import avatar from "@/components/utilities/lottie-avatar.json";
-
 import { cn } from "@/utilities/utils";
-import Lottie, { LottieRefCurrentProps } from "lottie-react";
+import Lottie, { type LottieRefCurrentProps } from "lottie-react";
 import { RefObject, useRef } from "react";
+import Image from "next/image";
+export type IconsType = "suitcase" | "folder" | "mail" | "avatar" | "me";
 
-export type IconsType = "suitcase" | "folder" | "mail" | "avatar";
-
-type Info = {
+type InfoLottie = {
   type: "morph" | "hover";
   animationData: unknown;
 };
+
+type InfoSimpleImage = {
+  type: "img";
+  path: string;
+  alt: string;
+};
+
+type Info = InfoSimpleImage | InfoLottie;
 
 type Props = {
   iconType: IconsType;
@@ -41,6 +48,11 @@ export const Icons: React.FC<Props> = (props: Props) => {
       animationData: avatar,
       type: "morph",
     },
+    me: {
+      type: "img",
+      path: "/me.png",
+      alt: "An image of me",
+    },
   };
 
   const icon = icons[props.iconType];
@@ -63,6 +75,22 @@ export const Icons: React.FC<Props> = (props: Props) => {
       lottieRef.current?.play();
     }
   };
+
+  if (icon.type === "img") {
+    return (
+      <Image
+        alt={icon.alt}
+        src={icon.path}
+        width={100}
+        height={100}
+        className={cn(
+          props.size === "sm" && "w-4 h-4",
+          props.size === "md" && "w-6 h-6",
+          props.size === "lg" && "w-24 h-24"
+        )}
+      />
+    );
+  }
 
   return (
     <Lottie
