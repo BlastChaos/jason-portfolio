@@ -1,6 +1,8 @@
 {
   "header": {
     "work": "Work",
-    "contact": "Contact"
+    "contact": "Contact",
+    "projects": "Projects",
+    "about": "About"
   }
 }
