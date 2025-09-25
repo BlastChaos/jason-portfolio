@@ -9,7 +9,7 @@ export default async function Home({
 }) {
   const { lang } = await params;
   return (
-    <div>
+    <div className="relative">
       <Header lang={lang} />
       <Hero lang={lang} />
     </div>

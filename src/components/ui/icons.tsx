@@ -7,7 +7,13 @@ import { cn } from "@/utilities/utils";
 import Lottie, { type LottieRefCurrentProps } from "lottie-react";
 import { RefObject, useRef } from "react";
 import Image from "next/image";
-export type IconsType = "suitcase" | "folder" | "mail" | "avatar" | "me";
+export type IconsType =
+  | "suitcase"
+  | "folder"
+  | "mail"
+  | "avatar"
+  | "me"
+  | "download";
 
 type InfoLottie = {
   type: "morph" | "hover";
@@ -54,6 +60,11 @@ export const Icons: React.FC<Props> = (props: Props) => {
       path: "/me.jpeg",
       alt: "An image of me",
     },
+    download: {
+      alt: "Download",
+      type: "img",
+      path: "/download.svg",
+    },
   };
 
   const icon = icons[props.iconType];
@@ -87,7 +98,7 @@ export const Icons: React.FC<Props> = (props: Props) => {
         className={cn(
           props.size === "sm" && "w-4 h-4",
           props.size === "md" && "w-6 h-6",
-          props.size === "lg" && "w-24 h-24",
+          props.size === "lg" && "w-16 h-16",
           props.className
         )}
       />
@@ -102,7 +113,7 @@ export const Icons: React.FC<Props> = (props: Props) => {
       className={cn(
         props.size === "sm" && "w-4 h-4",
         props.size === "md" && "w-6 h-6",
-        props.size === "lg" && "w-24 h-24"
+        props.size === "lg" && "w-16 h-16"
       )}
       lottieRef={props.lottieRef ?? lottieRef}
       animationData={icon.animationData}

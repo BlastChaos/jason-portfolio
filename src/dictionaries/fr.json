@@ -4,5 +4,17 @@
     "contact": "Contact",
     "projects": "Projets",
     "about": "Profil"
+  },
+  "hero": {
+    "work": "Voir mes projets",
+    "contactMe": "Contactez-moi",
+    "description": "Développeur avec plus de 3 ans d’expérience, j’aime explorer de nouvelles technologies et créer des solutions intuitives qui aident les gens à résoudre leurs problèmes.",
+    "whoAmI": {
+      "fullStack": "Développeur Fullstack",
+      "mobile": "Développeur d’applications mobiles",
+      "ai": "Passionné d’IA",
+      "competitive": "Développeur compétitif",
+      "tech": "Explorateur technologique"
+    }
   }
 }

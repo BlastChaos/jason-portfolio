@@ -4,5 +4,17 @@
     "contact": "Contact",
     "projects": "Projects",
     "about": "About"
+  },
+  "hero": {
+    "work": "See my projects",
+    "contactMe": "Contact me",
+    "description": "As a developer with 3+ years’ experience, I like exploring new technologies and building intuitive solutions that help people solve problems.",
+    "whoAmI": {
+      "fullStack": "Fullstack Developer",
+      "mobile": "Mobile app developer",
+      "ai": "AI enthusiast",
+      "competitive": "Competitive developer",
+      "tech": "Tech explorer"
+    }
   }
 }
