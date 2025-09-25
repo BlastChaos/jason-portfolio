@@ -11,7 +11,9 @@ export default async function Home({
   return (
     <div className="relative">
       <Header lang={lang} />
-      <Hero lang={lang} />
+      <div className="container mx-auto px-8 lg:px-12">
+        <Hero lang={lang} />
+      </div>
     </div>
   );
 }

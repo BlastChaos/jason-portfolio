@@ -13,7 +13,9 @@ export type IconsType =
   | "mail"
   | "avatar"
   | "me"
-  | "download";
+  | "download"
+  | "linkedin"
+  | "github";
 
 type InfoLottie = {
   type: "morph" | "hover";
@@ -64,6 +66,16 @@ export const Icons: React.FC<Props> = (props: Props) => {
       alt: "Download",
       type: "img",
       path: "/download.svg",
+    },
+    github: {
+      alt: "Github",
+      path: "/github.svg",
+      type: "img",
+    },
+    linkedin: {
+      alt: "Linkedin",
+      type: "img",
+      path: "/linkedin.svg",
     },
   };
 
