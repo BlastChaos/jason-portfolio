@@ -14,7 +14,7 @@ function getLocale(): Locale {
 export function middleware(request: NextRequest) {
   // Check if there is any supported locale in the pathname
   const { pathname } = request.nextUrl;
-  if (pathname.startsWith("/robot.txt")) {
+  if (pathname.startsWith("/robots.txt")) {
     const locale = getLocale();
     request.nextUrl.pathname = `/${locale}`;
     return NextResponse.redirect(request.nextUrl);
@@ -39,6 +39,6 @@ export const config = {
     "/((?!api/|_next/|.*\\..*).*)",
 
     // Run robot.txt
-    "/robot.txt",
+    "/robots.txt",
   ],
 };
