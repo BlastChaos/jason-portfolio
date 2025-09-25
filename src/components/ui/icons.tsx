@@ -15,7 +15,8 @@ export type IconsType =
   | "me"
   | "download"
   | "linkedin"
-  | "github";
+  | "github"
+  | "home";
 
 type InfoLottie = {
   type: "morph" | "hover";
@@ -76,6 +77,11 @@ export const Icons: React.FC<Props> = (props: Props) => {
       alt: "Linkedin",
       type: "img",
       path: "/linkedin.svg",
+    },
+    home: {
+      alt: "Home",
+      path: "/github.svg",
+      type: "img",
     },
   };
 

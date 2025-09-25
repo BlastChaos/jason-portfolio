@@ -15,6 +15,7 @@ export const Header: React.FC<Props> = async (props: Props) => {
         <div className="container mx-auto px-8 lg:px-12 flex flex-row items-center">
           <Typography text="＜JasonBrutus /＞" type="h3" />
           <div className="ml-auto flex  flex-row items-center gap-5  p-4">
+            <Section name={header.home} section={"home"} inSection={false} />
             <Section name={header.about} section={"about"} inSection={false} />
             <Section
               name={header.projects}
@@ -27,7 +28,11 @@ export const Header: React.FC<Props> = async (props: Props) => {
               section={"contact"}
               inSection={false}
             />
-            <TextIconButton text="Resume" variant={"secondary"} icon="avatar" />
+            <TextIconButton
+              text="Resume"
+              variant={"secondary"}
+              icon="download"
+            />
           </div>
         </div>
       </Card>
