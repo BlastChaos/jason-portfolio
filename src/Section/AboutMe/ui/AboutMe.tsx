@@ -15,7 +15,11 @@ export const AboutMe: React.FC<Props> = async (props: Props) => {
         <Header sectionName={aboutMe.sectionName} quote={aboutMe.quote} />
       </div>
       <div className="flex flex-row items-center">
-        <Icons iconType={"meThinking"} size={"5xl"} className="rounded-full " />
+        <Icons
+          iconType={"meThinking"}
+          size={"5xl"}
+          className="rounded-full transition-transform duration-300 hover:scale-105"
+        />
         <div className="flex flex-col">
           <div className="flex flex-row gap-1">
             <Icons iconType={"document"} size={"md"} />
