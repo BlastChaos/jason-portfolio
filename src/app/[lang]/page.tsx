@@ -1,5 +1,5 @@
 import { Locale } from "@/dictionaries/dictionaries";
-import { Header } from "@/Section/Header/ui/Header";
+import { Menu } from "@/Section/Menu/ui/Menu";
 import { Hero } from "@/Section/Hero/ui/Hero";
 
 export default async function Home({
@@ -10,7 +10,7 @@ export default async function Home({
   const { lang } = await params;
   return (
     <div className="relative">
-      <Header lang={lang} />
+      <Menu lang={lang} />
       <div className="container mx-auto px-8 lg:px-12">
         <Hero lang={lang} />
       </div>

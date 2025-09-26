@@ -1,5 +1,5 @@
 {
-  "header": {
+  "menu": {
     "work": "Work",
     "contact": "Contact",
     "projects": "Projects",
@@ -18,5 +18,6 @@
       "competitive": "Competitive developer",
       "tech": "Tech explorer"
     }
-  }
+  },
+  "aboutMe": {}
 }
