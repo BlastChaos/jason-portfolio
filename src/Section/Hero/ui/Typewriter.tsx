@@ -14,9 +14,9 @@ export const Typewriter: React.FC<Props> = (props: Props) => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
-  const SPEED = 150;
-  const WAIT_TIME = 2000;
-  const DELETE_SPEED = 30;
+  const SPEED = 200;
+  const WAIT_TIME = 7000;
+  const DELETE_SPEED = 50;
   const CURSOR_CHAR = "|";
 
   useEffect(() => {
@@ -64,7 +64,7 @@ export const Typewriter: React.FC<Props> = (props: Props) => {
     >
       <Typography
         type={"h2"}
-        className={"inline"}
+        className={"inline font-extralight"}
         text={displayText.length === 0 ? " " : displayText}
       />
       <motion.span
@@ -80,7 +80,7 @@ export const Typewriter: React.FC<Props> = (props: Props) => {
             },
           },
         }}
-        className={"text-5xl font-bold"}
+        className={"text-5xl font-extralight"}
         initial="initial"
         animate="animate"
       >
