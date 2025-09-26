@@ -15,7 +15,11 @@ export const Hero: React.FC<Props> = async (props: Props) => {
   return (
     <div className={"grid grid-cols-1 md:grid-cols-2 md:h-[93svh] h-svh"}>
       <div className="flex flex-col  md:items-start justify-center gap-4">
-        <Typography type={"lg"} text={"Hey! I'm"} className="text-primary" />
+        <Typography
+          type={"lg"}
+          text={hero.introduction}
+          className="text-primary font-medium"
+        />
         <Typography type={"h1"} text={"Jason Brutus"} />
         <Typewriter texts={texts} />
         <Typography
