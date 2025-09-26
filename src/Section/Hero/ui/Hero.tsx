@@ -15,7 +15,7 @@ export const Hero: React.FC<Props> = async (props: Props) => {
   return (
     <div
       className={
-        "flex flex-col md:grid md:grid-cols-2 h-svh pt-8 md:pt-0 gap-6 md:h-[93svh]"
+        "flex flex-col md:grid md:grid-cols-2 h-svh pt-14 md:pt-0 gap-6 md:h-[93svh]"
       }
     >
       <div className="flex flex-col justify-center gap-4 order-2 md:order-1">

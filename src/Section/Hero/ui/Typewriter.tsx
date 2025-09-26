@@ -80,7 +80,7 @@ export const Typewriter: React.FC<Props> = (props: Props) => {
             },
           },
         }}
-        className={"text-5xl font-extralight"}
+        className={"text-4xl md:text-5xl font-extralight"}
         initial="initial"
         animate="animate"
       >
