@@ -47,8 +47,8 @@ export const Hero: React.FC<Props> = async (props: Props) => {
         <div className="rounded-full w-56 h-56 md:w-110 md:h-110 absolute bg-accent animate-[pulsation_4s_ease-in-out_infinite]" />
         <Icons
           iconType="me"
-          size="lg"
-          className="rounded-full w-44 h-44 md:w-96 md:h-96  border-primary border-8 z-10 transition-transform duration-300 hover:scale-105"
+          size="5xl"
+          className="rounded-full border-primary border-8 z-10 transition-transform duration-300 hover:scale-105"
         />
       </div>
     </div>

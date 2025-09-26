@@ -21,6 +21,7 @@
   },
   "aboutMe": {
     "sectionName": "À propos de moi",
-    "quote": "Soyez vous-même ; tous les autres sont déjà pris."
+    "quote": "Soyez vous-même ; tous les autres sont déjà pris.",
+    "bio": "Biographie"
   }
 }

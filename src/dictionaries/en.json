@@ -21,6 +21,7 @@
   },
   "aboutMe": {
     "sectionName": "About me",
-    "quote": "Be yourself; everyone else is already taken."
+    "quote": "Be yourself; everyone else is already taken.",
+    "bio": "Biography"
   }
 }

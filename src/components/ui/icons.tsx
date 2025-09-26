@@ -16,7 +16,9 @@ export type IconsType =
   | "download"
   | "linkedin"
   | "github"
-  | "home";
+  | "home"
+  | "document"
+  | "meThinking";
 
 type InfoLottie = {
   type: "morph" | "hover";
@@ -33,7 +35,7 @@ type Info = InfoSimpleImage | InfoLottie;
 
 type Props = {
   iconType: IconsType;
-  size: "sm" | "md" | "lg";
+  size: "sm" | "md" | "lg" | "5xl";
   lottieRef?: RefObject<LottieRefCurrentProps | null>;
   className?: string;
 };
@@ -83,6 +85,16 @@ export const Icons: React.FC<Props> = (props: Props) => {
       path: "/github.svg",
       type: "img",
     },
+    document: {
+      type: "img",
+      alt: "Document",
+      path: "/document.svg",
+    },
+    meThinking: {
+      type: "img",
+      alt: "Me who's thinking about something",
+      path: "/me-thinking.jpeg",
+    },
   };
 
   const icon = icons[props.iconType];
@@ -117,6 +129,7 @@ export const Icons: React.FC<Props> = (props: Props) => {
           props.size === "sm" && "w-4 h-4",
           props.size === "md" && "w-6 h-6",
           props.size === "lg" && "w-16 h-16",
+          props.size === "5xl" && "w-44 h-44 md:w-96 md:h-96",
           props.className
         )}
       />
