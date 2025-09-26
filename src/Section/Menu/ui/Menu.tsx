@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 import { getDictionary, Locale } from "@/dictionaries/dictionaries";
 import { Section } from "./Section";
 import { Typography } from "@/components/ui/typography";
-import { TextIconButton } from "@/components/ui/button";
+import { DownloadResume } from "./DownloadResume";
 
 type Props = {
   lang: Locale;
@@ -28,11 +28,7 @@ export const Menu: React.FC<Props> = async (props: Props) => {
               section={"contact"}
               inSection={false}
             />
-            <TextIconButton
-              text="Resume"
-              variant={"secondary"}
-              icon="download"
-            />
+            <DownloadResume lang={props.lang} resumeText={menu.resume} />
           </div>
         </div>
       </Card>
