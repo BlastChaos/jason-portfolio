@@ -1,6 +1,7 @@
 import { Locale } from "@/dictionaries/dictionaries";
 import { Menu } from "@/Section/Menu/ui/Menu";
 import { Hero } from "@/Section/Hero/ui/Hero";
+import { AboutMe } from "@/Section/AboutMe/ui/AboutMe";
 
 export default async function Home({
   params,
@@ -13,6 +14,9 @@ export default async function Home({
       <Menu lang={lang} />
       <div className="container mx-auto px-8 lg:px-12">
         <Hero lang={lang} />
+        <div className="bg-secondary-background">
+          <AboutMe lang={lang} />
+        </div>
       </div>
     </div>
   );

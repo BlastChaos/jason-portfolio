@@ -19,5 +19,8 @@
       "tech": "Tech explorer"
     }
   },
-  "aboutMe": {}
+  "aboutMe": {
+    "sectionName": "About me",
+    "quote": "Be yourself; everyone else is already taken."
+  }
 }
