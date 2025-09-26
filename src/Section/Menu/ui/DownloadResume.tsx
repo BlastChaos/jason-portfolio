@@ -10,7 +10,7 @@ type Props = {
 const RESUME_URL =
   "https://etsmtl365-my.sharepoint.com/:b:/g/personal/jason_brutus_1_ens_etsmtl_ca/ETaisPKWb91EoOIRJRyf61kBDVpu8vgXcL28OYPgsd009g?e=ztyU4G";
 
-export const DownloadResume: React.FC<Props> = async (props: Props) => {
+export const DownloadResume: React.FC<Props> = (props: Props) => {
   const goTo = () => {
     window.open(RESUME_URL, "_blank")?.focus();
   };
