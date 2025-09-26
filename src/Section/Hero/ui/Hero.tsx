@@ -13,8 +13,12 @@ export const Hero: React.FC<Props> = async (props: Props) => {
 
   const texts = Object.values(hero.whoAmI);
   return (
-    <div className={"grid grid-cols-1 md:grid-cols-2 md:h-[93svh] h-svh"}>
-      <div className="flex flex-col  md:items-start justify-center gap-4">
+    <div
+      className={
+        "flex flex-col md:grid md:grid-cols-2 h-svh pt-8 md:pt-0 gap-6 md:h-[93svh]"
+      }
+    >
+      <div className="flex flex-col justify-center gap-4 order-2 md:order-1">
         <Typography
           type={"lg"}
           text={hero.introduction}
@@ -27,7 +31,7 @@ export const Hero: React.FC<Props> = async (props: Props) => {
           text={hero.description}
           className={"md:w-[77%]"}
         />
-        <div className="flex flex-row gap-4">
+        <div className="flex flex-col md:flex-row  gap-4">
           <TextIconButton text={hero.contactMe} icon="download" size={"lg"} />
           <TextIconButton
             text={hero.work}
@@ -39,12 +43,12 @@ export const Hero: React.FC<Props> = async (props: Props) => {
         <Contact />
       </div>
 
-      <div className="hidden md:flex justify-center relative items-center animate-[float_4s_ease-in-out_infinite]">
-        <div className="rounded-full w-110 h-110 absolute bg-accent animate-[pulsation_4s_ease-in-out_infinite]" />
+      <div className="flex justify-center relative items-center animate-[float_4s_ease-in-out_infinite]  order-1 md:order-2">
+        <div className="rounded-full w-56 h-56 md:w-110 md:h-110 absolute bg-accent animate-[pulsation_4s_ease-in-out_infinite]" />
         <Icons
           iconType="me"
           size="lg"
-          className="rounded-full w-96 h-96 border-primary border-8 z-10 transition-transform duration-300 hover:scale-105"
+          className="rounded-full w-44 h-44 md:w-96 md:h-96  border-primary border-8 z-10 transition-transform duration-300 hover:scale-105"
         />
       </div>
     </div>

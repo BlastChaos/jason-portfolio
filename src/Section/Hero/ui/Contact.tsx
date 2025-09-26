@@ -8,7 +8,7 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-row gap-4">
+    <div className="flex flex-row gap-4 md:justify-start justify-center">
       <IconButton
         variant={"secondary"}
         icon="github"
