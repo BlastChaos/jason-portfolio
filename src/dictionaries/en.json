@@ -23,6 +23,15 @@
   "aboutMe": {
     "sectionName": "About me",
     "quote": "Be yourself; everyone else is already taken.",
-    "bio": "Biography"
+    "bio": "Biography",
+    "bioDescription1": "Hi! I’m a full-stack web and mobile developer with over 3 years of experience. Passionate about emerging technologies, especially the impact of artificial intelligence on everyday life, I enjoy building useful, sustainable solutions while trying out exciting new tools.",
+    "bioDescription2": "Recently, I led the replacement of the synchronization system between a mobile app and a client’s platform over a three month period, which reduced support tickets by 20% and improved the user experience.",
+    "bioDescription3": "I place great importance on accessibility, testability, and readable code. If you’re looking for a collaborator who can bring your projects to life, don’t hesitate to contact me!",
+    "hobby1Tittle": "Smash Bros Enthusiast",
+    "hobby1Description": "I love playing Smash Bros with my friends. The strategy and adaptability needed to compete keep the game exciting and entertaining.",
+    "hobby2Tittle": "Music Lover",
+    "hobby2Description": "I love playing music I really like.",
+    "hobby3Tittle": "",
+    "hobby3Description": ""
   }
 }

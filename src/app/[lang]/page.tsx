@@ -12,10 +12,15 @@ export default async function Home({
   return (
     <div className="relative">
       <Menu lang={lang} />
-      <div className="container mx-auto px-8 lg:px-12">
-        <Hero lang={lang} />
+      <div>
+        <div className="container mx-auto px-8 lg:px-12">
+          <Hero lang={lang} />
+        </div>
+
         <div className="bg-secondary-background">
-          <AboutMe lang={lang} />
+          <div className="container mx-auto px-8 lg:px-12">
+            <AboutMe lang={lang} />
+          </div>
         </div>
       </div>
     </div>

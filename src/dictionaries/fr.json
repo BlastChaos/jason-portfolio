@@ -22,7 +22,17 @@
   },
   "aboutMe": {
     "sectionName": "À propos de moi",
-    "quote": "Soyez vous-même ; tous les autres sont déjà pris.",
-    "bio": "Biographie"
+    "quote": "Soyez-vous même, car tous les autres sont déjà pris.",
+    "bio": "Biographie",
+    "bioDescription": "Salut ! Je suis un développeur full stack web et mobile avec plus de 3 ans d’expérience dans le domaine. Passionné par l’avancée des nouvelles technologies, particulièrement par l’impact de l’intelligence artificielle dans notre quotidien, j’aime créer des solutions utiles et durables tout en essayant de nouveaux outils stimulants.",
+    "bioDescription1": "Salut! Je suis un développeur full stack web et mobile avec plus de 3 ans d’expérience dans le domaine. Passionné par l’avancée des nouvelles technologies, particulièrement par l’impact de l’intelligence artificielle dans notre quotidien, j’aime créer des solutions utiles et durables tout en essayant de nouveaux outils stimulants.",
+    "bioDescription2": "Récemment, j’ai dirigé le remplacement du système de synchronisation entre une application mobile et la plateforme d’un client en 3 mois, ce qui a réduit les tickets de support de 20 % et amélioré l’expérience utilisateur.",
+    "bioDescription3": "J’accorde une grande importance à l’accessibilité, à la testabilité et à la lisibilité du code. Si vous cherchez un collaborateur capable de donner vie à vos projets, n’hésitez pas à me contacter!",
+    "hobby1Tittle": "",
+    "hobby1Description": "",
+    "hobby2Tittle": "",
+    "hobby2Description": "",
+    "hobby3Tittle": "",
+    "hobby3Description": ""
   }
 }

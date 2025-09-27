@@ -18,6 +18,7 @@ export type IconsType =
   | "github"
   | "home"
   | "document"
+  | "controller"
   | "meThinking";
 
 type InfoLottie = {
@@ -95,6 +96,11 @@ export const Icons: React.FC<Props> = (props: Props) => {
       alt: "Me who's thinking about something",
       path: "/me-thinking.jpeg",
     },
+    controller: {
+      type: "img",
+      alt: "Controller",
+      path: "controller.svg",
+    },
   };
 
   const icon = icons[props.iconType];
@@ -128,7 +134,7 @@ export const Icons: React.FC<Props> = (props: Props) => {
         className={cn(
           props.size === "sm" && "w-4 h-4",
           props.size === "md" && "w-6 h-6",
-          props.size === "lg" && "w-16 h-16",
+          props.size === "lg" && "w-8 h-8",
           props.size === "5xl" && "w-44 h-44 md:w-96 md:h-96",
           props.className
         )}
@@ -144,7 +150,7 @@ export const Icons: React.FC<Props> = (props: Props) => {
       className={cn(
         props.size === "sm" && "w-4 h-4",
         props.size === "md" && "w-6 h-6",
-        props.size === "lg" && "w-16 h-16"
+        props.size === "lg" && "w-8 h-8"
       )}
       lottieRef={props.lottieRef ?? lottieRef}
       animationData={icon.animationData}
