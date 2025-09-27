@@ -15,7 +15,7 @@ export const InfoCard: React.FC<Props> = (props: Props) => {
         <Icons iconType={props.icon} size={"lg"} />
         <Typography type={"h4"} text={props.title} />
       </div>
-      <Typography type={"sm"} text={props.description} />{" "}
+      <Typography type={"sm"} text={props.description} />
     </Card>
   );
 };

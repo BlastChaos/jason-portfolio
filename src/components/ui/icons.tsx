@@ -19,7 +19,8 @@ export type IconsType =
   | "home"
   | "document"
   | "controller"
-  | "meThinking";
+  | "meThinking"
+  | "music";
 
 type InfoLottie = {
   type: "morph" | "hover";
@@ -99,7 +100,12 @@ export const Icons: React.FC<Props> = (props: Props) => {
     controller: {
       type: "img",
       alt: "Controller",
-      path: "controller.svg",
+      path: "/controller.svg",
+    },
+    music: {
+      type: "img",
+      alt: "Music",
+      path: "/music.svg",
     },
   };
 
