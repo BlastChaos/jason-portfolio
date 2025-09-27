@@ -20,7 +20,8 @@ export type IconsType =
   | "document"
   | "controller"
   | "meThinking"
-  | "music";
+  | "music"
+  | "idea";
 
 type InfoLottie = {
   type: "morph" | "hover";
@@ -37,7 +38,7 @@ type Info = InfoSimpleImage | InfoLottie;
 
 type Props = {
   iconType: IconsType;
-  size: "sm" | "md" | "lg" | "5xl";
+  size: "sm" | "md" | "lg" | "5xl" | "4xl";
   lottieRef?: RefObject<LottieRefCurrentProps | null>;
   className?: string;
 };
@@ -107,6 +108,11 @@ export const Icons: React.FC<Props> = (props: Props) => {
       alt: "Music",
       path: "/music.svg",
     },
+    idea: {
+      type: "img",
+      alt: "Idea",
+      path: "/idea.svg",
+    },
   };
 
   const icon = icons[props.iconType];
@@ -142,6 +148,8 @@ export const Icons: React.FC<Props> = (props: Props) => {
           props.size === "md" && "w-6 h-6",
           props.size === "lg" && "w-8 h-8",
           props.size === "5xl" && "w-44 h-44 md:w-96 md:h-96",
+          props.size === "4xl" && "w-44 h-44 md:w-72 md:h-72",
+
           props.className
         )}
       />
