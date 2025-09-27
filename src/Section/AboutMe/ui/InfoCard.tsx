@@ -10,7 +10,7 @@ type Props = {
 };
 export const InfoCard: React.FC<Props> = (props: Props) => {
   return (
-    <Card className="flex flex-col gap-3">
+    <Card className="flex flex-col gap-2">
       <div className="flex flex-row  items-center gap-1">
         <Icons iconType={props.icon} size={"lg"} />
         <Typography type={"h4"} text={props.title} />

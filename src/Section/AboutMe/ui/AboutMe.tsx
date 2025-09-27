@@ -37,7 +37,7 @@ export const AboutMe: React.FC<Props> = async (props: Props) => {
             />
             <InfoCard
               icon={"controller"}
-              title={aboutMe.hobby1Tittle}
+              title={aboutMe.hobby2Tittle}
               description={aboutMe.hobby2Description}
             />
             <InfoCard
