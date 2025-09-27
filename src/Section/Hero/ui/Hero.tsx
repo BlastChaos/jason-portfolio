@@ -44,7 +44,7 @@ export const Hero: React.FC<Props> = async (props: Props) => {
       </div>
 
       <div className="flex justify-center relative items-center animate-[float_4s_ease-in-out_infinite]  order-1 md:order-2">
-        <div className="rounded-full w-56 h-56 md:w-110 md:h-110 absolute bg-accent animate-[pulsation_4s_ease-in-out_infinite]" />
+        <div className="rounded-full w-56 h-56 md:w-80 md:h-80  lg:w-110 lg:h-110 absolute bg-accent animate-[pulsation_4s_ease-in-out_infinite]" />
         <Icons
           iconType="me"
           size="5xl"

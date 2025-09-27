@@ -13,7 +13,7 @@ type Props = {
   inSection: boolean;
 };
 
-export const Section: React.FC<Props> = (props: Props) => {
+export const MenuSection: React.FC<Props> = (props: Props) => {
   const lottieRef = useRef<LottieRefCurrentProps>(null);
 
   const [currentStatus, setCurrentStatus] = useState(props.inSection);

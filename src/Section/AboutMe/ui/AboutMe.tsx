@@ -1,4 +1,3 @@
-import { Header } from "@/components/ui/header";
 import { Icons } from "@/components/ui/icons";
 import { Typography } from "@/components/ui/typography";
 import { getDictionary, Locale } from "@/dictionaries/dictionaries";
@@ -11,17 +10,14 @@ export const AboutMe: React.FC<Props> = async (props: Props) => {
   const { aboutMe } = await getDictionary(props.lang);
 
   return (
-    <div className="flex flex-col gap-16 py-8">
-      <div className="flex justify-center">
-        <Header sectionName={aboutMe.sectionName} quote={aboutMe.quote} />
-      </div>
-      <div className="flex md:flex-row flex-col items-center">
+    <div className="flex flex-col">
+      <div className="md:grid md:grid-cols-3 flex flex-col items-center gap-2">
         <Icons
           iconType={"meThinking"}
-          size={"4xl"}
+          size={"5xl"}
           className="rounded-full transition-transform duration-300 hover:scale-105"
         />
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 col-span-2">
           <div className="flex flex-row gap-1">
             <Icons iconType={"document"} size={"md"} />
             <Typography type={"h3"} text={aboutMe.bio} />

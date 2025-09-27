@@ -1,4 +1,4 @@
-import { Typography } from "./typography";
+import { Typography } from "../../../components/ui/typography";
 
 type Props = {
   sectionName: string;

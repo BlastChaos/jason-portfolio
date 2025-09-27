@@ -20,6 +20,10 @@
       "tech": "Tech explorer"
     }
   },
+  "headers": {
+    "aboutMe": "About me",
+    "aboutMeQuote": "Be yourself; everyone else is already taken."
+  },
   "aboutMe": {
     "sectionName": "About me",
     "quote": "Be yourself; everyone else is already taken.",

@@ -20,6 +20,10 @@
       "tech": "Explorateur technologique"
     }
   },
+  "headers": {
+    "aboutMe": "À propos de moi",
+    "aboutMeQuote": "Soyez-vous même, car tous les autres sont déjà pris."
+  },
   "aboutMe": {
     "sectionName": "À propos de moi",
     "quote": "Soyez-vous même, car tous les autres sont déjà pris.",

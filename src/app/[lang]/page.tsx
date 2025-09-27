@@ -1,7 +1,8 @@
-import { Locale } from "@/dictionaries/dictionaries";
+import { getDictionary, Locale } from "@/dictionaries/dictionaries";
 import { Menu } from "@/Section/Menu/ui/Menu";
 import { Hero } from "@/Section/Hero/ui/Hero";
 import { AboutMe } from "@/Section/AboutMe/ui/AboutMe";
+import { Section } from "@/Section/shared/ui/Section";
 
 export default async function Home({
   params,
@@ -9,19 +10,23 @@ export default async function Home({
   params: Promise<{ lang: Locale }>;
 }) {
   const { lang } = await params;
+  const { headers } = await getDictionary(lang);
   return (
     <div className="relative">
       <Menu lang={lang} />
       <div>
-        <div className="container mx-auto px-8 lg:px-12">
+        <Section>
           <Hero lang={lang} />
-        </div>
-
-        <div className="bg-secondary-background">
-          <div className="container mx-auto px-8 lg:px-12">
-            <AboutMe lang={lang} />
-          </div>
-        </div>
+        </Section>
+        <Section
+          useSecondaryBgColor
+          header={{
+            titleName: headers.aboutMe,
+            quote: headers.aboutMeQuote,
+          }}
+        >
+          <AboutMe lang={lang} />
+        </Section>
       </div>
     </div>
   );
