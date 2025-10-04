@@ -7,21 +7,138 @@ import { cn } from "@/utilities/utils";
 import Lottie, { type LottieRefCurrentProps } from "lottie-react";
 import { RefObject, useRef } from "react";
 import Image from "next/image";
-export type IconsType =
-  | "suitcase"
-  | "folder"
-  | "mail"
-  | "avatar"
-  | "me"
-  | "download"
-  | "linkedin"
-  | "github"
-  | "home"
-  | "document"
-  | "controller"
-  | "meThinking"
-  | "music"
-  | "idea";
+
+const icons = {
+  suitcase: {
+    type: "morph",
+    animationData: suitCase,
+  },
+
+  folder: {
+    type: "morph",
+    animationData: folder,
+  },
+  mail: {
+    animationData: mail,
+    type: "morph",
+  },
+  avatar: {
+    animationData: avatar,
+    type: "morph",
+  },
+  me: {
+    type: "img",
+    path: "/me.jpeg",
+    alt: "An image of me",
+  },
+  download: {
+    alt: "Download",
+    type: "img",
+    path: "/download.svg",
+  },
+  github: {
+    alt: "Github",
+    path: "/github.svg",
+    type: "img",
+  },
+  linkedin: {
+    alt: "Linkedin",
+    type: "img",
+    path: "/linkedin.svg",
+  },
+  home: {
+    alt: "Home",
+    path: "/github.svg",
+    type: "img",
+  },
+  document: {
+    type: "img",
+    alt: "Document",
+    path: "/document.svg",
+  },
+  meThinking: {
+    type: "img",
+    alt: "Me who's thinking about something",
+    path: "/me-thinking.jpeg",
+  },
+  controller: {
+    type: "img",
+    alt: "Controller",
+    path: "/controller.svg",
+  },
+  music: {
+    type: "img",
+    alt: "Music",
+    path: "/music.svg",
+  },
+  idea: {
+    type: "img",
+    alt: "Idea",
+    path: "/idea.svg",
+  },
+  react: {
+    type: "img",
+    alt: "React",
+    path: "/tags/react.svg",
+  },
+  python: {
+    type: "img",
+    alt: "Python",
+    path: "/tags/python.svg",
+  },
+  Csharp: {
+    type: "img",
+    alt: "Csharp",
+    path: "/tags/csharp.svg",
+  },
+  typescript: {
+    type: "img",
+    alt: "TypeScript",
+    path: "/tags/typescript.svg",
+  },
+  nodejs: {
+    type: "img",
+    alt: "NodeJs",
+    path: "/tags/nodejs.svg",
+  },
+  electron: {
+    type: "img",
+    alt: "Electron",
+    path: "/tags/electron.svg",
+  },
+  graphql: {
+    type: "img",
+    alt: "Graphql",
+    path: "/tags/graphql.svg",
+  },
+  nextjs: {
+    type: "img",
+    alt: "NextJs",
+    path: "/tags/nextjs.svg",
+  },
+  postgres: {
+    type: "img",
+    alt: "PostgreSQL",
+    path: "/tags/postgres.svg",
+  },
+  sqlite: {
+    type: "img",
+    alt: "SQLite",
+    path: "/tags/sqlite.svg",
+  },
+  supabase: {
+    type: "img",
+    alt: "Supabase",
+    path: "/tags/supabase.svg",
+  },
+  tailwind: {
+    type: "img",
+    alt: "Tailwind",
+    path: "/tags/tailwind.svg",
+  },
+} satisfies Record<string, Info>;
+
+export type IconsType = keyof typeof icons;
 
 type InfoLottie = {
   type: "morph" | "hover";
@@ -45,75 +162,6 @@ type Props = {
 
 export const Icons: React.FC<Props> = (props: Props) => {
   const lottieRef = useRef<LottieRefCurrentProps>(null);
-
-  const icons: Record<IconsType, Info> = {
-    suitcase: {
-      type: "morph",
-      animationData: suitCase,
-    },
-    folder: {
-      type: "morph",
-      animationData: folder,
-    },
-    mail: {
-      animationData: mail,
-      type: "morph",
-    },
-    avatar: {
-      animationData: avatar,
-      type: "morph",
-    },
-    me: {
-      type: "img",
-      path: "/me.jpeg",
-      alt: "An image of me",
-    },
-    download: {
-      alt: "Download",
-      type: "img",
-      path: "/download.svg",
-    },
-    github: {
-      alt: "Github",
-      path: "/github.svg",
-      type: "img",
-    },
-    linkedin: {
-      alt: "Linkedin",
-      type: "img",
-      path: "/linkedin.svg",
-    },
-    home: {
-      alt: "Home",
-      path: "/github.svg",
-      type: "img",
-    },
-    document: {
-      type: "img",
-      alt: "Document",
-      path: "/document.svg",
-    },
-    meThinking: {
-      type: "img",
-      alt: "Me who's thinking about something",
-      path: "/me-thinking.jpeg",
-    },
-    controller: {
-      type: "img",
-      alt: "Controller",
-      path: "/controller.svg",
-    },
-    music: {
-      type: "img",
-      alt: "Music",
-      path: "/music.svg",
-    },
-    idea: {
-      type: "img",
-      alt: "Idea",
-      path: "/idea.svg",
-    },
-  };
 
   const icon = icons[props.iconType];
 

@@ -22,7 +22,9 @@
   },
   "headers": {
     "aboutMe": "À propos de moi",
-    "aboutMeQuote": "Soyez-vous même, car tous les autres sont déjà pris."
+    "aboutMeQuote": "Soyez-vous même, car tous les autres sont déjà pris.",
+    "project": "Mes projets",
+    "projectQuote": "Les grandes choses ne sont pas accomplies par impulsion, mais par une série de petites choses mises ensemble."
   },
   "aboutMe": {
     "sectionName": "À propos de moi",

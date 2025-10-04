@@ -3,6 +3,7 @@ import { Menu } from "@/Section/Menu/ui/Menu";
 import { Hero } from "@/Section/Hero/ui/Hero";
 import { AboutMe } from "@/Section/AboutMe/ui/AboutMe";
 import { Section } from "@/Section/shared/ui/Section";
+import { Projects } from "@/Section/Project/ui/projects";
 
 export default async function Home({
   params,
@@ -26,6 +27,14 @@ export default async function Home({
           }}
         >
           <AboutMe lang={lang} />
+        </Section>
+        <Section
+          header={{
+            titleName: headers.project,
+            quote: headers.projectQuote,
+          }}
+        >
+          <Projects lang={lang} />
         </Section>
       </div>
     </div>

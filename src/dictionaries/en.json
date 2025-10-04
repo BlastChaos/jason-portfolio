@@ -22,7 +22,9 @@
   },
   "headers": {
     "aboutMe": "About me",
-    "aboutMeQuote": "Be yourself; everyone else is already taken."
+    "aboutMeQuote": "Be yourself; everyone else is already taken.",
+    "project": "My projects",
+    "projectQuote": "Great things are not done by impulse, but by a series of small things brought together."
   },
   "aboutMe": {
     "sectionName": "About me",
