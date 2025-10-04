@@ -36,6 +36,12 @@ export default async function Home({
         >
           <Projects lang={lang} />
         </Section>
+        <Section
+          header={{
+            titleName: headers.workExperience,
+            quote: headers.workExperienceQuote,
+          }}
+        ></Section>
       </div>
     </div>
   );

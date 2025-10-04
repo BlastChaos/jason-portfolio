@@ -24,7 +24,9 @@
     "aboutMe": "À propos de moi",
     "aboutMeQuote": "Soyez-vous même, car tous les autres sont déjà pris.",
     "project": "Mes projets",
-    "projectQuote": "Les grandes choses ne sont pas accomplies par impulsion, mais par une série de petites choses mises ensemble."
+    "projectQuote": "Les grandes choses ne sont pas accomplies par impulsion, mais par une série de petites choses mises ensemble.",
+    "workExperience": "Expérience de travail",
+    "workExperienceQuote": "L'expérience est un dur professeur. Elle vous donne d'abord l'examen, puis la leçon."
   },
   "aboutMe": {
     "sectionName": "À propos de moi",

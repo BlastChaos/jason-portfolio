@@ -24,7 +24,9 @@
     "aboutMe": "About me",
     "aboutMeQuote": "Be yourself; everyone else is already taken.",
     "project": "My projects",
-    "projectQuote": "Great things are not done by impulse, but by a series of small things brought together."
+    "projectQuote": "Great things are not done by impulse, but by a series of small things brought together.",
+    "workExperience": "Work experience",
+    "workExperienceQuote": "Experience is a hard teacher. She gives you the test first, the lesson afterward."
   },
   "aboutMe": {
     "sectionName": "About me",
