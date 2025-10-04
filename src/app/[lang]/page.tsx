@@ -4,6 +4,7 @@ import { Hero } from "@/Section/Hero/ui/Hero";
 import { AboutMe } from "@/Section/AboutMe/ui/AboutMe";
 import { Section } from "@/Section/shared/ui/Section";
 import { Projects } from "@/Section/Project/ui/projects";
+import { WorkExperience } from "@/Section/workExperience/ui/workExperience";
 
 export default async function Home({
   params,
@@ -41,7 +42,9 @@ export default async function Home({
             titleName: headers.workExperience,
             quote: headers.workExperienceQuote,
           }}
-        ></Section>
+        >
+          <WorkExperience lang={lang} />
+        </Section>
       </div>
     </div>
   );

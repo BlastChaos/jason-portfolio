@@ -1,5 +1,5 @@
 import { Locale } from "@/dictionaries/dictionaries";
-import { Tag } from "./tags";
+import { Tag } from "../../shared/utilities/tags";
 
 type ProjectType = "school" | "work" | "personnal";
 

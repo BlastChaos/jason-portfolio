@@ -3,7 +3,7 @@ import { Locale } from "@/dictionaries/dictionaries";
 import Image from "next/image";
 import { projectsInfo } from "../utilities/projectsInfo";
 import { Typography } from "@/components/ui/typography";
-import { TagBadge } from "./tagBadge";
+import { TagBadge } from "../../shared/ui/tagBadge";
 
 type Props = {
   lang: Locale;
