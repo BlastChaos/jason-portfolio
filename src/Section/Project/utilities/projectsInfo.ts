@@ -87,7 +87,7 @@ export const projectsInfo: ProjectInfo[] = [
       fr: {
         tittle: "Application mobile Punch hors ligne",
         shortDescription:
-          "Logbook est une application mobile qui a pour but d'aider les teams leaders a tracker le temps de leur employés dans les chantiers de construction.",
+          "Une application mobile qui a pour but d'aider les teams leaders a tracker le temps de leur employés dans les chantiers de construction.",
 
         // problem: `Dans le secteur de la construction, la gestion quotidienne des heures travaillées, des activités de chantier et des rapports repose encore trop souvent sur le papier, Excel ou des processus manuels. Ces méthodes entraînent une perte de temps considérable, augmentent les risques d’erreurs et provoquent fréquemment une perte ou une dispersion des données essentielles.`,
         // solution: `Concevoir une application mobile conçue pour la saisie des heures de travail et la production de rapports quotidiens, spécialement adaptée aux équipes de terrain dans le domaine de la construction. Elle élimine ainsi les risques d’erreurs et la perte de données.`,
@@ -110,7 +110,7 @@ export const projectsInfo: ProjectInfo[] = [
       en: {
         tittle: "Offline Punch Mobile App",
         shortDescription:
-          "Logbook is a mobile application whose purpose is to help team leaders track the time of their employees on construction sites.",
+          "A mobile application whose purpose is to help team leaders track the time of their employees on construction sites.",
 
         // problem:
         //   "Before I worked on a desktop application for the company Planifiscale, they needed to use ___ to manage their clients and their documents for the taxes. " +
