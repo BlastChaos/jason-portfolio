@@ -67,7 +67,7 @@ export const workInfo: WorkInfo[] = [
     },
   },
   {
-    companyName: "Civalgo",
+    companyName: "Civalgo 2",
     website: "https://www.civalgo.com/",
     logo: "/civalgo/logo.svg",
     from: new Date("2000-01-01"),
