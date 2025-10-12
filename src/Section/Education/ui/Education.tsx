@@ -85,7 +85,10 @@ export const Education: React.FC<Props> = async (props: Props) => {
               <div className="gap-2 flex flex-row flex-wrap">
                 {educationInfo.langInfo[props.lang].keyCourses.map(
                   (info, index) => (
-                    <Card key={`${educationInfo.schoolName}-task-${index}`}>
+                    <Card
+                      key={`${educationInfo.schoolName}-task-${index}`}
+                      className="p-2 gap-2"
+                    >
                       <Typography type={"md"} text={`${info}`} />
                     </Card>
                   )
