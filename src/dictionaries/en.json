@@ -48,5 +48,9 @@
     "present": "Present",
     "keyAchievements": "Key Achievements",
     "techStack": "Tech Stack"
+  },
+  "education": {
+    "present": "Present",
+    "keyCourses": "Key Courses"
   }
 }

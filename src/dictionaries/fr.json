@@ -49,5 +49,9 @@
     "present": "Aujourd'hui",
     "keyAchievements": "Réalisations clés",
     "techStack": "Technologies utilisées"
+  },
+  "education": {
+    "present": "Aujourd'hui",
+    "keyCourses": "Cours principaux"
   }
 }
