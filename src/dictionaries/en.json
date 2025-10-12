@@ -44,6 +44,7 @@
   },
   "workExperience": {
     "present": "Present",
-    "keyAchievements": "Key Achievements"
+    "keyAchievements": "Key Achievements",
+    "techStack": "Tech Stack"
   }
 }

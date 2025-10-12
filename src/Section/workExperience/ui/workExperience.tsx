@@ -4,6 +4,7 @@ import { workInfo } from "../utilities/workInfo";
 import Image from "next/image";
 import { Typography } from "@/components/ui/typography";
 import { Icons } from "@/components/ui/icons";
+import { TagBadge } from "@/Section/shared/ui/tagBadge";
 
 type Props = {
   lang: Locale;
@@ -22,7 +23,7 @@ export const WorkExperience: React.FC<Props> = async (props: Props) => {
   };
 
   return (
-    <div className="relative mx-14 py-4">
+    <div className="relative mx-28 py-4">
       <div className="border-l-2  border-primary gap-4 flex flex-col py-6">
         {workInfo
           .sort((a, b) => b.from.getTime() - a.from.getTime())
@@ -77,18 +78,33 @@ export const WorkExperience: React.FC<Props> = async (props: Props) => {
               />
               <div className="gap-2 flex flex-col">
                 <div className="flex flex-row items-center gap-1">
-                  {/* <Icons iconType={"rightArrow"} size={"md"} /> */}
                   <Typography
                     type={"h5"}
-                    text={`🡺 ${workExperience.keyAchievements}`}
+                    text={`${workExperience.keyAchievements}`}
                   />
                 </div>
-                <div className="gap-4 flex flex-col pl-8">
+                <div className="gap-4 flex flex-col">
                   {work.langInfo[props.lang].tasks.map((info, index) => (
                     <Typography
                       key={`${work.companyName}-task-${index}`}
                       type={"md"}
                       text={`● ${info}`}
+                    />
+                  ))}
+                </div>
+              </div>
+              <div className="gap-2 flex flex-col">
+                <div className="flex flex-row items-center gap-1">
+                  <Typography
+                    type={"h5"}
+                    text={`${workExperience.techStack}`}
+                  />
+                </div>
+                <div className="gap-2 flex flex-row">
+                  {work.techStack.map((info) => (
+                    <TagBadge
+                      tag={info}
+                      key={`${work.companyName}-tag-${info}`}
                     />
                   ))}
                 </div>

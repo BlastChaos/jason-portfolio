@@ -45,6 +45,7 @@
   },
   "workExperience": {
     "present": "Aujourd'hui",
-    "keyAchievements": "Réalisations clés"
+    "keyAchievements": "Réalisations clés",
+    "techStack": "Technologies utilisées"
   }
 }
