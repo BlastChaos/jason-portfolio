@@ -100,7 +100,7 @@ export const WorkExperience: React.FC<Props> = async (props: Props) => {
                     text={`${workExperience.techStack}`}
                   />
                 </div>
-                <div className="gap-2 flex flex-row">
+                <div className="gap-2 flex flex-row flex-wrap">
                   {work.techStack.map((info) => (
                     <TagBadge
                       tag={info}
