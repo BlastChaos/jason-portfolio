@@ -4,7 +4,8 @@ import { Hero } from "@/Section/Hero/ui/Hero";
 import { AboutMe } from "@/Section/AboutMe/ui/AboutMe";
 import { Section } from "@/Section/shared/ui/Section";
 import { Projects } from "@/Section/Project/ui/projects";
-import { WorkExperience } from "@/Section/workExperience/ui/workExperience";
+import { WorkExperience } from "@/Section/WorkExperience/ui/WorkExperience";
+import { Education } from "@/Section/Education/ui/Education";
 
 export default async function Home({
   params,
@@ -38,12 +39,21 @@ export default async function Home({
           <Projects lang={lang} />
         </Section>
         <Section
+          useSecondaryBgColor
           header={{
             titleName: headers.workExperience,
             quote: headers.workExperienceQuote,
           }}
         >
           <WorkExperience lang={lang} />
+        </Section>
+        <Section
+          header={{
+            titleName: headers.Education,
+            quote: headers.educationQuote,
+          }}
+        >
+          <Education lang={lang} />
         </Section>
       </div>
     </div>

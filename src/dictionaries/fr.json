@@ -26,7 +26,9 @@
     "project": "Mes projets",
     "projectQuote": "Les grandes choses ne sont pas accomplies par impulsion, mais par une série de petites choses mises ensemble.",
     "workExperience": "Expérience de travail",
-    "workExperienceQuote": "L'expérience est un dur professeur. Elle vous donne d'abord l'examen, puis la leçon."
+    "workExperienceQuote": "L'expérience est un dur professeur. Elle vous donne d'abord l'examen, puis la leçon.",
+    "Education": "Éducation",
+    "educationQuote": "L’éducation n’est pas l’apprentissage de faits, mais l’entraînement de l’esprit à penser."
   },
   "aboutMe": {
     "sectionName": "À propos de moi",

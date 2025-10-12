@@ -26,7 +26,9 @@
     "project": "My projects",
     "projectQuote": "Great things are not done by impulse, but by a series of small things brought together.",
     "workExperience": "Work experience",
-    "workExperienceQuote": "Experience is a hard teacher. She gives you the test first, the lesson afterward."
+    "workExperienceQuote": "Experience is a hard teacher. She gives you the test first, the lesson afterward.",
+    "Education": "Education",
+    "educationQuote": "Education is not the learning of facts, but the training of the mind to think."
   },
   "aboutMe": {
     "sectionName": "About me",
