@@ -42,5 +42,9 @@
     "hobby2Description": "J'aime jouer des morceaux à la guitare pendant mon temps libre. Le temps et la concentration nécessaires pour apprendre chaque chanson affinent ma concentration et mon sens du détail.",
     "hobby3Tittle": "Compétiteur en coding",
     "hobby3Description": "Participer à des hackathons est toujours passionnant. J'aime découvrir de nouvelles technologies, résoudre rapidement des problèmes et travailler en équipe."
+  },
+  "workExperience": {
+    "present": "Aujourd'hui",
+    "keyAchievements": "Réalisations clés"
   }
 }

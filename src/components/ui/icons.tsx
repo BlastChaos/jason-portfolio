@@ -136,6 +136,16 @@ const icons = {
     alt: "Tailwind",
     path: "/tags/tailwind.svg",
   },
+  calendar: {
+    type: "img",
+    alt: "Calendar",
+    path: "/calendar.svg",
+  },
+  location: {
+    type: "img",
+    alt: "Location",
+    path: "/location.svg",
+  },
 } satisfies Record<string, Info>;
 
 export type IconsType = keyof typeof icons;
