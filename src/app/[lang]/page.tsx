@@ -6,6 +6,7 @@ import { Section } from "@/Section/shared/ui/Section";
 import { Projects } from "@/Section/Project/ui/projects";
 import { WorkExperience } from "@/Section/WorkExperience/ui/WorkExperience";
 import { Education } from "@/Section/Education/ui/Education";
+import { Skill } from "@/Section/Skill/ui/Skill";
 
 export default async function Home({
   params,
@@ -54,6 +55,15 @@ export default async function Home({
           }}
         >
           <Education lang={lang} />
+        </Section>
+        <Section
+          useSecondaryBgColor
+          header={{
+            titleName: headers.skill,
+            quote: headers.skillQuote,
+          }}
+        >
+          <Skill lang={lang} />
         </Section>
       </div>
     </div>

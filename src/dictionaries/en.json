@@ -28,7 +28,9 @@
     "workExperience": "Work experience",
     "workExperienceQuote": "Experience is a hard teacher. She gives you the test first, the lesson afterward.",
     "Education": "Education",
-    "educationQuote": "Education is not the learning of facts, but the training of the mind to think."
+    "educationQuote": "Education is not the learning of facts, but the training of the mind to think.",
+    "skill": "Skills & Expertise",
+    "skillQuote": "I have no special talent. I am only passionately curious."
   },
   "aboutMe": {
     "sectionName": "About me",

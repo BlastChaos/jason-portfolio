@@ -28,7 +28,9 @@
     "workExperience": "Expérience de travail",
     "workExperienceQuote": "L'expérience est un dur professeur. Elle vous donne d'abord l'examen, puis la leçon.",
     "Education": "Éducation",
-    "educationQuote": "L’éducation n’est pas l’apprentissage de faits, mais l’entraînement de l’esprit à penser."
+    "educationQuote": "L’éducation n’est pas l’apprentissage de faits, mais l’entraînement de l’esprit à penser.",
+    "skill": "Skills & Expertise",
+    "skillQuote": "I have no special talent. I am only passionately curious."
   },
   "aboutMe": {
     "sectionName": "À propos de moi",
