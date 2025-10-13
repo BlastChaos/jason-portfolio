@@ -151,6 +151,11 @@ const icons = {
     alt: "Code",
     path: "/code.svg",
   },
+  info: {
+    alt: "Info",
+    type: "img",
+    path: "/info.svg",
+  },
 } satisfies Record<string, Info>;
 
 export type IconsType = keyof typeof icons;

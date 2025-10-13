@@ -61,8 +61,12 @@
     "softSkill": "Compétence interpersonnelle",
     "tools": "Outil",
     "proficient": "Maîtrisé",
+    "proficientDescription": "À l'aise pour concevoir et maintenir des systèmes en production avec cette technologie. Capable de concevoir des solutions, de résoudre des problèmes complexes et d'encadrer d'autres personnes.",
     "intermediate": "Intermédiaire",
+    "intermediateDescription": "A utilisé régulièrement cette technologie pour livrer des fonctionnalités avec une certaine autonomie, à l'aise pour déboguer et étendre du code existant.",
     "familiar": "Connaissance de base",
-    "learning": "En apprentissage"
+    "familiarDescription": "Utilisé dans des prototypes ou de petits projets ; capable de lire et de modifier du code avec accompagnement. Peut ne pas avoir livré des systèmes à grande échelle.",
+    "learning": "En apprentissage",
+    "learningDescription": "A récemment commencé à explorer la technologie (cours, tutoriels, projets ludiques). Pas encore utilisé en production."
   }
 }

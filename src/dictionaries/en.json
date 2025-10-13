@@ -60,8 +60,12 @@
     "softSkill": "Soft skill",
     "tools": "Tool",
     "proficient": "Proficient",
+    "proficientDescription": "Confident building and maintaining production systems with this tech. Can design solutions, troubleshoot complex issues, and mentor others.",
     "intermediate": "Intermediate",
+    "intermediateDescription": "Regularly used this tech to deliver features with some autonomy, comfortable debugging and extending existing code.",
     "familiar": "Familiar",
-    "learning": "Learning"
+    "familiarDescription": "Used in prototypes or small projects; can read and modify code with guidance. May not have shipped large-scale systems.",
+    "learning": "Learning",
+    "learningDescription": "Recently started exploring the technology (courses, tutorials, toy projects). Not yet relied upon in production."
   }
 }
