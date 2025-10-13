@@ -79,9 +79,9 @@ export const Education: React.FC<Props> = async (props: Props) => {
               text={educationInfo.langInfo[props.lang].shortDescription}
             />
             <div className="gap-2 flex flex-col">
-              <div className="flex flex-row items-center gap-1">
+              {/* <div className="flex flex-row items-center gap-1">
                 <Typography type={"h5"} text={`${education.keyCourses}`} />
-              </div>
+              </div> */}
               <div className="gap-2 flex flex-row flex-wrap">
                 {educationInfo.langInfo[props.lang].keyCourses.map(
                   (info, index) => (
