@@ -54,5 +54,14 @@
   "education": {
     "present": "Present",
     "keyCourses": "Key Courses"
+  },
+  "skill": {
+    "technical": "Technical",
+    "softSkill": "Soft skill",
+    "tools": "Tool",
+    "proficient": "Proficient",
+    "intermediate": "Intermediate",
+    "familiar": "Familiar",
+    "learning": "Learning"
   }
 }

@@ -1,5 +1,5 @@
 import { cn } from "@/utilities/utils";
-import { JSX } from "react";
+import React, { JSX } from "react";
 import { type ClassValue } from "clsx";
 export type TypographyType =
   | "h1"
@@ -19,7 +19,7 @@ type PropsInfo = {
 
 type Props = {
   type: TypographyType;
-  text: string;
+  text: React.ReactNode;
   className?: ClassValue;
 };
 export const tagMap: Record<Props["type"], PropsInfo> = {

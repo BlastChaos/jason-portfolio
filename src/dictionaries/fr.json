@@ -55,5 +55,14 @@
   "education": {
     "present": "Aujourd'hui",
     "keyCourses": "Cours principaux"
+  },
+  "skill": {
+    "technical": "Technique",
+    "softSkill": "Compétence interpersonnelle",
+    "tools": "Outil",
+    "proficient": "Maîtrisé",
+    "intermediate": "Intermédiaire",
+    "familiar": "Connaissance de base",
+    "learning": "En apprentissage"
   }
 }
