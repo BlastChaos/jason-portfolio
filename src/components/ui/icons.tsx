@@ -156,6 +156,21 @@ const icons = {
     type: "img",
     path: "/info.svg",
   },
+  computer: {
+    type: "img",
+    alt: "Computer",
+    path: "/computer.svg",
+  },
+  database: {
+    type: "img",
+    alt: "Database",
+    path: "/database.svg",
+  },
+  cloud: {
+    type: "img",
+    alt: "Cloud",
+    path: "/cloud.svg",
+  },
 } satisfies Record<string, Info>;
 
 export type IconsType = keyof typeof icons;

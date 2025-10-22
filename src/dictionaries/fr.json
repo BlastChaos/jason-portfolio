@@ -58,7 +58,12 @@
   },
   "skill": {
     "technical": "Technique",
-    "softSkill": "Compétence interpersonnelle",
+    "softSkill": {
+      "name": "Compétences interpersonnelles",
+      "frontendDevelopment": "Développement frontend",
+      "backendDevelopment": "Développement backend",
+      "cloudDevelopment": "Développement cloud"
+    },
     "tools": "Outil",
     "proficient": "Maîtrisé",
     "proficientDescription": "À l'aise pour concevoir et maintenir des systèmes en production avec cette technologie. Capable de concevoir des solutions, de résoudre des problèmes complexes et d'encadrer d'autres personnes.",

@@ -57,7 +57,7 @@
   },
   "skill": {
     "technical": "Technical",
-    "softSkill": "Soft skill",
+
     "tools": "Tool",
     "proficient": "Proficient",
     "proficientDescription": "Confident building and maintaining production systems with this tech. Can design solutions, troubleshoot complex issues, and mentor others.",
@@ -66,6 +66,12 @@
     "familiar": "Familiar",
     "familiarDescription": "Used in prototypes or small projects; can read and modify code with guidance. May not have shipped large-scale systems.",
     "learning": "Learning",
-    "learningDescription": "Recently started exploring the technology (courses, tutorials, toy projects). Not yet relied upon in production."
+    "learningDescription": "Recently started exploring the technology (courses, tutorials, toy projects). Not yet relied upon in production.",
+    "softSkill": {
+      "name": "Soft Skill",
+      "frontendDevelopment": "Frontend Development",
+      "backendDevelopment": "Backend Development",
+      "cloudDevelopment": "Cloud Development"
+    }
   }
 }

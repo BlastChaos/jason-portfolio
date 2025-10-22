@@ -6,7 +6,7 @@ import { Section } from "@/Section/shared/ui/Section";
 import { Projects } from "@/Section/Project/ui/projects";
 import { WorkExperience } from "@/Section/WorkExperience/ui/WorkExperience";
 import { Education } from "@/Section/Education/ui/Education";
-import { Skill } from "@/Section/Skill/ui/Skill";
+import { SkillPage } from "@/Section/Skill/ui/skillPage";
 
 export default async function Home({
   params,
@@ -63,7 +63,7 @@ export default async function Home({
             quote: headers.skillQuote,
           }}
         >
-          <Skill lang={lang} />
+          <SkillPage lang={lang} />
         </Section>
       </div>
     </div>

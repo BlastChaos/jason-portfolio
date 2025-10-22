@@ -1,18 +1,22 @@
+"use client";
 import { Card } from "@/components/ui/card";
 import { Icons, IconsType } from "@/components/ui/icons";
 import { Tabs } from "@/components/ui/tabs";
 import { Typography } from "@/components/ui/typography";
 import { SkillType } from "./SkillType";
-import { Locale } from "@/dictionaries/dictionaries";
+import { DictionnaryProps, Locale } from "@/dictionaries/dictionaries";
+import { useState } from "react";
+import { SoftSkill } from "./softSkill";
 
 type Props = {
   lang: Locale;
+  skillDictionary: DictionnaryProps["skill"];
 };
 
 type Section = "technical" | "softSkills" | "tools";
 
 export const Skill: React.FC<Props> = (props: Props) => {
-  //   const [currentTab, setCurrentTab] = useState<Section>("technical");
+  const [currentTab, setCurrentTab] = useState<Section>("softSkills");
   const section: Record<Section, { name: string; icon: IconsType }> = {
     softSkills: {
       icon: "code",
@@ -43,13 +47,22 @@ export const Skill: React.FC<Props> = (props: Props) => {
             ),
           }))}
           bubbleClassName="rounded-full"
-          // onTabChange={(value) => setCurrentTab(value as Section)}
-          currentTab={"softSkills"}
+          onTabChange={(value) => setCurrentTab(value as Section)}
+          currentTab={currentTab}
         />
       </Card>
       <div className="flex justify-center pt-4">
-        <SkillType lang={props.lang} />
+        <SkillType skillDictionary={props.skillDictionary} lang={props.lang} />
       </div>
+      {currentTab === "softSkills" && (
+        <div className="py-4">
+          <SoftSkill
+            lang={props.lang}
+            softSkillDictionary={props.skillDictionary.softSkill}
+          />
+        </div>
+      )}
+      <div></div>
     </div>
   );
 };
