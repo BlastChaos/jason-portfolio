@@ -68,10 +68,10 @@
     "learning": "Learning",
     "learningDescription": "Recently started exploring the technology (courses, tutorials, toy projects). Not yet relied upon in production.",
     "softSkill": {
-      "name": "Soft Skill",
-      "frontendDevelopment": "Frontend Development",
-      "backendDevelopment": "Backend Development",
-      "cloudDevelopment": "Cloud Development"
+      "frontendDevelopment": "Frontend",
+      "backendDevelopment": "Backend & APIs",
+      "databaseDevelopment": "Databases & Data",
+      "cloudDevelopment": "Cloud & DevOps"
     }
   }
 }

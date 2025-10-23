@@ -20,6 +20,7 @@ type PropsInfo = {
 type Props = {
   type: TypographyType;
   text: React.ReactNode;
+  style?: React.CSSProperties;
   className?: ClassValue;
 };
 export const tagMap: Record<Props["type"], PropsInfo> = {
@@ -39,6 +40,7 @@ export const Typography: React.FC<Props> = (props: Props) => {
   return (
     <componentInfo.type
       className={cn(componentInfo.className, props.className)}
+      style={props.style}
     >
       {props.text}
     </componentInfo.type>

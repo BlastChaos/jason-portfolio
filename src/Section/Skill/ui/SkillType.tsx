@@ -1,35 +1,35 @@
 import { Typography } from "@/components/ui/typography";
-import { DictionnaryProps, Locale } from "@/dictionaries/dictionaries";
+import { getDictionary, Locale } from "@/dictionaries/dictionaries";
 import { InfoTooltip } from "./InfoTooltip";
 import { proficency, Proficency } from "../utilities/proficency";
 
 type Props = {
   lang: Locale;
-  skillDictionary: DictionnaryProps["skill"];
 };
-export const SkillType: React.FC<Props> = (props: Props) => {
+export const SkillType: React.FC<Props> = async (props: Props) => {
+  const { skill } = await getDictionary(props.lang);
   const proficencyInfo: Record<
     Proficency,
     { name: string; description: string; color: string }
   > = {
     proficient: {
-      name: props.skillDictionary.proficient,
-      description: props.skillDictionary.proficientDescription,
+      name: skill.proficient,
+      description: skill.proficientDescription,
       color: proficency.proficient.color,
     },
     intermediate: {
-      name: props.skillDictionary.intermediate,
-      description: props.skillDictionary.intermediateDescription,
+      name: skill.intermediate,
+      description: skill.intermediateDescription,
       color: proficency.intermediate.color,
     },
     familiar: {
-      name: props.skillDictionary.familiar,
-      description: props.skillDictionary.familiarDescription,
+      name: skill.familiar,
+      description: skill.familiarDescription,
       color: proficency.familiar.color,
     },
     learning: {
-      name: props.skillDictionary.learning,
-      description: props.skillDictionary.learningDescription,
+      name: skill.learning,
+      description: skill.learningDescription,
       color: proficency.learning.color,
     },
   };
