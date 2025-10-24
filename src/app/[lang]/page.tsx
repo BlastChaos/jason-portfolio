@@ -4,7 +4,7 @@ import { Hero } from "@/Section/Hero/ui/Hero";
 import { AboutMe } from "@/Section/AboutMe/ui/AboutMe";
 import { Section } from "@/Section/shared/ui/Section";
 import { Projects } from "@/Section/Project/ui/projects";
-import { WorkExperience } from "@/Section/WorkExperience/ui/WorkExperience";
+import { WorkExperience } from "@/Section/workExperience/ui/WorkExperience";
 import { Education } from "@/Section/Education/ui/Education";
 import { SkillPage } from "@/Section/Skill/ui/skillPage";
 

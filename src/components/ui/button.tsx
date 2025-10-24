@@ -89,9 +89,17 @@ type TextIconButtonProps = Omit<ButtonProps, "children" | "asChild"> & {
   icon: IconsType;
 };
 
-function TextIconButton({ text, icon, ...props }: TextIconButtonProps) {
+function TextIconButton({
+  text,
+  icon,
+  className,
+  ...props
+}: TextIconButtonProps) {
   return (
-    <Button {...props}>
+    <Button
+      {...props}
+      className={cn(className, "flex flex-row gap-2 items-center")}
+    >
       <Icons iconType={icon} size="md" />
       <Typography type={"md"} text={text} />
     </Button>

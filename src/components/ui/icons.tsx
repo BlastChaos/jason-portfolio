@@ -7,7 +7,21 @@ import { cn } from "@/utilities/utils";
 import Lottie, { type LottieRefCurrentProps } from "lottie-react";
 import { RefObject, useRef } from "react";
 import Image from "next/image";
-
+import { Calendar } from "./icons/calendar";
+import { Cloud } from "./icons/cloud";
+import { Download } from "./icons/download";
+import { Code } from "./icons/code";
+import { Computer } from "./icons/computer";
+import { Controller } from "./icons/controller";
+import { Database } from "./icons/database";
+import { Document } from "./icons/document";
+import { Github } from "./icons/github";
+import { Globe } from "./icons/globe";
+import { Idea } from "./icons/idea";
+import { Info } from "./icons/info";
+import { Linkedin } from "./icons/linkedin";
+import { Location } from "./icons/location";
+import { Music } from "./icons/music";
 const icons = {
   suitcase: {
     type: "morph",
@@ -32,19 +46,16 @@ const icons = {
     alt: "An image of me",
   },
   download: {
-    alt: "Download",
-    type: "img",
-    path: "/download.svg",
+    type: "svg",
+    svg: Download,
   },
   github: {
-    alt: "Github",
-    path: "/github.svg",
-    type: "img",
+    type: "svg",
+    svg: Github,
   },
   linkedin: {
-    alt: "Linkedin",
-    type: "img",
-    path: "/linkedin.svg",
+    type: "svg",
+    svg: Linkedin,
   },
   home: {
     alt: "Home",
@@ -52,9 +63,8 @@ const icons = {
     type: "img",
   },
   document: {
-    type: "img",
-    alt: "Document",
-    path: "/document.svg",
+    type: "svg",
+    svg: Document,
   },
   meThinking: {
     type: "img",
@@ -62,19 +72,16 @@ const icons = {
     path: "/me-thinking.jpeg",
   },
   controller: {
-    type: "img",
-    alt: "Controller",
-    path: "/controller.svg",
+    type: "svg",
+    svg: Controller,
   },
   music: {
-    type: "img",
-    alt: "Music",
-    path: "/music.svg",
+    type: "svg",
+    svg: Music,
   },
   idea: {
-    type: "img",
-    alt: "Idea",
-    path: "/idea.svg",
+    type: "svg",
+    svg: Idea,
   },
   react: {
     type: "img",
@@ -137,39 +144,36 @@ const icons = {
     path: "/tags/tailwind.svg",
   },
   calendar: {
-    type: "img",
-    alt: "Calendar",
-    path: "/calendar.svg",
+    type: "svg",
+    svg: Calendar,
   },
   location: {
-    type: "img",
-    alt: "Location",
-    path: "/location.svg",
+    type: "svg",
+    svg: Location,
   },
   code: {
-    type: "img",
-    alt: "Code",
-    path: "/code.svg",
+    type: "svg",
+    svg: Code,
   },
   info: {
-    alt: "Info",
-    type: "img",
-    path: "/info.svg",
+    type: "svg",
+    svg: Info,
   },
   computer: {
-    type: "img",
-    alt: "Computer",
-    path: "/computer.svg",
+    type: "svg",
+    svg: Computer,
   },
   database: {
-    type: "img",
-    alt: "Database",
-    path: "/database.svg",
+    type: "svg",
+    svg: Database,
   },
   cloud: {
-    type: "img",
-    alt: "Cloud",
-    path: "/cloud.svg",
+    type: "svg",
+    svg: Cloud,
+  },
+  globe: {
+    type: "svg",
+    svg: Globe,
   },
 } satisfies Record<string, Info>;
 
@@ -186,7 +190,12 @@ type InfoSimpleImage = {
   alt: string;
 };
 
-type Info = InfoSimpleImage | InfoLottie;
+type InfoSvg = {
+  type: "svg";
+  svg: React.FC<React.SVGProps<SVGSVGElement>>;
+};
+
+type Info = InfoSimpleImage | InfoLottie | InfoSvg;
 
 type Props = {
   iconType: IconsType;
@@ -219,6 +228,15 @@ export const Icons: React.FC<Props> = (props: Props) => {
     }
   };
 
+  const classNameInfo = cn(
+    props.size === "sm" && "w-4 h-4",
+    props.size === "md" && "w-6 h-6",
+    props.size === "lg" && "w-8 h-8",
+    props.size === "5xl" && "w-44 h-44 md:w-72 md:h-72 lg:w-96 lg:h-96",
+    props.size === "4xl" && "w-44 h-44 md:w-72 md:h-72",
+    props.className
+  );
+
   if (icon.type === "img") {
     return (
       <Image
@@ -226,17 +244,12 @@ export const Icons: React.FC<Props> = (props: Props) => {
         src={icon.path}
         width={9999}
         height={9999}
-        className={cn(
-          props.size === "sm" && "w-4 h-4",
-          props.size === "md" && "w-6 h-6",
-          props.size === "lg" && "w-8 h-8",
-          props.size === "5xl" && "w-44 h-44 md:w-72 md:h-72 lg:w-96 lg:h-96",
-          props.size === "4xl" && "w-44 h-44 md:w-72 md:h-72",
-
-          props.className
-        )}
+        className={classNameInfo}
       />
     );
+  }
+  if (icon.type === "svg") {
+    return <icon.svg className={classNameInfo} />;
   }
 
   return (

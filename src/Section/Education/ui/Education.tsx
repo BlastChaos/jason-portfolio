@@ -56,7 +56,7 @@ export const Education: React.FC<Props> = async (props: Props) => {
                   />
                 </a>
 
-                <div className="flex flex-row gap-1 items-center">
+                <div className="flex flex-row gap-1 items-center ">
                   <Icons iconType={"calendar"} size={"sm"} />
                   <Typography
                     type={"md"}
