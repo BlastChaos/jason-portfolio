@@ -19,7 +19,7 @@ export const Section: React.FC<PropsWithChildren<Props>> = async (
     >
       <div className={"container mx-auto px-8 lg:px-12 flex flex-col py-8"}>
         {props.header && (
-          <div className="flex justify-center flex-col text-center gap-2 pb-16">
+          <div className="flex justify-center items-center flex-col text-center gap-2 pb-16">
             <Typography type={"h2"} text={props.header.titleName} />
             <Typography type={"lg"} text={`“${props.header.quote}”`} />
           </div>

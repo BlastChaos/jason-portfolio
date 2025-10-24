@@ -1,11 +1,4 @@
-"use client";
-import suitCase from "@/components/utilities/lottie-suitcase.json";
-import folder from "@/components/utilities/lottie-folder.json";
-import mail from "@/components/utilities/lottie-mail.json";
-import avatar from "@/components/utilities/lottie-avatar.json";
 import { cn } from "@/utilities/utils";
-import Lottie, { type LottieRefCurrentProps } from "lottie-react";
-import { RefObject, useRef } from "react";
 import Image from "next/image";
 import { Calendar } from "./icons/calendar";
 import { Cloud } from "./icons/cloud";
@@ -22,23 +15,28 @@ import { Info } from "./icons/info";
 import { Linkedin } from "./icons/linkedin";
 import { Location } from "./icons/location";
 import { Music } from "./icons/music";
+import { Home } from "./icons/home";
+import { Avatar } from "./icons/avatar";
+import { Suitcase } from "./icons/suitcase";
+import { Folder } from "./icons/folder";
+import { Mail } from "./icons/mail";
 const icons = {
   suitcase: {
-    type: "morph",
-    animationData: suitCase,
+    type: "svg",
+    svg: Suitcase,
   },
 
   folder: {
-    type: "morph",
-    animationData: folder,
+    type: "svg",
+    svg: Folder,
   },
   mail: {
-    animationData: mail,
-    type: "morph",
+    type: "svg",
+    svg: Mail,
   },
   avatar: {
-    animationData: avatar,
-    type: "morph",
+    type: "svg",
+    svg: Avatar,
   },
   me: {
     type: "img",
@@ -58,9 +56,8 @@ const icons = {
     svg: Linkedin,
   },
   home: {
-    alt: "Home",
-    path: "/github.svg",
-    type: "img",
+    type: "svg",
+    svg: Home,
   },
   document: {
     type: "svg",
@@ -180,7 +177,7 @@ const icons = {
 export type IconsType = keyof typeof icons;
 
 type InfoLottie = {
-  type: "morph" | "hover";
+  type: "hover";
   animationData: unknown;
 };
 
@@ -200,33 +197,11 @@ type Info = InfoSimpleImage | InfoLottie | InfoSvg;
 type Props = {
   iconType: IconsType;
   size: "sm" | "md" | "lg" | "5xl" | "4xl";
-  lottieRef?: RefObject<LottieRefCurrentProps | null>;
   className?: string;
 };
 
 export const Icons: React.FC<Props> = (props: Props) => {
-  const lottieRef = useRef<LottieRefCurrentProps>(null);
-
   const icon = icons[props.iconType];
-
-  const handleMouseEnter = () => {
-    if (icon.type === "morph") {
-      // Forward direction
-      lottieRef.current?.setDirection(1);
-      lottieRef.current?.play();
-    } else {
-      // Play the animation from start
-      lottieRef.current?.goToAndPlay(0, true);
-    }
-  };
-
-  const handleMouseLeave = () => {
-    if (icon.type === "morph") {
-      // Reverse direction
-      lottieRef.current?.setDirection(-1);
-      lottieRef.current?.play();
-    }
-  };
 
   const classNameInfo = cn(
     props.size === "sm" && "w-4 h-4",
@@ -248,23 +223,6 @@ export const Icons: React.FC<Props> = (props: Props) => {
       />
     );
   }
-  if (icon.type === "svg") {
-    return <icon.svg className={classNameInfo} />;
-  }
 
-  return (
-    <Lottie
-      autoplay={false}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      className={cn(
-        props.size === "sm" && "w-4 h-4",
-        props.size === "md" && "w-6 h-6",
-        props.size === "lg" && "w-8 h-8"
-      )}
-      lottieRef={props.lottieRef ?? lottieRef}
-      animationData={icon.animationData}
-      loop={false}
-    />
-  );
+  return <icon.svg className={classNameInfo} />;
 };
