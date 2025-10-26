@@ -5,7 +5,9 @@
     "projects": "Projects",
     "about": "About",
     "home": "Home",
-    "resume": "Resume"
+    "resume": "Resume",
+    "education": "Education",
+    "skill": "Skills"
   },
   "hero": {
     "work": "See my projects",
@@ -57,7 +59,6 @@
   },
   "skill": {
     "technical": "Technical",
-
     "tools": "Tool",
     "proficient": "Proficient",
     "proficientDescription": "Confident building and maintaining production systems with this tech. Can design solutions, troubleshoot complex issues, and mentor others.",

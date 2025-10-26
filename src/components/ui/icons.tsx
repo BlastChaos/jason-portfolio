@@ -20,10 +20,15 @@ import { Avatar } from "./icons/avatar";
 import { Suitcase } from "./icons/suitcase";
 import { Folder } from "./icons/folder";
 import { Mail } from "./icons/mail";
+import { GraduationHat } from "./icons/graduationHat";
 const icons = {
   suitcase: {
     type: "svg",
     svg: Suitcase,
+  },
+  graduationHat: {
+    type: "svg",
+    svg: GraduationHat,
   },
 
   folder: {

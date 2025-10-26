@@ -13,7 +13,7 @@ type AnimatedTabsProps = {
   tabs: Tab[];
   currentTab: string;
   className?: string;
-  onTabChange: (id: string) => void;
+  onTabChange?: (id: string) => void;
   bubbleClassName?: string;
 };
 
@@ -25,7 +25,7 @@ export const Tabs = (props: AnimatedTabsProps) => {
       {props.tabs.map((tab) => (
         <button
           key={tab.id}
-          onClick={() => props.onTabChange(tab.id)}
+          onClick={() => props.onTabChange?.(tab.id)}
           className={cn(
             "relative rounded-[--radius] px-3 py-1.5 text-sm font-medium",
             "text-foreground outline-ring transition",

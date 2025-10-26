@@ -7,6 +7,17 @@ import { Projects } from "@/Section/Project/ui/projects";
 import { WorkExperience } from "@/Section/workExperience/ui/WorkExperience";
 import { Education } from "@/Section/Education/ui/Education";
 import { SkillPage } from "@/Section/Skill/ui/skillPage";
+import { IconsType } from "@/components/ui/icons";
+export type SectionType = {
+  id: string;
+  header?: {
+    titleName: string;
+    quote: string;
+  };
+  icon: IconsType;
+  menuName: string;
+  children: React.ReactNode;
+};
 
 export default async function Home({
   params,
@@ -14,57 +25,79 @@ export default async function Home({
   params: Promise<{ lang: Locale }>;
 }) {
   const { lang } = await params;
-  const { headers } = await getDictionary(lang);
+  const { headers, menu } = await getDictionary(lang);
+  const sections: SectionType[] = [
+    {
+      id: "home",
+      icon: "home",
+      menuName: menu.home,
+      children: <Hero lang={lang} />,
+    },
+    {
+      id: "about",
+      icon: "avatar",
+      header: {
+        titleName: headers.aboutMe,
+        quote: headers.aboutMeQuote,
+      },
+      menuName: menu.about,
+      children: <AboutMe lang={lang} />,
+    },
+    {
+      id: "projects",
+      header: {
+        titleName: headers.project,
+        quote: headers.projectQuote,
+      },
+      icon: "folder",
+      menuName: headers.project,
+      children: <Projects lang={lang} />,
+    },
+    {
+      id: "work",
+      header: {
+        titleName: headers.workExperience,
+        quote: headers.workExperienceQuote,
+      },
+      icon: "suitcase",
+      menuName: menu.work,
+      children: <WorkExperience lang={lang} />,
+    },
+    {
+      id: "education",
+      header: {
+        titleName: headers.Education,
+        quote: headers.educationQuote,
+      },
+      icon: "graduationHat",
+      menuName: menu.education,
+      children: <Education lang={lang} />,
+    },
+    {
+      id: "skill",
+      header: {
+        titleName: headers.skill,
+        quote: headers.skillQuote,
+      },
+      icon: "computer",
+      menuName: menu.skill,
+      children: <SkillPage lang={lang} />,
+    },
+  ];
   return (
     <div className="relative">
-      <Menu lang={lang} />
+      <Menu lang={lang} sections={sections} />
       <div>
-        <Section>
-          <Hero lang={lang} />
-        </Section>
-        <Section
-          useSecondaryBgColor
-          header={{
-            titleName: headers.aboutMe,
-            quote: headers.aboutMeQuote,
-          }}
-        >
-          <AboutMe lang={lang} />
-        </Section>
-        <Section
-          header={{
-            titleName: headers.project,
-            quote: headers.projectQuote,
-          }}
-        >
-          <Projects lang={lang} />
-        </Section>
-        <Section
-          useSecondaryBgColor
-          header={{
-            titleName: headers.workExperience,
-            quote: headers.workExperienceQuote,
-          }}
-        >
-          <WorkExperience lang={lang} />
-        </Section>
-        <Section
-          header={{
-            titleName: headers.Education,
-            quote: headers.educationQuote,
-          }}
-        >
-          <Education lang={lang} />
-        </Section>
-        <Section
-          useSecondaryBgColor
-          header={{
-            titleName: headers.skill,
-            quote: headers.skillQuote,
-          }}
-        >
-          <SkillPage lang={lang} />
-        </Section>
+        {sections.map((section, index) => (
+          <Section
+            key={section.id}
+            id={section.id}
+            header={section.header}
+            useSecondaryBgColor={index % 2 === 0}
+          >
+            {section.children}
+          </Section>
+        ))}
       </div>
     </div>
   );

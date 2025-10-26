@@ -5,7 +5,9 @@
     "projects": "Projets",
     "about": "Profil",
     "home": "Home",
-    "resume": "Résumé"
+    "resume": "Résumé",
+    "education": "Éducation",
+    "skill": "Compétences"
   },
   "hero": {
     "work": "Voir mes projets",

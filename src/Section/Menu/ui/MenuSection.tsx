@@ -1,28 +1,20 @@
-import { cn } from "@/utilities/utils";
-
-import { headerSections, SectionsType } from "../utilities/headerSection";
-import { Icons } from "@/components/ui/icons";
+import { Icons, IconsType } from "@/components/ui/icons";
 import { Typography } from "@/components/ui/typography";
+import Link from "next/link";
 
 type Props = {
+  id: string;
   name: string;
-  section: SectionsType;
-  inSection: boolean;
+  icon: IconsType;
 };
 
 export const MenuSection: React.FC<Props> = (props: Props) => {
   return (
-    <div className="group relative flex flex-row gap-2">
-      <Icons iconType={headerSections[props.section]} size="md" />
-      <Typography text={props.name} type="md" />
-      <span
-        className={cn(
-          "absolute left-0 bottom-0 w-full h-0.5 bg-primary",
-          "transform scale-x-0 origin-left",
-          "transition-transform duration-700",
-          "group-hover:scale-x-100"
-        )}
-      />
-    </div>
+    <Link href={`/#${props.id}`} key={props.id}>
+      <div className="group relative flex flex-row gap-2 items-center">
+        <Icons iconType={props.icon} size="md" />
+        <Typography text={props.name} type="md" />
+      </div>
+    </Link>
   );
 };
