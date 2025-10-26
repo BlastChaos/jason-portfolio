@@ -22,6 +22,7 @@ import { Folder } from "./icons/folder";
 import { Mail } from "./icons/mail";
 import { GraduationHat } from "./icons/graduationHat";
 import { Gear } from "./icons/gear";
+import { Hamburger } from "./icons/hamburger";
 const icons = {
   suitcase: {
     type: "svg",
@@ -35,7 +36,10 @@ const icons = {
     type: "svg",
     svg: Gear,
   },
-
+  hamburger: {
+    type: "svg",
+    svg: Hamburger,
+  },
   folder: {
     type: "svg",
     svg: Folder,

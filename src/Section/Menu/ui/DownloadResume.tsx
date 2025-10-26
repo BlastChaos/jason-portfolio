@@ -5,6 +5,7 @@ import { TextIconButton } from "@/components/ui/button";
 type Props = {
   lang: Locale;
   resumeText: string;
+  className?: string;
 };
 
 const RESUME_URL =
@@ -20,6 +21,7 @@ export const DownloadResume: React.FC<Props> = (props: Props) => {
       variant={"secondary"}
       icon="download"
       onClick={goTo}
+      className={props.className}
     />
   );
 };
