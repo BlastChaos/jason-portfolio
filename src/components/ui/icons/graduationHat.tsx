@@ -1,4 +1,4 @@
-export const GraduationHat = (props: React.SVGProps<SVGSVGElement>) => {
+export const GraduationHat: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

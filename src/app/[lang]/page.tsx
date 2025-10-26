@@ -79,7 +79,7 @@ export default async function Home({
         titleName: headers.skill,
         quote: headers.skillQuote,
       },
-      icon: "computer",
+      icon: "gear",
       menuName: menu.skill,
       children: <SkillPage lang={lang} />,
     },
