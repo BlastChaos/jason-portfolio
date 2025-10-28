@@ -23,6 +23,7 @@ import { Mail } from "./icons/mail";
 import { GraduationHat } from "./icons/graduationHat";
 import { Gear } from "./icons/gear";
 import { Hamburger } from "./icons/hamburger";
+import { AlternateEmail } from "./icons/alternateEmail";
 const icons = {
   suitcase: {
     type: "svg",
@@ -185,6 +186,10 @@ const icons = {
   globe: {
     type: "svg",
     svg: Globe,
+  },
+  alternateEmail: {
+    type: "svg",
+    svg: AlternateEmail,
   },
 } satisfies Record<string, Info>;
 

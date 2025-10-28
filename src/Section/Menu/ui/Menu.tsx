@@ -1,6 +1,6 @@
+import { Typography } from "@/components/ui/typography";
 import { Card } from "@/components/ui/card";
 import { getDictionary, Locale } from "@/dictionaries/dictionaries";
-import { Typography } from "@/components/ui/typography";
 import { DownloadResume } from "./DownloadResume";
 import { SectionType } from "@/app/[lang]/page";
 import { MenuSections } from "./MenuSections";
@@ -28,7 +28,7 @@ export const Menu: React.FC<Props> = async (props: Props) => {
           <Typography
             text="＜JasonBrutus /＞"
             type="h3"
-            className={"cursor-default"}
+            className={"cursor-default whitespace-nowrap"}
           />
           <div className="ml-auto   flex-row items-center gap-5 p-4 hidden lg:flex">
             <MenuSections sections={props.sections} />

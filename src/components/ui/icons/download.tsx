@@ -1,11 +1,11 @@
 export const Download: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg
-      {...props}
       xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 48 48"
+      fill="currentColor"
+      viewBox="-1 -1 50 50"
       id="Download--Streamline-Rounded-Material"
+      {...props}
     >
       <desc>Download Streamline Icon: https://streamlinehq.com</desc>
       <path

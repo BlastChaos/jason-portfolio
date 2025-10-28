@@ -4,6 +4,7 @@ import { Typewriter } from "./Typewriter";
 import { Icons } from "@/components/ui/icons";
 import { TextIconButton } from "@/components/ui/button";
 import { Contact } from "./Contact";
+import Link from "next/link";
 
 type Props = {
   lang: Locale;
@@ -32,13 +33,23 @@ export const Hero: React.FC<Props> = async (props: Props) => {
           className={"md:w-[77%]"}
         />
         <div className="flex flex-col md:flex-row  gap-4">
-          <TextIconButton text={hero.contactMe} icon="download" size={"lg"} />
-          <TextIconButton
-            text={hero.work}
-            size={"lg"}
-            variant={"secondary"}
-            icon="suitcase"
-          />
+          <Link href={`/#contact`}>
+            <TextIconButton
+              text={hero.contactMe}
+              icon="alternateEmail"
+              size={"lg"}
+              variant={"default"}
+            />
+          </Link>
+
+          <Link href={`/#projects`}>
+            <TextIconButton
+              text={hero.work}
+              size={"lg"}
+              variant={"secondary"}
+              icon="suitcase"
+            />
+          </Link>
         </div>
         <Contact />
       </div>

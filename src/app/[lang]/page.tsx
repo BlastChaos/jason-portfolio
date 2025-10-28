@@ -8,6 +8,7 @@ import { WorkExperience } from "@/Section/workExperience/ui/WorkExperience";
 import { Education } from "@/Section/Education/ui/Education";
 import { SkillPage } from "@/Section/Skill/ui/skillPage";
 import { IconsType } from "@/components/ui/icons";
+import { ContactMe } from "@/Section/AboutMe/ContactMe/ui/ContactMe";
 export type SectionType = {
   id: string;
   header?: {
@@ -82,6 +83,16 @@ export default async function Home({
       icon: "gear",
       menuName: menu.skill,
       children: <SkillPage lang={lang} />,
+    },
+    {
+      id: "contact",
+      header: {
+        titleName: headers.contact,
+        quote: headers.contactQuote,
+      },
+      icon: "alternateEmail",
+      menuName: menu.contact,
+      children: <ContactMe lang={lang} />,
     },
   ];
   return (

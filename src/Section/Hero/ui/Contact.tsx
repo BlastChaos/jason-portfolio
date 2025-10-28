@@ -14,7 +14,7 @@ export const Contact: React.FC = () => {
         icon="github"
         size={"lg"}
         onClick={() => goTo("https://github.com/BlastChaos")}
-        className="rounded-full px-3"
+        className="rounded-full px-3 "
       />
       <IconButton
         variant={"secondary"}

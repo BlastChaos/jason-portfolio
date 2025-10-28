@@ -32,7 +32,9 @@
     "Education": "Education",
     "educationQuote": "Education is not the learning of facts, but the training of the mind to think.",
     "skill": "Skills & Expertise",
-    "skillQuote": "I have no special talent. I am only passionately curious."
+    "skillQuote": "I have no special talent. I am only passionately curious.",
+    "contact": "Contact me",
+    "contactQuote": "My belief is that communication is the best way to create strong relationships."
   },
   "aboutMe": {
     "sectionName": "About me",

@@ -32,7 +32,9 @@
     "Education": "Éducation",
     "educationQuote": "L’éducation n’est pas l’apprentissage de faits, mais l’entraînement de l’esprit à penser.",
     "skill": "Skills & Expertise",
-    "skillQuote": "I have no special talent. I am only passionately curious."
+    "skillQuote": "I have no special talent. I am only passionately curious.",
+    "contact": "Contactez-moi",
+    "contactQuote": "Ma conviction est que la communication est le meilleur moyen de créer des relations solides."
   },
   "aboutMe": {
     "sectionName": "À propos de moi",
