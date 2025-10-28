@@ -23,16 +23,24 @@ export const Hero: React.FC<Props> = async (props: Props) => {
         <Typography
           type={"lg"}
           text={hero.introduction}
-          className="text-primary font-medium"
+          className="text-primary font-medium animate-[slideUpFadeIn_0.8s_ease-out_0.2s_both]"
         />
-        <Typography type={"h1"} text={"Jason Brutus"} />
-        <Typewriter texts={texts} />
+        <Typography
+          type={"h1"}
+          text={"Jason Brutus"}
+          className="animate-[slideUpFadeIn_0.8s_ease-out_0.4s_both]"
+        />
+        <div className="animate-[slideUpFadeIn_0.8s_ease-out_0.6s_both]">
+          <Typewriter texts={texts} />
+        </div>
         <Typography
           type={"md"}
           text={hero.description}
-          className={"md:w-[77%]"}
+          className={
+            "md:w-[77%] animate-[slideUpFadeIn_0.8s_ease-out_0.6s_both]"
+          }
         />
-        <div className="flex flex-col md:flex-row  gap-4">
+        <div className="flex flex-col md:flex-row gap-4 animate-[slideUpFadeIn_0.8s_ease-out_0.8s_both]">
           <Link href={`/#contact`}>
             <TextIconButton
               text={hero.contactMe}
@@ -51,15 +59,17 @@ export const Hero: React.FC<Props> = async (props: Props) => {
             />
           </Link>
         </div>
-        <Contact />
+        <div className="animate-[slideUpFadeIn_0.8s_ease-out_1s_both]">
+          <Contact />
+        </div>
       </div>
 
-      <div className="flex justify-center relative items-center animate-[float_4s_ease-in-out_infinite]  order-1 md:order-2">
+      <div className="flex justify-center relative items-center animate-slide-right-bounce order-1 md:order-2">
         <div className="rounded-full w-56 h-56 md:w-80 md:h-80  lg:w-110 lg:h-110 absolute bg-accent animate-[pulsation_4s_ease-in-out_infinite]" />
         <Icons
           iconType="me"
           size="5xl"
-          className="rounded-full border-primary border-8 z-10 transition-transform duration-300 hover:scale-105"
+          className="rounded-full border-primary border-8 z-10 transition-transform duration-300 hover:scale-105 animate-[float_4s_ease-in-out_2.4s_infinite]"
         />
       </div>
     </div>

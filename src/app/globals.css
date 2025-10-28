@@ -233,6 +233,51 @@
   }
 }
 
+/* Entrance animations */
+@keyframes slideUpFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRightFadeInBounce {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-8px);
+  }
+  70% {
+    transform: translateX(4px);
+  }
+  85% {
+    transform: translateX(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation classes */
+.animate-slide-right-bounce {
+  animation: slideRightFadeInBounce 1.3s ease-out 1.2s both;
+}
+
+/* Responsive animation for icon */
+@media (max-width: 768px) {
+  .animate-slide-right-bounce {
+    animation: slideUpFadeIn 0.8s ease-out 1.2s both;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
