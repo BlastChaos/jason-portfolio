@@ -1,7 +1,8 @@
 "use client";
 
-import { PropsWithChildren, useEffect, useRef, useState } from "react";
+import { PropsWithChildren, useRef } from "react";
 import { Typography } from "@/components/ui/typography";
+import { useIntersectionObserver } from "../hook/useIntersectionObserver";
 
 type Props = {
   id: string;
@@ -15,34 +16,9 @@ type Props = {
 export const Section: React.FC<PropsWithChildren<Props>> = (
   props: PropsWithChildren<Props>
 ) => {
-  const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !isVisible) {
-          setIsVisible(true);
-        }
-      },
-      {
-        threshold: 0.2, // Trigger when 20% of the section is visible
-        rootMargin: "-50px 0px", // Start animation slightly after entering viewport
-      }
-    );
-
-    const currentRef = sectionRef.current;
-    if (currentRef) {
-      observer.observe(currentRef);
-    }
-
-    return () => {
-      if (currentRef) {
-        observer.unobserve(currentRef);
-      }
-    };
-  }, [isVisible]);
-
+  const isIntersecting = useIntersectionObserver(sectionRef);
   return (
     <div
       className={
@@ -62,7 +38,7 @@ export const Section: React.FC<PropsWithChildren<Props>> = (
               type={"h2"}
               text={props.header.titleName}
               className={
-                isVisible
+                isIntersecting
                   ? "animate-[slideUpFadeIn_0.8s_ease-out_0.2s_both]"
                   : "invisible"
               }
@@ -71,7 +47,7 @@ export const Section: React.FC<PropsWithChildren<Props>> = (
               type={"lg"}
               text={`“${props.header.quote}”`}
               className={
-                isVisible
+                isIntersecting
                   ? "animate-[slideUpFadeIn_0.8s_ease-out_0.4s_both]"
                   : "invisible"
               }
