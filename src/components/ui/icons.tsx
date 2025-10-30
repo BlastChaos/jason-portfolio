@@ -226,7 +226,7 @@ export const Icons: React.FC<Props> = (props: Props) => {
     props.size === "sm" && "w-4 h-4",
     props.size === "md" && "w-6 h-6",
     props.size === "lg" && "w-8 h-8",
-    props.size === "5xl" && "w-44 h-44 md:w-72 md:h-72 lg:w-96 lg:h-96",
+    props.size === "5xl" && "w-52 h-52 md:w-72 md:h-72 lg:w-96 lg:h-96",
     props.size === "4xl" && "w-44 h-44 md:w-72 md:h-72",
 
     props.className

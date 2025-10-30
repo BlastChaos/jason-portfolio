@@ -5,6 +5,7 @@ import { Icons } from "@/components/ui/icons";
 import { TextIconButton } from "@/components/ui/button";
 import { Contact } from "./Contact";
 import Link from "next/link";
+import { cn } from "@/utilities/utils";
 
 type Props = {
   lang: Locale;
@@ -36,9 +37,7 @@ export const Hero: React.FC<Props> = async (props: Props) => {
         <Typography
           type={"md"}
           text={hero.description}
-          className={
-            "md:w-[77%] animate-[slideUpFadeIn_1s_ease-out_0.6s_both]"
-          }
+          className={"md:w-[77%] animate-[slideUpFadeIn_1s_ease-out_0.6s_both]"}
         />
         <div className="flex flex-col md:flex-row gap-4 animate-[slideUpFadeIn_1s_ease-out_1s_both]">
           <Link href={`/#contact`}>
@@ -47,6 +46,7 @@ export const Hero: React.FC<Props> = async (props: Props) => {
               icon="alternateEmail"
               size={"lg"}
               variant={"default"}
+              className="w-full"
             />
           </Link>
 
@@ -56,6 +56,7 @@ export const Hero: React.FC<Props> = async (props: Props) => {
               size={"lg"}
               variant={"secondary"}
               icon="suitcase"
+              className="w-full"
             />
           </Link>
         </div>
@@ -69,7 +70,14 @@ export const Hero: React.FC<Props> = async (props: Props) => {
         <Icons
           iconType="me"
           size="5xl"
-          className="rounded-full border-primary border-8 z-10 transition-transform duration-300 hover:scale-105 animate-[float_4s_ease-in-out_2.4s_infinite]"
+          className={cn(
+            "rounded-full",
+            "border-primary border-8",
+            "z-10",
+            "transition-transform duration-300",
+            "hover:scale-105",
+            "animate-[float_4s_ease-in-out_2.4s_infinite]"
+          )}
         />
       </div>
     </div>

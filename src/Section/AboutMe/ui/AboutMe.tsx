@@ -31,7 +31,9 @@ export const AboutMe: React.FC<Props> = (props: Props) => {
             iconType={"meThinking"}
             size={"full"}
             className={cn(
-              "transition-transform duration-300 hover:scale-105   object-contain rounded-4xl border-primary border-8",
+              "transition-transform duration-300 hover:scale-105 rounded-4xl border-primary border-8",
+              "object-contain w-full max-w-xs",
+              "rounded-4xl",
               isIntersecting
                 ? "animate-[slideLeftFadeIn_1s_ease-out_0.8s_both]"
                 : "invisible"
