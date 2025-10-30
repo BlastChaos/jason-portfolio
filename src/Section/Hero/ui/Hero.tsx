@@ -23,24 +23,24 @@ export const Hero: React.FC<Props> = async (props: Props) => {
         <Typography
           type={"lg"}
           text={hero.introduction}
-          className="text-primary font-medium animate-[slideUpFadeIn_0.8s_ease-out_0.2s_both]"
+          className="text-primary font-medium animate-[slideUpFadeIn_1s_ease-out_0.2s_both]"
         />
         <Typography
           type={"h1"}
           text={"Jason Brutus"}
-          className="animate-[slideUpFadeIn_0.8s_ease-out_0.4s_both]"
+          className="animate-[slideUpFadeIn_1s_ease-out_0.4s_both]"
         />
-        <div className="animate-[slideUpFadeIn_0.8s_ease-out_0.6s_both]">
+        <div className="animate-[slideUpFadeIn_1s_ease-out_0.6s_both]">
           <Typewriter texts={texts} />
         </div>
         <Typography
           type={"md"}
           text={hero.description}
           className={
-            "md:w-[77%] animate-[slideUpFadeIn_0.8s_ease-out_0.6s_both]"
+            "md:w-[77%] animate-[slideUpFadeIn_1s_ease-out_0.6s_both]"
           }
         />
-        <div className="flex flex-col md:flex-row gap-4 animate-[slideUpFadeIn_0.8s_ease-out_0.8s_both]">
+        <div className="flex flex-col md:flex-row gap-4 animate-[slideUpFadeIn_1s_ease-out_1s_both]">
           <Link href={`/#contact`}>
             <TextIconButton
               text={hero.contactMe}
@@ -59,7 +59,7 @@ export const Hero: React.FC<Props> = async (props: Props) => {
             />
           </Link>
         </div>
-        <div className="animate-[slideUpFadeIn_0.8s_ease-out_1s_both]">
+        <div className="animate-[slideUpFadeIn_1s_ease-out_1s_both]">
           <Contact />
         </div>
       </div>
