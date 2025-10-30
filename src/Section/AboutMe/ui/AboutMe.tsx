@@ -25,17 +25,20 @@ export const AboutMe: React.FC<Props> = (props: Props) => {
   const isIntersecting = useIntersectionObserver(sectionRef);
   return (
     <div ref={sectionRef} className="flex flex-col">
-      <div className="md:grid md:grid-cols-3 flex flex-col items-center gap-2">
-        <Icons
-          iconType={"meThinking"}
-          size={"5xl"}
-          className={cn(
-            "transition-transform duration-300 hover:scale-105",
-            isIntersecting
-              ? "animate-[slideLeftFadeIn_1s_ease-out_0.8s_both]"
-              : "invisible"
-          )}
-        />
+      <div className="md:grid md:grid-cols-3 flex flex-col items-center gap-4">
+        <div className="flex relative w-full h-full justify-center items-center">
+          <Icons
+            iconType={"meThinking"}
+            size={"full"}
+            className={cn(
+              "transition-transform duration-300 hover:scale-105   object-contain rounded-4xl border-primary border-8",
+              isIntersecting
+                ? "animate-[slideLeftFadeIn_1s_ease-out_0.8s_both]"
+                : "invisible"
+            )}
+          />
+        </div>
+
         <div className="flex flex-col gap-2 col-span-2">
           <div
             className={cn(

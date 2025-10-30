@@ -81,7 +81,7 @@ const icons = {
   meThinking: {
     type: "img",
     alt: "Me who's thinking about something",
-    path: "/me-thinking.jpeg",
+    path: "/me-thinking.png",
   },
   controller: {
     type: "svg",
@@ -215,7 +215,7 @@ type Info = InfoSimpleImage | InfoLottie | InfoSvg;
 
 type Props = {
   iconType: IconsType;
-  size: "sm" | "md" | "lg" | "5xl" | "4xl";
+  size: "sm" | "md" | "lg" | "5xl" | "4xl" | "full";
   className?: string;
 };
 
@@ -228,6 +228,7 @@ export const Icons: React.FC<Props> = (props: Props) => {
     props.size === "lg" && "w-8 h-8",
     props.size === "5xl" && "w-44 h-44 md:w-72 md:h-72 lg:w-96 lg:h-96",
     props.size === "4xl" && "w-44 h-44 md:w-72 md:h-72",
+
     props.className
   );
 
