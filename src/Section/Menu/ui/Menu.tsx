@@ -23,7 +23,7 @@ export const Menu: React.FC<Props> = async (props: Props) => {
 
   return (
     <div className="sticky md:flex top-0 z-10">
-      <Card className="flex flex-row h-14 gap-4 w-full">
+      <Card removeHoverEffect className="flex flex-row h-14 gap-4 w-full">
         <div className="container mx-auto md:px-8 px-2 lg:px-12 flex flex-row items-center">
           <Typography
             text="＜JasonBrutus /＞"
@@ -56,7 +56,11 @@ export const Menu: React.FC<Props> = async (props: Props) => {
                   </DropdownMenuItem>
                 ))}
                 <DropdownMenuItem>
-                  <DownloadResume lang={props.lang} resumeText={menu.resume} className="w-full" />
+                  <DownloadResume
+                    lang={props.lang}
+                    resumeText={menu.resume}
+                    className="w-full"
+                  />
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

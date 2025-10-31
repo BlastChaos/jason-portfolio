@@ -28,7 +28,7 @@ export const WorkExperience: React.FC<Props> = async (props: Props) => {
         {workInfo
           .sort((a, b) => b.from.getTime() - a.from.getTime())
           .map((work) => (
-            <Card className="ml-8" key={work.companyName}>
+            <Card removeHoverEffect   className="ml-8" key={work.companyName}>
               <div className="flex md:flex-row flex-col gap-4">
                 <div>
                   <Image

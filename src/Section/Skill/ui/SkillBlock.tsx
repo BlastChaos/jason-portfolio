@@ -14,7 +14,7 @@ type Props = {
 
 export const SkillBlock: React.FC<Props> = (props: Props) => {
   return (
-    <Card>
+    <Card removeHoverEffect>
       <div className="flex flex-row gap-2 items-center">
         <Icons iconType={"computer"} size={"lg"} />
         <Typography type={"h3"} text={props.title} />
