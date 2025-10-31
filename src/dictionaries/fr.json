@@ -51,6 +51,11 @@
     "hobby3Tittle": "Compétiteur en coding",
     "hobby3Description": "Participer à des hackathons est toujours passionnant. J'aime découvrir de nouvelles technologies, résoudre rapidement des problèmes et travailler en équipe."
   },
+  "projects": {
+    "school": "École",
+    "work": "Projet de travail interne chez",
+    "personnal": "Personnel"
+  },
   "workExperience": {
     "present": "Aujourd'hui",
     "keyAchievements": "Réalisations clés",

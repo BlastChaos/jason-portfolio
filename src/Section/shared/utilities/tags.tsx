@@ -30,10 +30,10 @@ export const tagsInfo = {
     name: "React Native",
     icon: "react",
   },
-  // mongodb: {
-  //   name: "MongoDB",
-  //   icon: "mongodb",
-  // },
+  mongodb: {
+    name: "MongoDB",
+    icon: "mongodb",
+  },
   // auth0: {
   //   name: "Auth0",
   //   icon: "auth0",
@@ -85,6 +85,14 @@ export const tagsInfo = {
   graphql: {
     name: "GraphQL",
     icon: "graphql",
+  },
+  expo: {
+    name: "Expo",
+    icon: "expo",
+  },
+  electron: {
+    name: "Electron",
+    icon: "electron",
   },
   // jest: {
   //   name: "Jest",

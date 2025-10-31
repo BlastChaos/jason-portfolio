@@ -25,6 +25,8 @@ import { Gear } from "./icons/gear";
 import { Hamburger } from "./icons/hamburger";
 import { AlternateEmail } from "./icons/alternateEmail";
 import { Devpost } from "./icons/devpost";
+import { Expo } from "./icons/expo";
+import { Link } from "./icons/link";
 const icons = {
   suitcase: {
     type: "svg",
@@ -156,6 +158,11 @@ const icons = {
     alt: "Tailwind",
     path: "/tags/tailwind.svg",
   },
+  mongodb: {
+    type: "img",
+    alt: "MongoDB",
+    path: "/tags/mongodb.svg",
+  },
   calendar: {
     type: "svg",
     svg: Calendar,
@@ -192,9 +199,17 @@ const icons = {
     type: "svg",
     svg: AlternateEmail,
   },
+  link: {
+    type: "svg",
+    svg: Link,
+  },
   devpost: {
     type: "svg",
     svg: Devpost,
+  },
+  expo: {
+    type: "svg",
+    svg: Expo,
   },
 } satisfies Record<string, Info>;
 

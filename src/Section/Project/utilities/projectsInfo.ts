@@ -1,7 +1,7 @@
 import { Locale } from "@/dictionaries/dictionaries";
 import { Tag } from "../../shared/utilities/tags";
 
-type ProjectType = "school" | "work" | "personnal";
+export type ProjectType = "school" | "work" | "personnal";
 
 type ProjectInfo = {
   tags: Tag[];
@@ -13,6 +13,7 @@ type ProjectInfo = {
   from: Date;
   to?: Date;
   type: ProjectType;
+  typeName: string;
   localizationInfo: Record<
     Locale,
     {
@@ -33,31 +34,38 @@ type ProjectInfo = {
 };
 
 export const projectsInfo: ProjectInfo[] = [
-  // {
-  //   from: new Date("2025-01-05"),
-  //   to: new Date("2025-05-05"),
-  //   icons: [],
-  //   tags: ["react", "mongodb", "electron", "tailwind", "typescript", "nodejs"],
-  //   localizationInfo: {
-  //     fr: {
-  //       tittle: "Planifiscale",
-  //       description: "",
-  //       shortDescription: "",
-  //     },
-  //     en: {
-  //       tittle: "Planifiscale",
-  //       shortDescription:
-  //         "A desktop application that helps companies prepare income tax documents for their clients in Canada.",
+  {
+    from: new Date("2025-01-05"),
+    to: new Date("2025-05-05"),
+    icons: ["/planifiscale/client-list.png"],
+    type: "work",
+    projectLink: "https://www.planifiscale.com",
+    slug: "planifiscale",
+    typeName: "Planifiscale",
+    bgColor: "#f9f0d0",
+    tags: ["electron", "mongodb", "tailwind", "typescript", "react"],
+    localizationInfo: {
+      fr: {
+        tittle: "Planifiscale - Gestion des documents fiscaux",
 
-  //       problem:
-  //         "Before I worked on a desktop application for the company Planifiscale, they needed to use ___ to manage their clients and their documents for the taxes. " +
-  //         "They didn't like their software since it was and old desktop application who couldn't suffice all their need." +
-  //         "To fix theur issues, me and my collegues decided to create a desktop application who help them prepare income tax documents for their clients in Canada.",
-  //       solution:
-  //         "With our application, the user is able to easily add the clients and their documents info, allowing them to easily ",
-  //     },
-  //   },
-  // },
+        shortDescription:
+          "Une application desktop qui a pour but de faciliter la gestion des documents fiscaux pour les entreprises.",
+        // description: "",
+      },
+      en: {
+        tittle: "Planifiscale - Tax income management",
+        shortDescription:
+          "A desktop application that helps companies prepare income tax documents for their clients in Canada.",
+
+        // problem:
+        //   "Before I worked on a desktop application for the company Planifiscale, they needed to use ___ to manage their clients and their documents for the taxes. " +
+        //   "They didn't like their software since it was and old desktop application who couldn't suffice all their need." +
+        //   "To fix theur issues, me and my collegues decided to create a desktop application who help them prepare income tax documents for their clients in Canada.",
+        // solution:
+        //   "With our application, the user is able to easily add the clients and their documents info, allowing them to easily ",
+      },
+    },
+  },
   {
     bgColor: "#FF9300",
     slug: "logbook",
@@ -69,23 +77,27 @@ export const projectsInfo: ProjectInfo[] = [
       "/civalgo/task.png",
     ],
     tags: [
-      "graphql",
-      "postgres",
-      "react",
+      "reactNative",
+      "expo",
+      "tailwind",
       "sqlite",
       "supabase",
-      "reactNative",
-      "tailwind",
-      "typescript",
-      "nodejs",
+
+      // "graphql",
+      // "postgres",
+      // "react",
+
+      // "typescript",
+      // "nodejs",
       // "sentry",
       // "posthog",
     ],
     projectLink: "https://www.civalgo.com/en/logbook-by-civalgo",
     type: "work",
+    typeName: "Civalgo",
     localizationInfo: {
       fr: {
-        tittle: "Application mobile Punch hors ligne",
+        tittle: "Logbook - Application mobile Punch hors ligne",
         shortDescription:
           "Une application mobile qui a pour but d'aider les teams leaders a tracker le temps de leur employés dans les chantiers de construction.",
 
@@ -108,10 +120,9 @@ export const projectsInfo: ProjectInfo[] = [
         // ],
       },
       en: {
-        tittle: "Offline Punch Mobile App",
+        tittle: "Logbook - Offline Punch Mobile App",
         shortDescription:
           "A mobile application whose purpose is to help team leaders track the time of their employees on construction sites.",
-
         // problem:
         //   "Before I worked on a desktop application for the company Planifiscale, they needed to use ___ to manage their clients and their documents for the taxes. " +
         //   "They didn't like their software since it was and old desktop application who couldn't suffice all their need." +
