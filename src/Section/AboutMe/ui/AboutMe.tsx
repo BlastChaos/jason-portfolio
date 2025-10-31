@@ -39,31 +39,31 @@ export const AboutMe: React.FC<Props> = async (props: Props) => {
             <Icons iconType={"document"} size={"md"} />
             <Typography type={"h3"} text={aboutMe.bio} />
           </CustomAnimation>
-          <CustomAnimation type={"slideLeftFadeIn"} delay={1.2} duration={1}>
+          <CustomAnimation type={"slideUpFadeIn"} delay={1} duration={1}>
             <Typography type={"lg"} text={aboutMe.bioDescription1} />
           </CustomAnimation>
-          <CustomAnimation type={"slideUpFadeIn"} delay={1.4} duration={1}>
+          <CustomAnimation type={"slideUpFadeIn"} delay={1} duration={1}>
             <Typography type={"lg"} text={aboutMe.bioDescription2} />
           </CustomAnimation>
-          <CustomAnimation type={"slideUpFadeIn"} delay={1.6} duration={1}>
+          <CustomAnimation type={"slideUpFadeIn"} delay={1} duration={1}>
             <Typography type={"lg"} text={aboutMe.bioDescription3} />
           </CustomAnimation>
           <div className="md:grid lg:grid-cols-3 md:grid-cols-2 flex flex-col gap-4 pt-2">
-            <CustomAnimation type={"slideRightFadeIn"} delay={1.8} duration={1}>
+            <CustomAnimation type={"slideRightFadeIn"} delay={1} duration={1}>
               <InfoCard
                 icon={"idea"}
                 title={aboutMe.hobby3Tittle}
                 description={aboutMe.hobby3Description}
               />
             </CustomAnimation>
-            <CustomAnimation type={"slideRightFadeIn"} delay={2} duration={1}>
+            <CustomAnimation type={"slideRightFadeIn"} delay={1.2} duration={1}>
               <InfoCard
                 icon={"controller"}
                 title={aboutMe.hobby1Tittle}
                 description={aboutMe.hobby1Description}
               />
             </CustomAnimation>
-            <CustomAnimation type={"slideRightFadeIn"} delay={2.2} duration={1}>
+            <CustomAnimation type={"slideRightFadeIn"} delay={1.4} duration={1}>
               <InfoCard
                 icon={"music"}
                 title={aboutMe.hobby2Tittle}
