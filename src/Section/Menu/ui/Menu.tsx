@@ -30,12 +30,12 @@ export const Menu: React.FC<Props> = async (props: Props) => {
             type="h3"
             className={"cursor-default whitespace-nowrap"}
           />
-          <div className="ml-auto   flex-row items-center gap-5 p-4 hidden lg:flex">
+          <div className="ml-auto   flex-row items-center gap-5 p-4 hidden md:flex">
             <MenuSections sections={props.sections} />
 
             <DownloadResume lang={props.lang} resumeText={menu.resume} />
           </div>
-          <div className="flex lg:hidden ml-auto ">
+          <div className="flex md:hidden ml-auto ">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <IconButton icon={"hamburger"} variant={"ghost"} />

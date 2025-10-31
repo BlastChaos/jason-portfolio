@@ -22,6 +22,7 @@ export const MenuSections: React.FC<Props> = (props: Props) => {
               id={section.id}
               name={section.menuName}
               icon={section.icon}
+              isActiveSession={activeSection === section.id}
             />
           ),
         }))}
