@@ -1,8 +1,6 @@
-"use client";
-
-import { PropsWithChildren, useRef } from "react";
+import { PropsWithChildren } from "react";
 import { Typography } from "@/components/ui/typography";
-import { useIntersectionObserver } from "../hook/useIntersectionObserver";
+import { CustomAnimation } from "./CustomAnimation";
 
 type Props = {
   id: string;
@@ -16,9 +14,6 @@ type Props = {
 export const Section: React.FC<PropsWithChildren<Props>> = (
   props: PropsWithChildren<Props>
 ) => {
-  const sectionRef = useRef<HTMLElement>(null);
-
-  const isIntersecting = useIntersectionObserver(sectionRef);
   return (
     <div
       className={
@@ -26,7 +21,6 @@ export const Section: React.FC<PropsWithChildren<Props>> = (
       }
     >
       <section
-        ref={sectionRef}
         id={props.id}
         className={"container mx-auto px-8 lg:px-12 flex flex-col py-16"}
       >
@@ -34,24 +28,12 @@ export const Section: React.FC<PropsWithChildren<Props>> = (
           <div
             className={`flex justify-center items-center flex-col text-center gap-2 pb-16 transition-all duration-700`}
           >
-            <Typography
-              type={"h2"}
-              text={props.header.titleName}
-              className={
-                isIntersecting
-                  ? "animate-[slideUpFadeIn_0.8s_ease-out_0.2s_both]"
-                  : "invisible"
-              }
-            />
-            <Typography
-              type={"lg"}
-              text={`“${props.header.quote}”`}
-              className={
-                isIntersecting
-                  ? "animate-[slideUpFadeIn_0.8s_ease-out_0.4s_both]"
-                  : "invisible"
-              }
-            />
+            <CustomAnimation type="slideUpFadeIn" delay={0.2} duration={0.8}>
+              <Typography type={"h2"} text={props.header.titleName} />
+            </CustomAnimation>
+            <CustomAnimation type="slideUpFadeIn" delay={0.4} duration={0.8}>
+              <Typography type={"lg"} text={`“${props.header.quote}”`} />
+            </CustomAnimation>
           </div>
         )}
         {props.children}

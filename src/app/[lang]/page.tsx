@@ -8,7 +8,8 @@ import { Education } from "@/Section/Education/ui/Education";
 import { SkillPage } from "@/Section/Skill/ui/skillPage";
 import { IconsType } from "@/components/ui/icons";
 import { ContactMe } from "@/Section/AboutMe/ContactMe/ui/ContactMe";
-import { AboutMePage } from "@/Section/AboutMe/ui/AboutMePage";
+
+import { AboutMe } from "@/Section/AboutMe/ui/AboutMe";
 export type SectionType = {
   id: string;
   header?: {
@@ -42,7 +43,7 @@ export default async function Home({
         quote: headers.aboutMeQuote,
       },
       menuName: menu.about,
-      children: <AboutMePage lang={lang} />,
+      children: <AboutMe lang={lang} />,
     },
     {
       id: "projects",
