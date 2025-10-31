@@ -4,6 +4,7 @@ import { cn } from "@/utilities/utils";
 
 function Card({
   className,
+  removeHoverEffect,
   ...props
 }: React.ComponentProps<"div"> & { removeHoverEffect?: boolean }) {
   return (
@@ -11,7 +12,7 @@ function Card({
       data-slot="card"
       className={cn(
         "bg-card text-card-foreground flex flex-col gap-6 rounded-xl shadow-sm p-4",
-        !props.removeHoverEffect &&
+        !removeHoverEffect &&
           "hover:shadow-md transition-all duration-300 hover:scale-105",
         className
       )}
