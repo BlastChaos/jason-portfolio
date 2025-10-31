@@ -56,7 +56,7 @@ export const Menu: React.FC<Props> = async (props: Props) => {
                   </DropdownMenuItem>
                 ))}
                 <DropdownMenuItem>
-                  <DownloadResume lang={props.lang} resumeText={menu.resume} />
+                  <DownloadResume lang={props.lang} resumeText={menu.resume} className="w-full" />
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
