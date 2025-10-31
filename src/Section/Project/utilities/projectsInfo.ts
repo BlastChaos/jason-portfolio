@@ -3,7 +3,7 @@ import { Tag } from "../../shared/utilities/tags";
 
 export type ProjectType = "school" | "work" | "personnal";
 
-type ProjectInfo = {
+export type ProjectInfo = {
   tags: Tag[];
   icons: string[];
   githubLink?: string;

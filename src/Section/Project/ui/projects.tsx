@@ -75,7 +75,7 @@ export const Projects: React.FC<Props> = async (props: Props) => {
                 />
               )}
             </div>
-            <div className="px-4 flex flex-col gap-2">
+            <div className="px-4 flex flex-col flex-1 gap-2">
               <div className="flex flex-col">
                 <div className="flex flex-row items-center gap-2">
                   <Typography
@@ -107,8 +107,8 @@ export const Projects: React.FC<Props> = async (props: Props) => {
                 )} */}
                 </div>
               </div>
-              <Separator />
-              <div className="flex flex-1">
+              <div className="mt-auto">
+                <Separator />
                 {project.type === "work" && (
                   <div className="w-fit p-1.5 flex flex-row items-center gap-2 text-muted-foreground">
                     <Icons
