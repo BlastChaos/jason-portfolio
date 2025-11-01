@@ -2,18 +2,23 @@ import * as React from "react";
 
 import { cn } from "@/utilities/utils";
 
+type AnimationType = "top" | "scale" | "none";
+
 function Card({
   className,
-  removeHoverEffect,
+  animationType = "top",
   ...props
-}: React.ComponentProps<"div"> & { removeHoverEffect?: boolean }) {
+}: React.ComponentProps<"div"> & { animationType?: AnimationType }) {
   return (
     <div
       data-slot="card"
       className={cn(
         "bg-card text-card-foreground flex flex-col gap-6 rounded-xl shadow-sm p-4",
-        !removeHoverEffect &&
-          "hover:shadow-md transition-all duration-300 hover:scale-105",
+
+        animationType === "top" &&
+          "hover:shadow-md transition-all duration-300 hover:-translate-y-2",
+        animationType === "scale" &&
+          "transition-all duration-300 hover:scale-105",
         className
       )}
       {...props}

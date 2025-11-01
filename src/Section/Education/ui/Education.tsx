@@ -28,7 +28,7 @@ export const Education: React.FC<Props> = async (props: Props) => {
       {educationInfos
         .sort((a, b) => b.from.getTime() - a.from.getTime())
         .map((educationInfo) => (
-          <Card key={educationInfo.schoolName}>
+          <Card key={educationInfo.schoolName} animationType="top">
             <div className="flex md:flex-row flex-col gap-4">
               <div>
                 <Image

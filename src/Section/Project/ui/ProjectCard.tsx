@@ -32,7 +32,10 @@ export const ProjectCard = async (props: {
     },
   };
   return (
-    <Card className="pt-0  pb-1 mb-2 px-0 gap-2 group h-full" removeHoverEffect>
+    <Card
+      className="pt-0  pb-1 mb-2 px-0 gap-2 group h-full"
+      animationType="none"
+    >
       <div
         style={{
           backgroundColor: project.bgColor,

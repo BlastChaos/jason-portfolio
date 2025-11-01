@@ -22,7 +22,7 @@ export const workInfo: WorkInfo[] = [
   {
     companyName: "Civalgo",
     website: "https://www.civalgo.com/",
-    logo: "/civalgo/logo.svg",
+    logo: "/civalgo/logo.png",
     from: new Date("2025-01-01"),
     techStack: [
       "graphql",
