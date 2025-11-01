@@ -3,11 +3,11 @@ import { IconsType, Icons } from "@/components/ui/icons";
 import { Typography } from "@/components/ui/typography";
 import { Locale, getDictionary } from "@/dictionaries/dictionaries";
 import { TagBadge } from "@/Section/shared/ui/tagBadge";
-import { Separator } from "@radix-ui/react-separator";
+
 import Link from "next/link";
 import Image from "next/image";
 import { ProjectInfo, ProjectType } from "../utilities/projectsInfo";
-
+import { Separator } from "@/components/ui/separator";
 export const ProjectCard = async (props: {
   project: ProjectInfo;
   lang: Locale;
@@ -26,13 +26,13 @@ export const ProjectCard = async (props: {
       name: projectsDict.work,
       icon: "suitcase",
     },
-    personnal: {
+    personal: {
       name: projectsDict.personnal,
       icon: "folder",
     },
   };
   return (
-    <Card className="pt-0 px-0 gap-2 group h-full" removeHoverEffect>
+    <Card className="pt-0  pb-1 mb-2 px-0 gap-2 group h-full" removeHoverEffect>
       <div
         style={{
           backgroundColor: project.bgColor,
@@ -109,7 +109,7 @@ export const ProjectCard = async (props: {
               <Typography
                 type={"sm"}
                 text={`${projectTypesName[project.type].name} ${
-                  project.typeName
+                  project.companyName
                 }`}
               />
             </div>

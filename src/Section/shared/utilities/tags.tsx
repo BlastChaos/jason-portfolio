@@ -94,6 +94,26 @@ export const tagsInfo = {
     name: "Electron",
     icon: "electron",
   },
+  machineLearning: {
+    name: "Machine Learning",
+    icon: "machineLearning",
+  },
+  docker: {
+    name: "Docker",
+    icon: "docker",
+  },
+  vite: {
+    name: "Vite",
+    icon: "vite",
+  },
+  openai: {
+    name: "OpenAI",
+    icon: "openai",
+  },
+  metamask: {
+    name: "MetaMask",
+    icon: "metamask",
+  },
   // jest: {
   //   name: "Jest",
   //   icon: "jest",

@@ -27,7 +27,24 @@ import { AlternateEmail } from "./icons/alternateEmail";
 import { Devpost } from "./icons/devpost";
 import { Expo } from "./icons/expo";
 import { Link } from "./icons/link";
+import { MachineLearning } from "./icons/machineLearning";
+import { Docker } from "./icons/docker";
+import { Vite } from "./icons/vite";
+import { OpenAI } from "./icons/openAI";
+import { MetaMask } from "./icons/metaMask";
 const icons = {
+  metamask: {
+    type: "svg",
+    svg: MetaMask,
+  },
+  vite: {
+    type: "svg",
+    svg: Vite,
+  },
+  openai: {
+    type: "svg",
+    svg: OpenAI,
+  },
   suitcase: {
     type: "svg",
     svg: Suitcase,
@@ -182,6 +199,14 @@ const icons = {
   computer: {
     type: "svg",
     svg: Computer,
+  },
+  machineLearning: {
+    type: "svg",
+    svg: MachineLearning,
+  },
+  docker: {
+    type: "svg",
+    svg: Docker,
   },
   database: {
     type: "svg",
