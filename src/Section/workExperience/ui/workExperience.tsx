@@ -35,91 +35,89 @@ export const WorkExperience: React.FC<Props> = async (props: Props) => {
             duration={1}
             key={work.companyName}
           >
-            <Link href={work.website} target="_blank">
-              <Card animationType="top" key={work.companyName}>
-                <div className="flex flex-col gap-1">
-                  <div className="flex flex-row items-center gap-2">
-                    <Image
-                      alt={`${work.companyName} Logo`}
-                      src={work.logo}
-                      width={100}
-                      height={100}
-                      className="object-contain p-4"
-                    />
+            <Card animationType="top" key={work.companyName}>
+              <div className="flex flex-col gap-1">
+                <div className="flex flex-row items-center gap-2">
+                  <Image
+                    alt={`${work.companyName} Logo`}
+                    src={work.logo}
+                    width={70}
+                    height={70}
+                    className="object-contain p-4"
+                  />
 
-                    <div className="flex flex-1 flex-col">
+                  <div className="flex flex-1 flex-col">
+                    <Typography
+                      type={"h3"}
+                      text={work.langInfo[props.lang].tittleName}
+                    />
+                    <Link
+                      href={work.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <Typography
-                        type={"h3"}
-                        text={work.langInfo[props.lang].tittleName}
+                        type={"h4"}
+                        className={"text-primary hover:underline font-medium"}
+                        text={work.companyName}
                       />
-                      <Link
-                        href={work.website}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Typography
-                          type={"h4"}
-                          className={"text-primary hover:underline font-medium"}
-                          text={work.companyName}
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="flex flex-row gap-1 items-center">
-                    <Icons iconType={"calendar"} size={"sm"} />
-                    <Typography
-                      type={"sm"}
-                      text={`${getDate(work.from)} - ${getDate(work.to)}`}
-                    />
-                  </div>
-                  <div className="flex flex-row gap-1 items-center">
-                    <Icons iconType={"location"} size={"sm"} />
-                    <Typography
-                      type={"sm"}
-                      text={work.langInfo[props.lang].location}
-                    />
+                    </Link>
                   </div>
                 </div>
+                <div className="flex flex-row gap-1 items-center">
+                  <Icons iconType={"calendar"} size={"sm"} />
+                  <Typography
+                    type={"sm"}
+                    text={`${getDate(work.from)} - ${getDate(work.to)}`}
+                  />
+                </div>
+                <div className="flex flex-row gap-1 items-center">
+                  <Icons iconType={"location"} size={"sm"} />
+                  <Typography
+                    type={"sm"}
+                    text={work.langInfo[props.lang].location}
+                  />
+                </div>
+              </div>
 
-                <Typography
-                  type={"md"}
-                  text={work.langInfo[props.lang].shortDescription}
-                />
-                <div className="gap-2 flex flex-col">
-                  <div className="flex flex-row items-center gap-1">
-                    <Typography
-                      type={"h5"}
-                      text={`${workExperience.keyAchievements}`}
-                    />
-                  </div>
-                  <div className="gap-3 flex flex-col">
-                    {work.langInfo[props.lang].tasks.map((info, index) => (
-                      <Typography
-                        key={`${work.companyName}-task-${index}`}
-                        type={"md"}
-                        text={`● ${info}`}
-                      />
-                    ))}
-                  </div>
+              <Typography
+                type={"md"}
+                text={work.langInfo[props.lang].shortDescription}
+              />
+              <div className="gap-2 flex flex-col">
+                <div className="flex flex-row items-center gap-1">
+                  <Typography
+                    type={"h5"}
+                    text={`${workExperience.keyAchievements}`}
+                  />
                 </div>
-                <div className="gap-2 flex flex-col">
-                  <div className="flex flex-row items-center gap-1">
+                <div className="gap-3 flex flex-col">
+                  {work.langInfo[props.lang].tasks.map((info, index) => (
                     <Typography
-                      type={"h5"}
-                      text={`${workExperience.techStack}`}
+                      key={`${work.companyName}-task-${index}`}
+                      type={"md"}
+                      text={`● ${info}`}
                     />
-                  </div>
-                  <div className="gap-2 flex flex-row flex-wrap">
-                    {work.techStack.map((info) => (
-                      <TagBadge
-                        tag={info}
-                        key={`${work.companyName}-tag-${info}`}
-                      />
-                    ))}
-                  </div>
+                  ))}
                 </div>
-              </Card>
-            </Link>
+              </div>
+              <div className="gap-2 flex flex-col">
+                <div className="flex flex-row items-center gap-1">
+                  <Typography
+                    type={"h5"}
+                    text={`${workExperience.techStack}`}
+                  />
+                </div>
+                <div className="gap-2 flex flex-row flex-wrap">
+                  {work.techStack.map((info) => (
+                    <TagBadge
+                      tag={info}
+                      key={`${work.companyName}-tag-${info}`}
+                    />
+                  ))}
+                </div>
+              </div>
+            </Card>
           </CustomAnimation>
         ))}
     </div>
