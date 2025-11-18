@@ -10,7 +10,7 @@ import { ContactMe } from "@/Section/ContactMe/ui/ContactMe";
 import { Footer } from "@/Section/Footer/ui/Footer";
 
 import { AboutMe } from "@/Section/AboutMe/ui/AboutMe";
-import { WorkExperience } from "@/Section/WorkExperience/ui/workExperience";
+import { WorkExperience } from "@/Section/workExperience/ui/workExperience";
 export type SectionType = {
   id: string;
   header?: {
