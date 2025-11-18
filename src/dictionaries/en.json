@@ -103,5 +103,9 @@
       "title": "Jason Brutus | Portfolio",
       "description": "Full-stack developer with 3+ years of experience"
     }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with"
   }
 }
