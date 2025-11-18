@@ -32,7 +32,7 @@ export const Education: React.FC<Props> = async (props: Props) => {
             <div className="flex md:flex-row flex-col gap-4">
               <div>
                 <Image
-                  alt={`${educationInfo.schoolName} Logo`}
+                  alt={`${educationInfo.schoolName} school logo`}
                   src={educationInfo.logo}
                   className="p-4 border-2 border-input"
                   width={100}

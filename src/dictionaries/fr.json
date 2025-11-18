@@ -36,6 +36,14 @@
     "contact": "Contactez-moi",
     "contactQuote": "Ma conviction est que la communication est le meilleur moyen de créer des relations solides."
   },
+  "contact": {
+    "description": "Je suis toujours ouvert à discuter de nouvelles opportunités, de projets intéressants ou simplement de parler de technologie. N'hésitez pas à me contacter via l'un des canaux ci-dessous!",
+    "email": "Courriel",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "devpost": "DevPost",
+    "ctaButton": "Envoyez-moi un courriel"
+  },
   "aboutMe": {
     "sectionName": "À propos de moi",
     "quote": "Soyez-vous même, car tous les autres sont déjà pris.",
@@ -82,5 +90,19 @@
     "familiarDescription": "Utilisé dans des prototypes ou de petits projets ; capable de lire et de modifier du code avec accompagnement. Peut ne pas avoir livré des systèmes à grande échelle.",
     "learning": "En apprentissage",
     "learningDescription": "A récemment commencé à explorer la technologie (cours, tutoriels, projets ludiques). Pas encore utilisé en production."
+  },
+  "metadata": {
+    "title": "Jason Brutus | Portfolio",
+    "description": "Bienvenue sur mon portfolio — présentant mon travail en tant que développeur. N'hésitez pas à me contacter pour des collaborations ou des opportunités.",
+    "applicationName": "Mon portfolio",
+    "openGraph": {
+      "title": "Jason Brutus | Portfolio",
+      "description": "Développeur full stack avec plus de 3 ans d'expérience. Passionné par les technologies émergentes et la création de solutions intuitives.",
+      "siteName": "Jason Brutus Portfolio"
+    },
+    "twitter": {
+      "title": "Jason Brutus | Portfolio",
+      "description": "Développeur full stack avec plus de 3 ans d'expérience"
+    }
   }
 }

@@ -37,12 +37,13 @@ export const tagMap: Record<Props["type"], PropsInfo> = {
 
 export const Typography: React.FC<Props> = (props: Props) => {
   const componentInfo = tagMap[props.type];
+  const Component = componentInfo.type;
   return (
-    <componentInfo.type
+    <Component
       className={cn(componentInfo.className, props.className)}
       style={props.style}
     >
       {props.text}
-    </componentInfo.type>
+    </Component>
   );
 };

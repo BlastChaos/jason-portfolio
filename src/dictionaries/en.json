@@ -36,6 +36,14 @@
     "contact": "Contact me",
     "contactQuote": "My belief is that communication is the best way to create strong relationships."
   },
+  "contact": {
+    "description": "I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology. Feel free to reach out through any of the channels below!",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "devpost": "DevPost",
+    "ctaButton": "Send me an email"
+  },
   "aboutMe": {
     "sectionName": "About me",
     "quote": "Be yourself; everyone else is already taken.",
@@ -80,6 +88,20 @@
       "backendDevelopment": "Backend & APIs",
       "databaseDevelopment": "Databases & Data",
       "cloudDevelopment": "Cloud & DevOps"
+    }
+  },
+  "metadata": {
+    "title": "Jason Brutus | Portfolio",
+    "description": "Welcome to my portfolio — showcasing my work as a developer. Feel free to reach out for collaboration or opportunities.",
+    "applicationName": "My portfolio",
+    "openGraph": {
+      "title": "Jason Brutus | Portfolio",
+      "description": "Full-stack developer with 3+ years of experience. Passionate about emerging technologies and building intuitive solutions.",
+      "siteName": "Jason Brutus Portfolio"
+    },
+    "twitter": {
+      "title": "Jason Brutus | Portfolio",
+      "description": "Full-stack developer with 3+ years of experience"
     }
   }
 }

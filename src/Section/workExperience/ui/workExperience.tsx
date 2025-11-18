@@ -39,7 +39,7 @@ export const WorkExperience: React.FC<Props> = async (props: Props) => {
               <div className="flex flex-col gap-1">
                 <div className="flex flex-row items-center gap-2">
                   <Image
-                    alt={`${work.companyName} Logo`}
+                    alt={`${work.companyName} company logo`}
                     src={work.logo}
                     width={70}
                     height={70}

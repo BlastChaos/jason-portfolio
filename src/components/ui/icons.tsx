@@ -32,6 +32,7 @@ import { Docker } from "./icons/docker";
 import { Vite } from "./icons/vite";
 import { OpenAI } from "./icons/openAI";
 import { MetaMask } from "./icons/metaMask";
+import { Twitter } from "./icons/twitter";
 const icons = {
   metamask: {
     type: "svg",
@@ -76,7 +77,7 @@ const icons = {
   me: {
     type: "img",
     path: "/me.jpeg",
-    alt: "An image of me",
+    alt: "Jason Brutus - Full Stack Developer",
   },
   download: {
     type: "svg",
@@ -235,6 +236,10 @@ const icons = {
   expo: {
     type: "svg",
     svg: Expo,
+  },
+  twitter: {
+    type: "svg",
+    svg: Twitter,
   },
 } satisfies Record<string, Info>;
 

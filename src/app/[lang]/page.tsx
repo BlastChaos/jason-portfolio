@@ -3,11 +3,11 @@ import { Menu } from "@/Section/Menu/ui/Menu";
 import { Hero } from "@/Section/Hero/ui/Hero";
 import { Section } from "@/Section/shared/ui/Section";
 import { Projects } from "@/Section/Project/ui/projects";
-import { WorkExperience } from "@/Section/workExperience/ui/WorkExperience";
+import { WorkExperience } from "@/Section/workExperience/ui/workExperience";
 import { Education } from "@/Section/Education/ui/Education";
 import { SkillPage } from "@/Section/Skill/ui/skillPage";
 import { IconsType } from "@/components/ui/icons";
-import { ContactMe } from "@/Section/AboutMe/ContactMe/ui/ContactMe";
+import { ContactMe } from "@/Section/ContactMe/ui/ContactMe";
 
 import { AboutMe } from "@/Section/AboutMe/ui/AboutMe";
 export type SectionType = {

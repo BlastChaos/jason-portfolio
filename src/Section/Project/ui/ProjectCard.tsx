@@ -50,7 +50,7 @@ export const ProjectCard = async (props: {
             <Image
               src={project.icons[0]}
               fill
-              alt={`${project.slug} icon`}
+              alt={`${project.localizationInfo[props.lang].tittle} project preview`}
               style={{
                 objectFit: "contain",
               }}
@@ -61,7 +61,7 @@ export const ProjectCard = async (props: {
           <Image
             src={project.icons[0]}
             fill
-            alt={`${project.slug} icon`}
+            alt={`${project.localizationInfo[props.lang].tittle} project preview`}
             style={{
               objectFit: "contain",
             }}
