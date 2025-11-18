@@ -4,13 +4,13 @@ import { Hero } from "@/Section/Hero/ui/Hero";
 import { Section } from "@/Section/shared/ui/Section";
 import { Projects } from "@/Section/Project/ui/projects";
 import { Education } from "@/Section/Education/ui/Education";
-import { SkillPage } from "@/Section/Skill/ui/skillPage";
 import { IconsType } from "@/components/ui/icons";
 import { ContactMe } from "@/Section/ContactMe/ui/ContactMe";
 import { Footer } from "@/Section/Footer/ui/Footer";
 
 import { AboutMe } from "@/Section/AboutMe/ui/AboutMe";
 import { WorkExperience } from "@/Section/workExperience/ui/workExperience";
+import { Skill } from "@/Section/Skill/ui/Skill";
 export type SectionType = {
   id: string;
   header?: {
@@ -84,7 +84,7 @@ export default async function Home({
       },
       icon: "gear",
       menuName: menu.skill,
-      children: <SkillPage lang={lang} />,
+      children: <Skill lang={lang} />,
     },
     {
       id: "contact",
