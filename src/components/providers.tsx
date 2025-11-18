@@ -1,16 +1,16 @@
 "use client";
 
-import { ThemeProvider } from "next-themes";
-
 export function Providers({ children }: { children: React.ReactNode }) {
+  //TODO: Add theme provider
   return (
-    <ThemeProvider
-      attribute="class"
-      defaultTheme="system"
-      enableSystem
-      disableTransitionOnChange
-    >
-      {children}
-    </ThemeProvider>
+    // <ThemeProvider
+    //   attribute="class"
+    //   defaultTheme="system"
+    //   enableSystem
+    //   disableTransitionOnChange
+    // >
+
+    // </ThemeProvider>
+    <>{children}</>
   );
 }
