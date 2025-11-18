@@ -12,16 +12,16 @@ const poppins = Poppins({
 
 type Props = {
   children: React.ReactNode;
-  params: Promise<{ lang: Locale }>;
+  params: Promise<{ lang: string }>;
 };
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ lang: Locale }>;
+  params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang } = await params;
-  const { metadata } = await getDictionary(lang);
+  const { metadata } = await getDictionary(lang as Locale);
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://jasonbrutus.com";
 
   return {

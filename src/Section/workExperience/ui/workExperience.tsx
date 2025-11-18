@@ -4,9 +4,9 @@ import Image from "next/image";
 import { Typography } from "@/components/ui/typography";
 import { Icons } from "@/components/ui/icons";
 import { TagBadge } from "@/Section/shared/ui/tagBadge";
-import { workInfo } from "../utilities/workInfo";
 import { CustomAnimation } from "@/Section/shared/ui/CustomAnimation";
 import Link from "next/link";
+import { workInfo } from "../utilities/workInfo";
 
 type Props = {
   lang: Locale;
