@@ -113,7 +113,7 @@ export const workInfo: WorkInfo[] = [
   {
     companyName: "Nomadis",
     website: "https://www.nomadis.com/",
-    logo: "/civalgo/logo.svg",
+    logo: "/civalgo/logo.png",
     from: new Date("2022-08-01"),
     to: new Date("2023-05-01"),
     techStack: [
@@ -157,7 +157,7 @@ export const workInfo: WorkInfo[] = [
   {
     companyName: "Nomadis",
     website: "https://www.nomadis.com/",
-    logo: "/civalgo/logo.svg",
+    logo: "/civalgo/logo.png",
     from: new Date("2022-01-01"),
     to: new Date("2022-08-01"),
     techStack: [

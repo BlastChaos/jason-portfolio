@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "../globals.css";
 import { LINKEDIN_URL } from "@/Section/ContactMe/utilities/contactInfo";
+import { Providers } from "@/components/providers";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -64,11 +65,13 @@ export async function generateMetadata({
 export default async function LangLayout({ children, params }: Props) {
   const { lang } = await params;
   return (
-    <html lang={lang}>
+    <html lang={lang} suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={`${poppins.variable} antialiased`}>{children}</body>
+      <body className={`${poppins.variable} antialiased`}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
