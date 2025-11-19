@@ -37,7 +37,8 @@
     "contactQuote": "Ma conviction est que la communication est le meilleur moyen de créer des relations solides."
   },
   "contact": {
-    "description": "Je suis toujours ouvert à discuter de nouvelles opportunités, de projets intéressants ou simplement de parler de technologie. N'hésitez pas à me contacter via l'un des canaux ci-dessous!",
+    "description1": "Je suis toujours ouvert à discuter de nouvelles opportunités, de projets intéressants ou simplement de parler de technologie.",
+    "description2": "N'hésitez pas à me contacter via l'un des canaux ci-dessous!",
     "email": "Courriel",
     "linkedin": "LinkedIn",
     "github": "GitHub",

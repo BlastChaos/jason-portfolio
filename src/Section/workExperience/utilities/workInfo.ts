@@ -67,7 +67,7 @@ export const workInfo: WorkInfo[] = [
     },
   },
   {
-    companyName: "Civalgo",
+    companyName: "Civalgo 2",
     website: "https://www.civalgo.com/",
     logo: "/civalgo/logo.png",
     from: new Date("2023-05-01"),
@@ -155,7 +155,7 @@ export const workInfo: WorkInfo[] = [
     },
   },
   {
-    companyName: "Nomadis",
+    companyName: "Nomadis 2",
     website: "https://www.nomadis.com/",
     logo: "/civalgo/logo.png",
     from: new Date("2022-01-01"),

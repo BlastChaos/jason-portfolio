@@ -37,7 +37,8 @@
     "contactQuote": "My belief is that communication is the best way to create strong relationships."
   },
   "contact": {
-    "description": "I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.\nFeel free to reach out through any of the channels below!",
+    "description1": "I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.",
+    "description2": "Feel free to reach out through any of the channels below!",
     "email": "Email",
     "linkedin": "LinkedIn",
     "github": "GitHub",

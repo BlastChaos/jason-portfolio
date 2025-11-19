@@ -54,11 +54,21 @@ export const ContactMe: React.FC<Props> = async (props: Props) => {
 
   return (
     <div className="flex flex-col gap-8">
-      <CustomAnimation type="slideUpFadeIn" delay={0.2} duration={1}>
+      <CustomAnimation
+        type="slideUpFadeIn"
+        delay={0.2}
+        duration={1}
+        className="flex flex-col gap-2"
+      >
         <Typography
           type="lg"
-          text={contact.description}
-          className="text-center max-w-2xl mx-auto"
+          text={contact.description1}
+          className="text-center mx-auto whitespace-pre-line"
+        />
+        <Typography
+          type="lg"
+          text={contact.description2}
+          className="text-center max-w-2xl mx-auto whitespace-pre-line"
         />
       </CustomAnimation>
 
