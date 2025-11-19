@@ -39,10 +39,11 @@ export const educationInfos: EducationInfo[] = [
         shortDescription:
           "Bachelor's degree focused on the complete software development lifecycle, from requirements analysis to system architecture and quality assurance. Emphasizes practical, hands-on experience with modern engineering tools and methodologies.",
         keyCourses: [
-          "Machine Learning",
-          "Computer Networks",
-          "Software Engineering",
-          "Artificial Intelligence",
+          "Software Architecture",
+          "DevOps",
+          "High Performance Databases",
+          "Intelligent Systems & Algorithms",
+          "Web Development Technologies",
         ],
       },
       fr: {
@@ -51,10 +52,11 @@ export const educationInfos: EducationInfo[] = [
         shortDescription:
           "Baccalauréat axé sur le cycle de vie complet du développement logiciel, de l'analyse des exigences à l'architecture système et l'assurance qualité. Met l'accent sur l'expérience pratique avec des outils et méthodologies d'ingénierie modernes.",
         keyCourses: [
-          "Apprentissage automatique",
-          "Réseaux informatiques",
-          "Génie logiciel",
-          "Intelligence artificielle",
+          "Architecture logicielle",
+          "DevOps",
+          "Bases de données haute performance",
+          "Systèmes intelligents et algorithmes",
+          "Technologies de développement Web",
         ],
       },
     },
@@ -72,9 +74,11 @@ export const educationInfos: EducationInfo[] = [
         shortDescription:
           "Comprehensive program covering the fundamentals of computer science, including programming, database management, and web development. Provided a strong technical foundation for further engineering studies.",
         keyCourses: [
-          "Data Structures and Algorithms",
-          "Database Management Systems",
-          "Web Technologies",
+          "Data Structures & Programming",
+          "Discrete Mathematics",
+          "Linear Algebra & Geometry",
+          "Software Development",
+          "Integral & Differential Calculus",
         ],
       },
       fr: {
@@ -83,9 +87,11 @@ export const educationInfos: EducationInfo[] = [
         shortDescription:
           "Programme complet couvrant les fondamentaux de l'informatique, incluant la programmation, la gestion de bases de données et le développement web. A fourni une base technique solide pour la poursuite d'études en ingénierie.",
         keyCourses: [
-          "Structures de données et algorithmes",
-          "Systèmes de gestion de bases de données",
-          "Technologies Web",
+          "Structures de données et programmation",
+          "Mathématiques discrètes",
+          "Algèbre linéaire et géométrie",
+          "Développement logiciel",
+          "Calcul différentiel et intégral",
         ],
       },
     },

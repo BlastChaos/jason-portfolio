@@ -80,6 +80,15 @@ export const Education: React.FC<Props> = async (props: Props) => {
                         text={educationInfo.langInfo[props.lang].location}
                       />
                     </div>
+                    {educationInfo.gpa && (
+                      <div className="flex flex-row gap-1 items-center">
+                        <Icons iconType={"graduationHat"} size={"sm"} />
+                        <Typography
+                          type={"md"}
+                          text={`GPA: ${educationInfo.gpa.currentNumber} / ${educationInfo.gpa.maxNumber}`}
+                        />
+                      </div>
+                    )}
                   </div>
 
                   <Typography
