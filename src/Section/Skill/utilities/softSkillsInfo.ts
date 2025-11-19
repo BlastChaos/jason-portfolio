@@ -7,150 +7,162 @@ export type Skill = {
   image: string;
 };
 type SoftSkillInfo = {
-  frontendDevelopment: Skill[];
-  backendDevelopment: Skill[];
-  databaseDevelopment: Skill[];
-  cloudDevelopment: Skill[];
+  frontend: Skill[];
+  backendAndData: Skill[];
+  devOpsAndTools: Skill[];
+  softSkills: Skill[];
 };
+
 export const softSkillsInfo: SoftSkillInfo = {
-  frontendDevelopment: [
+  frontend: [
     {
-      name: { en: "Communication", fr: "Communication" },
+      name: { en: "React", fr: "React" },
       proficiency: "proficient",
-      image: "/calendar.svg",
+      image: "react",
     },
     {
-      name: { en: "Communication", fr: "Communication" },
+      name: { en: "Next.js", fr: "Next.js" },
       proficiency: "proficient",
-      image: "/calendar.svg",
+      image: "nextjs",
     },
     {
-      name: { en: "Communication", fr: "Communication" },
+      name: { en: "TypeScript", fr: "TypeScript" },
       proficiency: "proficient",
-      image: "/calendar.svg",
+      image: "typescript",
     },
     {
-      name: { en: "Communication", fr: "Communication" },
+      name: { en: "React Native", fr: "React Native" },
       proficiency: "proficient",
-      image: "/calendar.svg",
+      image: "reactNative",
     },
     {
-      name: { en: "Communication", fr: "Communication" },
-      proficiency: "proficient",
-      image: "/calendar.svg",
-    },
-    {
-      name: { en: "HTML", fr: "HTML" },
-      proficiency: "proficient",
-      image: "/calendar.svg",
-    },
-    {
-      name: { en: "HTML", fr: "HTML" },
+      name: { en: "Expo", fr: "Expo" },
       proficiency: "intermediate",
-      image: "/calendar.svg",
+      image: "expo",
     },
     {
-      name: { en: "HTML", fr: "HTML" },
+      name: { en: "Tailwind CSS", fr: "Tailwind CSS" },
       proficiency: "proficient",
-      image: "/calendar.svg",
+      image: "tailwind",
     },
     {
-      name: { en: "HTML", fr: "HTML" },
+      name: { en: "Vite", fr: "Vite" },
       proficiency: "intermediate",
-      image: "/calendar.svg",
+      image: "vite",
     },
     {
-      name: { en: "HTML", fr: "HTML" },
-      proficiency: "proficient",
-      image: "/calendar.svg",
+      name: { en: "Electron", fr: "Electron" },
+      proficiency: "intermediate",
+      image: "electron",
     },
     {
-      name: { en: "HTML", fr: "HTML" },
+      name: {
+        en: "MetaMask & Web3 integration",
+        fr: "Intégration MetaMask & Web3",
+      },
       proficiency: "familiar",
-      image: "/calendar.svg",
-    },
-    {
-      name: { en: "HTML", fr: "HTML" },
-      proficiency: "proficient",
-      image: "/calendar.svg",
-    },
-    {
-      name: { en: "HTML", fr: "HTML" },
-      proficiency: "proficient",
-      image: "/calendar.svg",
-    },
-    {
-      name: { en: "HTML", fr: "HTML" },
-      proficiency: "intermediate",
-      image: "/calendar.svg",
+      image: "metamask",
     },
   ],
-  backendDevelopment: [
+  backendAndData: [
     {
-      name: { en: "Communication", fr: "Communication" },
+      name: { en: "Node.js", fr: "Node.js" },
       proficiency: "proficient",
-      image: "/calendar.svg",
+      image: "nodejs",
     },
     {
-      name: { en: "HTML", fr: "HTML" },
+      name: {
+        en: "REST APIs (Express / Next.js)",
+        fr: "APIs REST (Express / Next.js)",
+      },
       proficiency: "proficient",
-      image: "/calendar.svg",
+      image: "nodejs",
     },
     {
-      name: { en: "HTML", fr: "HTML" },
-      proficiency: "intermediate",
-      image: "/calendar.svg",
+      name: { en: "GraphQL", fr: "GraphQL" },
+      proficiency: "proficient",
+      image: "graphql",
     },
-
     {
-      name: { en: "HTML", fr: "HTML" },
+      name: { en: "Supabase", fr: "Supabase" },
+      proficiency: "proficient",
+      image: "supabase",
+    },
+    {
+      name: { en: "PostgreSQL", fr: "PostgreSQL" },
+      proficiency: "proficient",
+      image: "postgres",
+    },
+    {
+      name: { en: "MongoDB", fr: "MongoDB" },
       proficiency: "intermediate",
-      image: "/calendar.svg",
+      image: "mongodb",
+    },
+    {
+      name: { en: "SQLite", fr: "SQLite" },
+      proficiency: "intermediate",
+      image: "sqlite",
+    },
+    {
+      name: {
+        en: "Database design & optimization",
+        fr: "Conception et optimisation de bases de données",
+      },
+      proficiency: "intermediate",
+      image: "database",
     },
   ],
-  databaseDevelopment: [
+  devOpsAndTools: [
     {
-      name: { en: "Communication", fr: "Communication" },
+      name: {
+        en: "Docker & containerization",
+        fr: "Docker & conteneurisation",
+      },
+      proficiency: "intermediate",
+      image: "docker",
+    },
+    {
+      name: { en: "CI/CD (GitHub Actions)", fr: "CI/CD (GitHub Actions)" },
+      proficiency: "intermediate",
+      image: "gear",
+    },
+    {
+      name: { en: "Git & Version Control", fr: "Git & Contrôle de version" },
       proficiency: "proficient",
-      image: "/calendar.svg",
+      image: "github",
+    },
+    {
+      name: { en: "OpenAI & AI integrations", fr: "OpenAI & intégrations IA" },
+      proficiency: "intermediate",
+      image: "openai",
     },
   ],
-  cloudDevelopment: [
+  softSkills: [
     {
-      name: { en: "Communication", fr: "Communication" },
+      name: {
+        en: "Bilingual (English/French)",
+        fr: "Bilingue (Anglais/Français)",
+      },
       proficiency: "proficient",
-      image: "/calendar.svg",
+      image: "globe",
     },
-
     {
-      name: { en: "HTML", fr: "HTML" },
+      name: {
+        en: "Agile & Scrum Methodologies",
+        fr: "Méthodes Agiles & Scrum",
+      },
+      proficiency: "proficient",
+      image: "calendar",
+    },
+    {
+      name: { en: "Problem Solving", fr: "Résolution de problèmes" },
+      proficiency: "proficient",
+      image: "idea",
+    },
+    {
+      name: { en: "Team Leadership", fr: "Leadership d'équipe" },
       proficiency: "intermediate",
-      image: "/calendar.svg",
-    },
-    {
-      name: { en: "HTML", fr: "HTML" },
-      proficiency: "proficient",
-      image: "/calendar.svg",
-    },
-    {
-      name: { en: "HTML", fr: "HTML" },
-      proficiency: "familiar",
-      image: "/calendar.svg",
-    },
-    {
-      name: { en: "HTML", fr: "HTML" },
-      proficiency: "proficient",
-      image: "/calendar.svg",
-    },
-    {
-      name: { en: "HTML", fr: "HTML" },
-      proficiency: "proficient",
-      image: "/calendar.svg",
-    },
-    {
-      name: { en: "HTML", fr: "HTML" },
-      proficiency: "intermediate",
-      image: "/calendar.svg",
+      image: "suitcase",
     },
   ],
 };

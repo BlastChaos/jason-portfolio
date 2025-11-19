@@ -14,12 +14,14 @@ type Props = {
 
 export const SkillBlock: React.FC<Props> = (props: Props) => {
   return (
-    <Card animationType="none">
-      <div className="flex flex-row gap-2 items-center">
-        <Icons iconType={"computer"} size={"lg"} />
+    <Card animationType="top" className="h-full space-y-4">
+      <div className="flex flex-row gap-3 items-center pb-1 border-b border-border/60 mb-2">
+        <div className="rounded-full bg-primary/10 p-2 flex items-center justify-center">
+          <Icons iconType={props.icon} size={"lg"} />
+        </div>
         <Typography type={"h3"} text={props.title} />
       </div>
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
         {props.skills.map((skill, index) => (
           <SkillCard
             key={`${props.title}-${index}`}

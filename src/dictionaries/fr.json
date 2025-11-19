@@ -76,10 +76,10 @@
   "skill": {
     "technical": "Technique",
     "softSkill": {
-      "frontendDevelopment": "Développement frontend",
-      "backendDevelopment": "Développement backend & APIs",
-      "databaseDevelopment": "Développement base de données",
-      "cloudDevelopment": "Développement cloud & DevOps"
+      "frontend": "Développement Frontend",
+      "backendAndData": "Backend & Données",
+      "devOpsAndTools": "DevOps & Outils",
+      "softSkills": "Communication & Savoir-être"
     },
     "tools": "Outil",
     "proficient": "Maîtrisé",

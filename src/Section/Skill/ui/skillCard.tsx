@@ -11,24 +11,23 @@ type Props = {
 };
 
 export const SkillCard: React.FC<Props> = (props: Props) => {
+  const color = proficency[props.skill.proficiency].color;
+
   return (
     <Card
-      className="flex flex-row gap-2 items-center  p-3 bg-proficient/10 border-2 border-proficient/80"
+      animationType="scale"
+      className="flex flex-row items-center gap-2 p-3 border-2 rounded-lg"
       style={{
-        borderColor: `color-mix(in oklab, ${
-          proficency[props.skill.proficiency].color
-        } 80%, transparent)`,
-        backgroundColor: `color-mix(in oklab, ${
-          proficency[props.skill.proficiency].color
-        } 10%, transparent)`,
-        color: proficency[props.skill.proficiency].color,
+        borderColor: `color-mix(in oklab, ${color} 75%, transparent)`,
+        backgroundColor: `color-mix(in oklab, ${color} 8%, transparent)`,
+        color,
       }}
     >
       <Icons iconType={"code"} size={"md"} />
       <Typography
         type={"md"}
         text={props.skill.name[props.lang]}
-        className={`font-black`}
+        className="font-semibold"
       />
     </Card>
   );

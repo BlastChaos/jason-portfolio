@@ -37,7 +37,7 @@
     "contactQuote": "My belief is that communication is the best way to create strong relationships."
   },
   "contact": {
-    "description": "I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology. Feel free to reach out through any of the channels below!",
+    "description": "I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.\nFeel free to reach out through any of the channels below!",
     "email": "Email",
     "linkedin": "LinkedIn",
     "github": "GitHub",
@@ -84,10 +84,10 @@
     "learning": "Learning",
     "learningDescription": "Recently started exploring the technology (courses, tutorials, toy projects). Not yet relied upon in production.",
     "softSkill": {
-      "frontendDevelopment": "Frontend",
-      "backendDevelopment": "Backend & APIs",
-      "databaseDevelopment": "Databases & Data",
-      "cloudDevelopment": "Cloud & DevOps"
+      "frontend": "Frontend Development",
+      "backendAndData": "Backend & Data",
+      "devOpsAndTools": "DevOps & Tools",
+      "softSkills": "Communication & Soft Skills"
     }
   },
   "metadata": {
