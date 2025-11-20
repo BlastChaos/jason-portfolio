@@ -5,14 +5,14 @@ export type Skill = {
   name: Record<Locale, string>;
   proficiency: Proficency;
 };
-type SoftSkillInfo = {
+type SkillsInfo = {
   frontend: Skill[];
   backendAndData: Skill[];
   devOpsAndTools: Skill[];
   softSkills: Skill[];
 };
 
-export const softSkillsInfo: SoftSkillInfo = {
+export const skillsInfo: SkillsInfo = {
   frontend: [
     {
       name: { en: "React", fr: "React" },
@@ -52,8 +52,8 @@ export const softSkillsInfo: SoftSkillInfo = {
     },
     {
       name: {
-        en: "MetaMask & Web3 integration",
-        fr: "Intégration MetaMask & Web3",
+        en: "MetaMask & Web3 int.",
+        fr: "Int. MetaMask & Web3",
       },
       proficiency: "familiar",
     },
@@ -101,7 +101,7 @@ export const softSkillsInfo: SoftSkillInfo = {
     },
     {
       name: {
-        en: "Database design & optimization",
+        en: "DB design & optimization",
         fr: "Conception et optimisation DB",
       },
       proficiency: "intermediate",

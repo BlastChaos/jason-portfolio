@@ -191,8 +191,10 @@ Or deploy to any platform that supports Next.js:
 
 - Built with [Next.js](https://nextjs.org/)
 - UI components inspired by [shadcn/ui](https://ui.shadcn.com/)
-- Icons from various open-source projects
+- Designed with [Figma](https://www.figma.com/)
+- Icons from [streamlinhq](https://home.streamlinehq.com/) and [svgrepo](https://www.svgrepo.com/)
 - Fonts from [Google Fonts](https://fonts.google.com/)
+- Some UI/UX ideas were refined using ChatGPT. All implementation and final design decisions were done by me.
 
 ---
 

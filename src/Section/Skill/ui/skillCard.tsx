@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Locale } from "@/dictionaries/dictionaries";
 import { Typography } from "@/components/ui/typography";
-import { Skill } from "../utilities/softSkillsInfo";
+import { Skill } from "../utilities/skillsInfo";
 import { proficency } from "../utilities/proficency";
 import { Icons } from "@/components/ui/icons";
 
@@ -16,19 +16,24 @@ export const SkillCard: React.FC<Props> = (props: Props) => {
   return (
     <Card
       animationType="scale"
-      className="flex flex-row items-center gap-2 p-3 border-2 rounded-lg"
-      style={{
-        borderColor: `color-mix(in oklab, ${color} 75%, transparent)`,
-        backgroundColor: `color-mix(in oklab, ${color} 8%, transparent)`,
-        color,
-      }}
+      className="flex flex-row items-center gap-3 p-3.5 border border-border/50 hover:shadow-md transition-all duration-300 bg-card"
     >
-      <Icons iconType={"code"} size={"md"} />
-      <Typography
-        type={"md"}
-        text={props.skill.name[props.lang]}
-        className="font-semibold"
-      />
+      <div
+        className="p-2 rounded-md shrink-0 flex items-center justify-center"
+        style={{
+          backgroundColor: `color-mix(in oklab, ${color} 15%, transparent)`,
+          color: color,
+        }}
+      >
+        <Icons iconType={"code"} size={"sm"} />
+      </div>
+      <div className="flex flex-col min-w-0">
+        <Typography
+          type={"md"}
+          text={props.skill.name[props.lang]}
+          className="font-semibold truncate leading-tight"
+        />
+      </div>
     </Card>
   );
 };

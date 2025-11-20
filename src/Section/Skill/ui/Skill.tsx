@@ -1,7 +1,7 @@
 import { SkillType } from "./SkillType";
 import { getDictionary, Locale } from "@/dictionaries/dictionaries";
 
-import { softSkillsInfo } from "../utilities/softSkillsInfo";
+import { skillsInfo } from "../utilities/skillsInfo";
 import { SkillBlock } from "./SkillBlock";
 import { CustomAnimation } from "@/Section/shared/ui/CustomAnimation";
 
@@ -22,7 +22,7 @@ export const Skill: React.FC<Props> = async (props: Props) => {
           <CustomAnimation type="slideUpFadeIn" delay={0.1} duration={0.7}>
             <SkillBlock
               title={skill.softSkill.frontend}
-              skills={softSkillsInfo.frontend}
+              skills={skillsInfo.frontend}
               icon={"computer"}
               lang={props.lang}
             />
@@ -31,7 +31,7 @@ export const Skill: React.FC<Props> = async (props: Props) => {
           <CustomAnimation type="slideUpFadeIn" delay={0.2} duration={0.7}>
             <SkillBlock
               title={skill.softSkill.backendAndData}
-              skills={softSkillsInfo.backendAndData}
+              skills={skillsInfo.backendAndData}
               icon={"database"}
               lang={props.lang}
             />
@@ -40,7 +40,7 @@ export const Skill: React.FC<Props> = async (props: Props) => {
           <CustomAnimation type="slideUpFadeIn" delay={0.3} duration={0.7}>
             <SkillBlock
               title={skill.softSkill.devOpsAndTools}
-              skills={softSkillsInfo.devOpsAndTools}
+              skills={skillsInfo.devOpsAndTools}
               icon={"gear"}
               lang={props.lang}
             />
@@ -49,7 +49,7 @@ export const Skill: React.FC<Props> = async (props: Props) => {
           <CustomAnimation type="slideUpFadeIn" delay={0.4} duration={0.7}>
             <SkillBlock
               title={skill.softSkill.softSkills}
-              skills={softSkillsInfo.softSkills}
+              skills={skillsInfo.softSkills}
               icon={"idea"}
               lang={props.lang}
             />

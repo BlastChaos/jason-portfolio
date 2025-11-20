@@ -1,6 +1,6 @@
 import { Locale } from "@/dictionaries/dictionaries";
 
-type EducationInfo = {
+export type EducationInfo = {
   logo: string;
   schoolName: string;
   website: string;
