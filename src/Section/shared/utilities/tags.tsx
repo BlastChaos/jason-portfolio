@@ -114,10 +114,18 @@ export const tagsInfo = {
     name: "MetaMask",
     icon: "metamask",
   },
-  // jest: {
-  //   name: "Jest",
-  //   icon: "jest",
-  // },
+  gitlab: {
+    name: "GitLab",
+    icon: "gitlab",
+  },
+  jest: {
+    name: "Jest",
+    icon: "jest",
+  },
+  auth0: {
+    name: "Auth0",
+    icon: "auth0",
+  },
 } satisfies Record<string, TagInfo>;
 
 export type Tag = keyof typeof tagsInfo;

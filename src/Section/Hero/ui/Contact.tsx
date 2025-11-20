@@ -4,7 +4,6 @@ import {
   LINKEDIN_URL,
   EMAIL_URL,
   DEVPOST_URL,
-  TWITTER_URL,
 } from "@/Section/ContactMe/utilities/contactInfo";
 import Link from "next/link";
 
@@ -45,19 +44,6 @@ export const Contact: React.FC = () => {
           size={"lg"}
           className="rounded-full p-6"
           aria-label="Email"
-        />
-      </Link>
-      <Link
-        href={TWITTER_URL}
-        target="_blank"
-        aria-label="Visit my Twitter profile"
-      >
-        <IconButton
-          variant={"secondary"}
-          icon="twitter"
-          size={"lg"}
-          className="rounded-full p-6"
-          aria-label="Twitter"
         />
       </Link>
       <Link

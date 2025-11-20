@@ -8,7 +8,7 @@ import {
   EMAIL_URL,
   LINKEDIN_URL,
   GITHUB_URL,
-  TWITTER_URL,
+  DEVPOST_URL,
 } from "../utilities/contactInfo";
 
 type Props = {
@@ -37,9 +37,9 @@ export const ContactMe: React.FC<Props> = async (props: Props) => {
       action: "external",
     },
     {
-      icon: "twitter" as const,
-      label: "Twitter",
-      href: TWITTER_URL,
+      icon: "devpost" as const,
+      label: contact.devpost,
+      href: DEVPOST_URL,
       action: "external",
     },
   ];

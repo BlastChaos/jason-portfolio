@@ -33,6 +33,9 @@ import { Vite } from "./icons/vite";
 import { OpenAI } from "./icons/openAI";
 import { MetaMask } from "./icons/metaMask";
 import { Twitter } from "./icons/twitter";
+import { GitlabIcon } from "./icons/gitlab";
+import { JestIcon } from "./icons/jest";
+import { Auth0Icon } from "./icons/auth0";
 const icons = {
   metamask: {
     type: "svg",
@@ -240,6 +243,18 @@ const icons = {
   twitter: {
     type: "svg",
     svg: Twitter,
+  },
+  gitlab: {
+    type: "svg",
+    svg: GitlabIcon,
+  },
+  jest: {
+    type: "svg",
+    svg: JestIcon,
+  },
+  auth0: {
+    type: "svg",
+    svg: Auth0Icon,
   },
 } satisfies Record<string, Info>;
 
