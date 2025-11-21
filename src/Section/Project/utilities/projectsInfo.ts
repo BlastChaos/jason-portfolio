@@ -44,13 +44,13 @@ export const projectsInfo: ProjectInfo[] = [
     localizationInfo: {
       en: {
         shortDescription:
-          "My personal portfolio website created with Next.js, Tailwind CSS, and TypeScript.",
+          "A modern, responsive portfolio website showcasing my work with smooth animations and multi-language support.",
         tittle: "My Portfolio Website",
       },
       fr: {
         shortDescription:
-          "Mon site web de portfolio personnel créé avec Next.js, Tailwind CSS, et TypeScript.",
-        tittle: "Mon Site Web de Portfolio",
+          "Un portfolio moderne et réactif présentant mon travail, avec animations fluides et support multilingue.",
+        tittle: "Mon Portfolio",
       },
     },
   },
