@@ -19,7 +19,7 @@ export const tagsInfo = {
     icon: "python",
   },
   Csharp: {
-    name: "C#",
+    name: ".NET",
     icon: "Csharp",
   },
   postgres: {
@@ -125,6 +125,10 @@ export const tagsInfo = {
   auth0: {
     name: "Auth0",
     icon: "auth0",
+  },
+  lucidchart: {
+    name: "Lucidchart",
+    icon: "lucidchart",
   },
 } satisfies Record<string, TagInfo>;
 

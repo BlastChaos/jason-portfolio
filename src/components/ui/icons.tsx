@@ -36,6 +36,8 @@ import { Twitter } from "./icons/twitter";
 import { GitlabIcon } from "./icons/gitlab";
 import { JestIcon } from "./icons/jest";
 import { Auth0Icon } from "./icons/auth0";
+import { Lucidchart } from "./icons/lucidchart";
+import { Dotnet } from "./icons/dotnet";
 const icons = {
   metamask: {
     type: "svg",
@@ -130,9 +132,8 @@ const icons = {
     path: "/tags/python.svg",
   },
   Csharp: {
-    type: "img",
-    alt: "Csharp",
-    path: "/tags/csharp.svg",
+    type: "svg",
+    svg: Dotnet,
   },
   typescript: {
     type: "img",
@@ -255,6 +256,10 @@ const icons = {
   auth0: {
     type: "svg",
     svg: Auth0Icon,
+  },
+  lucidchart: {
+    type: "svg",
+    svg: Lucidchart,
   },
 } satisfies Record<string, Info>;
 
