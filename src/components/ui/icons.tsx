@@ -43,6 +43,7 @@ import { Angular } from "./icons/angular";
 import { GoogleCloudPlatform } from "./icons/googleCloudPlatform";
 import { Notion } from "./icons/notion";
 import { Capacitor } from "./icons/capacitor";
+import { Figma } from "./icons/figma";
 const icons = {
   metamask: {
     type: "svg",
@@ -285,6 +286,10 @@ const icons = {
   capacitor: {
     type: "svg",
     svg: Capacitor,
+  },
+  figma: {
+    type: "svg",
+    svg: Figma,
   },
 } satisfies Record<string, Info>;
 

@@ -126,6 +126,10 @@ export const tagsInfo = {
     name: "Capacitor",
     icon: "capacitor",
   },
+  figma: {
+    name: "Figma",
+    icon: "figma",
+  },
 } satisfies Record<string, TagInfo>;
 
 export type Tag = keyof typeof tagsInfo;

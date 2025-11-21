@@ -26,21 +26,34 @@ export type ProjectInfo = {
     {
       tittle: string;
       shortDescription: string;
-      // problem: string;
-      // solution: string;
-      // myRole: string;
-      // process: string[];
-
-      // features: string[];
-      // challenges: string[];
-      // results: string[];
-      // whatToDoDifferently: string;
-      // next: string;
     }
   >;
 } & (ProjectTypeWork | ProjectTypePersonal);
 
 export const projectsInfo: ProjectInfo[] = [
+  {
+    bgColor: "#4387F6",
+    type: "personal",
+    from: new Date("2025-09-26"),
+    to: new Date("2025-11-20"),
+    slug: "portfolio",
+    tags: ["nextjs", "react", "typescript", "tailwind", "figma", "notion"],
+    icons: ["/portfolio/snapshot.png"],
+    projectLink: "https://www.jasonbrutus.ca",
+    githubLink: "https://github.com/BlastChaos/jason-portfolio",
+    localizationInfo: {
+      en: {
+        shortDescription:
+          "My personal portfolio website created with Next.js, Tailwind CSS, and TypeScript.",
+        tittle: "My Portfolio Website",
+      },
+      fr: {
+        shortDescription:
+          "Mon site web de portfolio personnel créé avec Next.js, Tailwind CSS, et TypeScript.",
+        tittle: "Mon Site Web de Portfolio",
+      },
+    },
+  },
   {
     from: new Date("2025-01-05"),
     to: new Date("2025-05-05"),

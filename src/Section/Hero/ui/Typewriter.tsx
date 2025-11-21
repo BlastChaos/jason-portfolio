@@ -15,7 +15,7 @@ export const Typewriter: React.FC<Props> = (props: Props) => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
   const SPEED = 200;
-  const WAIT_TIME = 7000;
+  const WAIT_TIME = 5000;
   const DELETE_SPEED = 50;
   const CURSOR_CHAR = "|";
 
