@@ -41,6 +41,7 @@ export const workInfo: WorkInfo[] = [
       "gitlab",
       "openai",
       "auth0",
+      "jest",
     ],
     langInfo: {
       en: {
