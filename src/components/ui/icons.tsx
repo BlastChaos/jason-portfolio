@@ -42,6 +42,7 @@ import { Confluence } from "./icons/confluance";
 import { Angular } from "./icons/angular";
 import { GoogleCloudPlatform } from "./icons/googleCloudPlatform";
 import { Notion } from "./icons/notion";
+import { Capacitor } from "./icons/capacitor";
 const icons = {
   metamask: {
     type: "svg",
@@ -280,6 +281,10 @@ const icons = {
   notion: {
     type: "svg",
     svg: Notion,
+  },
+  capacitor: {
+    type: "svg",
+    svg: Capacitor,
   },
 } satisfies Record<string, Info>;
 

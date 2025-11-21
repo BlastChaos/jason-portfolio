@@ -91,6 +91,7 @@ export const workInfo: WorkInfo[] = [
       "auth0",
       "googleCloudPlatform",
       "efcore",
+      "capacitor",
     ],
     langInfo: {
       en: {

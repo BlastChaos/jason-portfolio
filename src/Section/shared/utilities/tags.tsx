@@ -34,14 +34,6 @@ export const tagsInfo = {
     name: "MongoDB",
     icon: "mongodb",
   },
-  // auth0: {
-  //   name: "Auth0",
-  //   icon: "auth0",
-  // },
-  // vite: {
-  //   name: "Vite",
-  //   icon: "vite",
-  // },
   nextjs: {
     name: "Next.js",
     icon: "nextjs",
@@ -54,34 +46,14 @@ export const tagsInfo = {
     name: "SQLite",
     icon: "sqlite",
   },
-  // angular: {
-  //   name: "Angular",
-  //   icon: "angular",
-  // },
-  // nginx: {
-  //   name: "NGINX",
-  //   icon: "nginx",
-  // },
   supabase: {
     name: "Supabase",
     icon: "supabase",
   },
-  // prisma: {
-  //   name: "Prisma",
-  //   icon: "prisma",
-  // },
-  // java: {
-  //   name: "Java",
-  //   icon: "java",
-  // },
   nodejs: {
     name: "Node.js",
     icon: "nodejs",
   },
-  // restApi: {
-  //   name: "REST API",
-  //   icon: "rest",
-  // },
   graphql: {
     name: "GraphQL",
     icon: "graphql",
@@ -149,6 +121,10 @@ export const tagsInfo = {
   notion: {
     name: "Notion",
     icon: "notion",
+  },
+  capacitor: {
+    name: "Capacitor",
+    icon: "capacitor",
   },
 } satisfies Record<string, TagInfo>;
 
