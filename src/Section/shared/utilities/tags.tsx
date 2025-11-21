@@ -130,6 +130,18 @@ export const tagsInfo = {
     name: "Lucidchart",
     icon: "lucidchart",
   },
+  confluance: {
+    name: "Confluence",
+    icon: "confluance",
+  },
+  angular: {
+    name: "Angular",
+    icon: "angular",
+  },
+  googleCloudPlatform: {
+    name: "Google Cloud Platform (GCP)",
+    icon: "googleCloudPlatform",
+  },
 } satisfies Record<string, TagInfo>;
 
 export type Tag = keyof typeof tagsInfo;

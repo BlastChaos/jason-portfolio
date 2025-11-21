@@ -38,6 +38,9 @@ import { JestIcon } from "./icons/jest";
 import { Auth0Icon } from "./icons/auth0";
 import { Lucidchart } from "./icons/lucidchart";
 import { Dotnet } from "./icons/dotnet";
+import { Confluence } from "./icons/confluance";
+import { Angular } from "./icons/angular";
+import { GoogleCloudPlatform } from "./icons/googleCloudPlatform";
 const icons = {
   metamask: {
     type: "svg",
@@ -260,6 +263,18 @@ const icons = {
   lucidchart: {
     type: "svg",
     svg: Lucidchart,
+  },
+  confluance: {
+    type: "svg",
+    svg: Confluence,
+  },
+  angular: {
+    type: "svg",
+    svg: Angular,
+  },
+  googleCloudPlatform: {
+    type: "svg",
+    svg: GoogleCloudPlatform,
   },
 } satisfies Record<string, Info>;
 
