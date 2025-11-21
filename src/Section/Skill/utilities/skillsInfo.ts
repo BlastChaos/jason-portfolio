@@ -52,8 +52,8 @@ export const skillsInfo: SkillsInfo = {
     },
     {
       name: {
-        en: "MetaMask & Web3 int.",
-        fr: "Int. MetaMask & Web3",
+        en: "MetaMask & Web3",
+        fr: "MetaMask & Web3",
       },
       proficiency: "familiar",
     },
@@ -101,8 +101,8 @@ export const skillsInfo: SkillsInfo = {
     },
     {
       name: {
-        en: "DB design & optimization",
-        fr: "Conception et optimisation DB",
+        en: "DB Design",
+        fr: "Conception DB",
       },
       proficiency: "intermediate",
     },
@@ -117,8 +117,8 @@ export const skillsInfo: SkillsInfo = {
   devOpsAndTools: [
     {
       name: {
-        en: "Docker & containerization",
-        fr: "Docker & conteneurisation",
+        en: "Docker",
+        fr: "Docker",
       },
       proficiency: "intermediate",
     },
@@ -127,7 +127,7 @@ export const skillsInfo: SkillsInfo = {
       proficiency: "intermediate",
     },
     {
-      name: { en: "Git & Version Control", fr: "Git & Contrôle de version" },
+      name: { en: "Git", fr: "Git" },
       proficiency: "proficient",
     },
     {
@@ -139,11 +139,11 @@ export const skillsInfo: SkillsInfo = {
       proficiency: "familiar",
     },
     {
-      name: { en: "Google Cloud Platform", fr: "Google Cloud Platform" },
+      name: { en: "Google Cloud", fr: "Google Cloud" },
       proficiency: "familiar",
     },
     {
-      name: { en: "OpenAI & AI integrations", fr: "OpenAI & intégrations IA" },
+      name: { en: "OpenAI & AI", fr: "OpenAI & IA" },
       proficiency: "intermediate",
     },
     {
@@ -154,24 +154,24 @@ export const skillsInfo: SkillsInfo = {
   softSkills: [
     {
       name: {
-        en: "Bilingual (English/French)",
-        fr: "Bilingue (Anglais/Français)",
+        en: "Bilingual EN/FR",
+        fr: "Bilingue EN/FR",
       },
       proficiency: "proficient",
     },
     {
       name: {
-        en: "Agile & Scrum Methodologies",
-        fr: "Méthodes Agiles & Scrum",
+        en: "Agile & Scrum",
+        fr: "Agile & Scrum",
       },
       proficiency: "proficient",
     },
     {
-      name: { en: "Problem Solving", fr: "Résolution de problèmes" },
+      name: { en: "Problem Solving", fr: "Résolution Pb." },
       proficiency: "proficient",
     },
     {
-      name: { en: "Team Leadership", fr: "Leadership d'équipe" },
+      name: { en: "Team Leadership", fr: "Leadership" },
       proficiency: "intermediate",
     },
     {
@@ -183,7 +183,7 @@ export const skillsInfo: SkillsInfo = {
       proficiency: "proficient",
     },
     {
-      name: { en: "Teamwork", fr: "Travail en équipe" },
+      name: { en: "Teamwork", fr: "Collaboration" },
       proficiency: "proficient",
     },
     {
