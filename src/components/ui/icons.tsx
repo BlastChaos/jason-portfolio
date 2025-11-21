@@ -41,6 +41,7 @@ import { Dotnet } from "./icons/dotnet";
 import { Confluence } from "./icons/confluance";
 import { Angular } from "./icons/angular";
 import { GoogleCloudPlatform } from "./icons/googleCloudPlatform";
+import { Notion } from "./icons/notion";
 const icons = {
   metamask: {
     type: "svg",
@@ -275,6 +276,10 @@ const icons = {
   googleCloudPlatform: {
     type: "svg",
     svg: GoogleCloudPlatform,
+  },
+  notion: {
+    type: "svg",
+    svg: Notion,
   },
 } satisfies Record<string, Info>;
 

@@ -34,6 +34,7 @@ export const workInfo: WorkInfo[] = [
       "graphql",
       "supabase",
       "postgres",
+      "notion",
       "sqlite",
       "tailwind",
       "docker",
@@ -89,6 +90,7 @@ export const workInfo: WorkInfo[] = [
       "angular",
       "auth0",
       "googleCloudPlatform",
+      "efcore",
     ],
     langInfo: {
       en: {

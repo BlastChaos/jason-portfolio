@@ -142,6 +142,14 @@ export const tagsInfo = {
     name: "Google Cloud Platform (GCP)",
     icon: "googleCloudPlatform",
   },
+  efcore: {
+    name: "EF Core",
+    icon: "database",
+  },
+  notion: {
+    name: "Notion",
+    icon: "notion",
+  },
 } satisfies Record<string, TagInfo>;
 
 export type Tag = keyof typeof tagsInfo;
