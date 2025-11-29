@@ -11,6 +11,8 @@ import { Footer } from "@/Section/Footer/ui/Footer";
 import { AboutMe } from "@/Section/AboutMe/ui/AboutMe";
 import { WorkExperience } from "@/Section/workExperience/ui/workExperience";
 import { Skill } from "@/Section/Skill/ui/Skill";
+import Link from "next/link";
+import { IconButton } from "@/components/ui/button";
 export type SectionType = {
   id: string;
   header?: {
@@ -98,7 +100,7 @@ export default async function Home({
     },
   ];
   return (
-    <div className="relative">
+    <div className="relative w-full overflow-x-hidden">
       <Menu lang={lang} sections={sections} />
       <div>
         {sections.map((section, index) => (
@@ -112,6 +114,18 @@ export default async function Home({
           </Section>
         ))}
       </div>
+      <Link
+        href={`/${lang}#${sections[0].id}`}
+        className="bottom-5 right-6 z-40 fixed sm:hidden"
+      >
+        <IconButton
+          icon="arrowUp"
+          variant="default"
+          size="lg"
+          className="rounded-full p-2 w-14 h-14"
+        />
+      </Link>
+
       <Footer lang={lang} />
     </div>
   );

@@ -22,7 +22,7 @@ export const Section: React.FC<PropsWithChildren<Props>> = (
     >
       <section
         id={props.id}
-        className={"container mx-auto px-8 lg:px-12 flex flex-col py-16"}
+        className={"container mx-auto px-8 lg:px-12 flex flex-col py-8"}
       >
         {props.header && (
           <div

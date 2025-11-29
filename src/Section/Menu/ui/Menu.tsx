@@ -22,9 +22,9 @@ export const Menu: React.FC<Props> = async (props: Props) => {
   const { menu } = await getDictionary(props.lang);
 
   return (
-    <div className="sticky md:flex top-0 z-10">
+    <div className="fixed md:flex top-0 z-10 w-full">
       <Card animationType="none" className="flex flex-row h-14 gap-4 w-full rounded-b-md">
-        <div className="container mx-auto md:px-8 px-2 lg:px-12 flex flex-row items-center">
+        <div className="container mx-auto md:px-0 px-2 lg:px-8 flex flex-row items-center">
           <Typography
             text="＜JasonBrutus /＞"
             type="h3"

@@ -44,7 +44,12 @@ import { GoogleCloudPlatform } from "./icons/googleCloudPlatform";
 import { Notion } from "./icons/notion";
 import { Capacitor } from "./icons/capacitor";
 import { Figma } from "./icons/figma";
+import { ArrowUp } from "./icons/arrowUp";
 const icons = {
+  arrowUp: {
+    type: "svg",
+    svg: ArrowUp,
+  },
   metamask: {
     type: "svg",
     svg: MetaMask,
@@ -295,11 +300,6 @@ const icons = {
 
 export type IconsType = keyof typeof icons;
 
-type InfoLottie = {
-  type: "hover";
-  animationData: unknown;
-};
-
 type InfoSimpleImage = {
   type: "img";
   path: string;
@@ -311,7 +311,7 @@ type InfoSvg = {
   svg: React.FC<React.SVGProps<SVGSVGElement>>;
 };
 
-type Info = InfoSimpleImage | InfoLottie | InfoSvg;
+type Info = InfoSimpleImage | InfoSvg;
 
 type Props = {
   iconType: IconsType;

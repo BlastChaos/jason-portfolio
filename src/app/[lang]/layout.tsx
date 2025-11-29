@@ -23,7 +23,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = await params;
   const { metadata } = await getDictionary(lang as Locale);
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://jasonbrutus.com";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.jasonbrutus.ca";
 
   return {
     title: metadata.title,
