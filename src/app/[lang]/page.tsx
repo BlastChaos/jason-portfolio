@@ -122,7 +122,7 @@ export default async function Home({
           icon="arrowUp"
           variant="default"
           size="lg"
-          className="rounded-full p-2 w-14 h-14"
+          className="rounded-full p-2 w-10 h-10"
         />
       </Link>
 
