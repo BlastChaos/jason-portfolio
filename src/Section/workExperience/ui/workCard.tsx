@@ -6,6 +6,7 @@ import { Typography } from "@/components/ui/typography";
 import { TagBadge } from "@/Section/shared/ui/tagBadge";
 import Link from "next/link";
 import Image from "next/image";
+import { getFormattedDate } from "@/utilities/getFormattedDate";
 
 type Props = {
   workInfo: WorkInfo;
@@ -19,11 +20,7 @@ export const WorkCard: React.FC<Props> = async (props: Props) => {
     if (!date) {
       return workExperience.present;
     }
-
-    return new Intl.DateTimeFormat(props.lang, {
-      month: "short",
-      year: "numeric",
-    }).format(date);
+    return getFormattedDate(date);
   };
   return (
     <Card
@@ -131,7 +128,10 @@ export const WorkCard: React.FC<Props> = async (props: Props) => {
           />
           <div className="gap-2 flex flex-row flex-wrap">
             {props.workInfo.techStack.map((info) => (
-              <TagBadge tag={info} key={`${props.workInfo.companyName}-tag-${info}`} />
+              <TagBadge
+                tag={info}
+                key={`${props.workInfo.companyName}-tag-${info}`}
+              />
             ))}
           </div>
         </div>

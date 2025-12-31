@@ -4,6 +4,7 @@ import { Typography } from "@/components/ui/typography";
 import { getDictionary, Locale } from "@/dictionaries/dictionaries";
 import Image from "next/image";
 import { EducationInfo } from "../utilities/educationInfos";
+import { getFormattedDate } from "@/utilities/getFormattedDate";
 
 type Props = {
   educationInfo: EducationInfo;
@@ -17,10 +18,7 @@ export const EducationCard: React.FC<Props> = async (props: Props) => {
       return education.present;
     }
 
-    return new Intl.DateTimeFormat(props.lang, {
-      month: "short",
-      year: "numeric",
-    }).format(date);
+    return getFormattedDate(date);
   };
   return (
     <Card
