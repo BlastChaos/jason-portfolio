@@ -9,7 +9,7 @@ type Props = {
 };
 
 const RESUME_URL =
-  "https://etsmtl365-my.sharepoint.com/:b:/g/personal/jason_brutus_1_ens_etsmtl_ca/ETaisPKWb91EoOIRJRyf61kBDVpu8vgXcL28OYPgsd009g?e=ztyU4G";
+  "https://docs.google.com/document/d/1tLnUxXERxWT7hhfYOgmRxKydAqliq_78/edit?usp=sharing&ouid=107560061721660228440&rtpof=true&sd=true";
 
 export const DownloadResume: React.FC<Props> = (props: Props) => {
   return (
