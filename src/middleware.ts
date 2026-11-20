@@ -3,12 +3,19 @@ import { match } from "@formatjs/intl-localematcher";
 import Negotiator from "negotiator";
 import { Locale, LOCALES } from "./dictionaries/dictionaries";
 
-function getLocale(): Locale {
-  const headers = { "accept-language": "en-US,en;q=0.5" };
+const DEFAULT_LOCALE: Locale = "en";
+
+function getLocale(request: NextRequest): Locale {
+  const headers = {
+    "accept-language": request.headers.get("accept-language") ?? "",
+  };
   const languages = new Negotiator({ headers }).languages();
-  const defaultLocale = "en";
-  const locale = match(languages, LOCALES, defaultLocale) as Locale;
-  return locale;
+  try {
+    return match(languages, LOCALES, DEFAULT_LOCALE) as Locale;
+  } catch {
+    // match() throws on malformed language tags (e.g. "*")
+    return DEFAULT_LOCALE;
+  }
 }
 
 export function middleware(request: NextRequest) {
@@ -21,7 +28,7 @@ export function middleware(request: NextRequest) {
   if (pathnameHasLocale) return;
 
   // Redirect if there is no locale
-  const locale = getLocale();
+  const locale = getLocale(request);
   request.nextUrl.pathname = `/${locale}${pathname}`;
   // e.g. incoming request is /products
   // The new URL is now /en-US/products
