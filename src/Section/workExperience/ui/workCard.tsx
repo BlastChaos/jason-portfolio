@@ -1,5 +1,5 @@
 import { getDictionary, Locale } from "@/dictionaries/dictionaries";
-import { WorkInfo } from "../utilities/workInfo";
+import { WorkInfo } from "@/content/types";
 import { Card } from "@/components/ui/card";
 import { Icons } from "@/components/ui/icons";
 import { Typography } from "@/components/ui/typography";
@@ -43,7 +43,7 @@ export const WorkCard: React.FC<Props> = async (props: Props) => {
           <div className="flex flex-col">
             <Typography
               type={"h3"}
-              text={props.workInfo.langInfo[props.lang].tittleName}
+              text={props.workInfo.content[props.lang].title}
               className="font-bold leading-tight"
             />
             <Link
@@ -76,7 +76,7 @@ export const WorkCard: React.FC<Props> = async (props: Props) => {
             <Icons iconType={"location"} size={"sm"} />
             <Typography
               type={"sm"}
-              text={props.workInfo.langInfo[props.lang].location}
+              text={props.workInfo.content[props.lang].location}
             />
           </div>
         </div>
@@ -88,7 +88,7 @@ export const WorkCard: React.FC<Props> = async (props: Props) => {
         <Typography
           type={"md"}
           className="italic text-muted-foreground"
-          text={props.workInfo.langInfo[props.lang].shortDescription}
+          text={props.workInfo.content[props.lang].shortDescription}
         />
 
         <div className="gap-2 flex flex-col bg-secondary-background/30 p-5 rounded-lg border border-border/50">
@@ -100,7 +100,7 @@ export const WorkCard: React.FC<Props> = async (props: Props) => {
             />
           </div>
           <ul className="gap-2 flex flex-col ml-1">
-            {props.workInfo.langInfo[props.lang].tasks.map((info, index) => (
+            {props.workInfo.content[props.lang].tasks.map((info, index) => (
               <li
                 key={`${props.workInfo.companyName}-task-${index}`}
                 className="flex items-start  gap-2"

@@ -6,7 +6,7 @@ import { TagBadge } from "@/Section/shared/ui/tagBadge";
 
 import Link from "next/link";
 import Image from "next/image";
-import { ProjectInfo, ProjectType } from "../utilities/projectsInfo";
+import { ProjectInfo, ProjectType } from "@/content/types";
 import { cn } from "@/utilities/utils";
 
 export const ProjectCard = async (props: {
@@ -62,7 +62,7 @@ export const ProjectCard = async (props: {
               src={project.icons[0]}
               fill
               alt={`${
-                project.localizationInfo[props.lang].tittle
+                project.content[props.lang].title
               } project preview`}
               className="object-contain p-6 transition-transform duration-500 group-hover:scale-105"
             />
@@ -72,7 +72,7 @@ export const ProjectCard = async (props: {
             src={project.icons[0]}
             fill
             alt={`${
-              project.localizationInfo[props.lang].tittle
+              project.content[props.lang].title
             } project preview`}
             className="object-contain p-6 transition-transform duration-500 group-hover:scale-105"
           />
@@ -88,7 +88,7 @@ export const ProjectCard = async (props: {
               <Link href={mainLink} target="_blank" className="w-fit">
                 <Typography
                   type="h4"
-                  text={project.localizationInfo[props.lang].tittle}
+                  text={project.content[props.lang].title}
                   className={cn(
                     "font-bold leading-tight transition-colors",
                     "group-hover:text-primary"
@@ -98,7 +98,7 @@ export const ProjectCard = async (props: {
             ) : (
               <Typography
                 type="h4"
-                text={project.localizationInfo[props.lang].tittle}
+                text={project.content[props.lang].title}
                 className="font-bold leading-tight"
               />
             )}
@@ -135,7 +135,7 @@ export const ProjectCard = async (props: {
         {/* Description */}
         <Typography
           type="sm"
-          text={project.localizationInfo[props.lang].shortDescription}
+          text={project.content[props.lang].shortDescription}
           className="text-muted-foreground line-clamp-3"
         />
 
