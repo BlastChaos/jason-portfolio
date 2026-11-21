@@ -24,13 +24,26 @@ export default {
     "auth0",
     "jest",
   ],
-  from: new Date("2023-05-01"),
+  periods: [
+    {
+      type: "internship",
+      from: new Date("2023-08-01"),
+      to: new Date("2024-01-01"),
+    },
+    {
+      type: "partTime",
+      from: new Date("2024-01-01"),
+      to: new Date("2024-07-01"),
+    },
+    { type: "fullTime", from: new Date("2024-07-01") },
+  ],
   roles: ["fullstack", "frontend", "backend", "mobile"],
   content: {
     en: {
       title: "Full Stack Developer",
       location: "Montreal, QC",
-      shortDescription: "Develop and maintain cloud and mobile applications to help clients manage their planning and construction projects efficiently",
+      shortDescription:
+        "Develop and maintain cloud and mobile applications to help clients manage their planning and construction projects efficiently",
       tasks: [
         "Led the replacement of the synchronization system between the mobile app and client platform over 3 months, reducing support tickets by 20% and improving user experience",
         "Quickly learned React and React Native on the job to maintain and improve the web platform and mobile app, reducing average load and action execution time from 5 minutes to 3 seconds",
@@ -43,7 +56,8 @@ export default {
     fr: {
       title: "Développeur Full Stack",
       location: "Montréal, QC",
-      shortDescription: "Développer et maintenir des applications cloud et mobiles pour aider les clients à gérer efficacement leur planification et leurs projets de construction",
+      shortDescription:
+        "Développer et maintenir des applications cloud et mobiles pour aider les clients à gérer efficacement leur planification et leurs projets de construction",
       tasks: [
         "Dirigé le remplacement du système de synchronisation entre l'application mobile et la plateforme client sur 3 mois, réduisant les tickets de support de 20% et améliorant l'expérience utilisateur",
         "Appris rapidement React et React Native sur le terrain pour maintenir et améliorer la plateforme web et l'application mobile, réduisant le temps de chargement moyen et d'exécution des actions de 5 minutes à 3 secondes",

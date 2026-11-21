@@ -2,12 +2,7 @@ import type { Locale } from "@/dictionaries/dictionaries";
 import type { Tag } from "@/Section/shared/utilities/tags";
 
 export type Role =
-  | "fullstack"
-  | "frontend"
-  | "backend"
-  | "mobile"
-  | "devops"
-  | "ai";
+  "fullstack" | "frontend" | "backend" | "mobile" | "devops" | "ai";
 
 export type ProjectType = "school" | "work" | "personal";
 
@@ -34,13 +29,21 @@ type ProjectBase = {
 export type ProjectInfo = ProjectBase &
   ({ type: "work"; companyName: string } | { type: "personal" });
 
+export type EmploymentType = "internship" | "partTime" | "fullTime";
+
+export type WorkPeriod = {
+  type: EmploymentType;
+  from: Date;
+  to?: Date;
+};
+
 export type WorkInfo = {
   slug: string;
   companyName: string;
   logo: string;
   website: string;
-  from: Date;
-  to?: Date;
+  /** Chronological and non-overlapping. */
+  periods: WorkPeriod[];
   techStack: Tag[];
   /** Roles this experience is relevant to, used to rank it in tailored views. */
   roles: Role[];

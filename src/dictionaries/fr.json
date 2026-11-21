@@ -69,7 +69,12 @@
   "workExperience": {
     "present": "Aujourd'hui",
     "keyAchievements": "Réalisations clés",
-    "techStack": "Technologies utilisées"
+    "techStack": "Technologies utilisées",
+    "employmentType": {
+      "internship": "Stage",
+      "partTime": "Temps partiel",
+      "fullTime": "Temps plein"
+    }
   },
   "education": {
     "present": "Aujourd'hui",
