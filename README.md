@@ -185,7 +185,7 @@ Or deploy to any platform that supports Next.js:
 - Portfolio: [jasonbrutus.com](https://jasonbrutus.com)
 - LinkedIn: [linkedin.com/in/jasonbrutus](https://www.linkedin.com/in/jasonbrutus/)
 - GitHub: [@BlastChaos](https://github.com/BlastChaos)
-- Email: brutusjason123@gmail.com
+- Email: hello@jasonbrutus.ca
 
 ## 🙏 Acknowledgments
 
