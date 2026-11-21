@@ -26,12 +26,12 @@ export default {
     },
     {
       type: "internship",
-      from: new Date("2022-04-01"),
+      from: new Date("2022-05-01"),
       to: new Date("2022-08-01"),
     },
     {
       type: "partTime",
-      from: new Date("2022-08-01"),
+      from: new Date("2022-09-01"),
       to: new Date("2023-05-01"),
     },
   ],

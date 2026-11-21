@@ -27,13 +27,13 @@ export default {
   periods: [
     {
       type: "internship",
-      from: new Date("2023-08-01"),
-      to: new Date("2024-01-01"),
+      from: new Date("2023-09-01"),
+      to: new Date("2023-12-01"),
     },
     {
       type: "partTime",
       from: new Date("2024-01-01"),
-      to: new Date("2024-07-01"),
+      to: new Date("2024-06-01"),
     },
     { type: "fullTime", from: new Date("2024-07-01") },
   ],

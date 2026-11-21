@@ -34,6 +34,7 @@ export type EmploymentType = "internship" | "partTime" | "fullTime";
 export type WorkPeriod = {
   type: EmploymentType;
   from: Date;
+  // Inclusive month, as on a CV: "Jan – Apr" includes April.
   to?: Date;
 };
 
