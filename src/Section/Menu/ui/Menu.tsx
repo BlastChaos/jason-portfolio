@@ -44,7 +44,7 @@ export const Menu: React.FC<Props> = async (props: Props) => {
                 {props.sections.map((section) => (
                   <DropdownMenuItem key={section.id} asChild>
                     <Link
-                      href={`/#${section.id}`}
+                      href={`#${section.id}`}
                       key={section.id}
                       className="flex-1"
                     >

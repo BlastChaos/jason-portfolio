@@ -61,7 +61,7 @@ export const Hero: React.FC<Props> = async (props: Props) => {
             />
           </Link>
 
-          <Link href={`/${props.lang}#projects`}>
+          <Link href={`#projects`}>
             <TextIconButton
               text={hero.work}
               size={"lg"}

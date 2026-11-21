@@ -116,7 +116,7 @@ export default async function Home({
         ))}
       </div>
       <Link
-        href={`/${lang}#${sections[0].id}`}
+        href={`#${sections[0].id}`}
         className="bottom-5 right-6 z-40 fixed sm:hidden"
       >
         <IconButton

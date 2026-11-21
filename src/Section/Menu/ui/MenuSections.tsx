@@ -1,6 +1,7 @@
 "use client";
 import { SectionType } from "@/app/[lang]/page";
 import { MenuSection } from "./MenuSection";
+import { useMemo } from "react";
 import { Tabs } from "@/components/ui/tabs";
 import useGetActiveSession from "../hook/useGetActiveSession";
 
@@ -8,9 +9,11 @@ type Props = {
   sections: SectionType[];
 };
 export const MenuSections: React.FC<Props> = (props: Props) => {
-  const activeSection = useGetActiveSession(
-    props.sections.map((section) => section.id)
+  const sectionIds = useMemo(
+    () => props.sections.map((section) => section.id),
+    [props.sections]
   );
+  const activeSection = useGetActiveSession(sectionIds);
   return (
     <div>
       <Tabs

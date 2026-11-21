@@ -1,37 +1,48 @@
 import { useEffect, useState } from "react";
 
+/** Height of the fixed menu bar (h-14), plus a little breathing room. */
+const ACTIVATION_OFFSET_PX = 56 + 24;
+
+/**
+ * Scroll-spy: the active section is the last one whose top has passed just
+ * below the fixed menu. Unlike intersection ratios, this has exactly one
+ * answer per scroll position, so the highlight never flickers between
+ * sections, even ones taller than the viewport.
+ */
 export default function useActiveSection(sectionIds: string[]) {
   const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     if (sectionIds.length === 0) return;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries.filter((e) => e.isIntersecting);
-
-        if (visible.length > 0) {
-          const mostVisible = visible.reduce((max, entry) =>
-            entry.intersectionRatio > max.intersectionRatio ? entry : max
-          );
-          setActiveSection(mostVisible.target.id);
-        }
-      },
-      {
-        threshold: [0.25, 0.5, 0.75, 1],
-      }
-    );
-
-    const timeout = setTimeout(() => {
-      sectionIds.forEach((id) => {
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      let current = sectionIds[0];
+      for (const id of sectionIds) {
         const el = document.getElementById(id);
-        if (el) observer.observe(el);
-      });
-    }, 100); // ensure DOM ready
+        if (el && el.getBoundingClientRect().top <= ACTIVATION_OFFSET_PX) {
+          current = id;
+        }
+      }
+      // At the very bottom, short last sections can never reach the offset.
+      const atBottom =
+        window.innerHeight + window.scrollY >=
+        document.documentElement.scrollHeight - 2;
+      if (atBottom) current = sectionIds[sectionIds.length - 1];
+      setActiveSection(current);
+    };
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
 
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
     return () => {
-      clearTimeout(timeout);
-      observer.disconnect();
+      if (frame) cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
     };
   }, [sectionIds]);
 

@@ -311,6 +311,8 @@
 
 html {
   scroll-behavior: smooth;
+  /* Keep anchor targets clear of the fixed menu bar (h-14). */
+  scroll-padding-top: 3.5rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
