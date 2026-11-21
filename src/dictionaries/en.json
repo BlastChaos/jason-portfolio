@@ -68,7 +68,12 @@
   "workExperience": {
     "present": "Present",
     "keyAchievements": "Key Achievements",
-    "techStack": "Tech Stack"
+    "techStack": "Tech Stack",
+    "employmentType": {
+      "internship": "Internship",
+      "partTime": "Part-time",
+      "fullTime": "Full-time"
+    }
   },
   "education": {
     "present": "Present",

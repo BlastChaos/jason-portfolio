@@ -22,6 +22,11 @@ export const WorkCard: React.FC<Props> = async (props: Props) => {
     }
     return getFormattedDate(date, props.lang);
   };
+  const { periods } = props.workInfo;
+  const employmentPath = periods
+    .map((period) => period.type)
+    .filter((type, index, types) => type !== types[index - 1])
+    .map((type) => workExperience.employmentType[type]);
   return (
     <Card
       animationType="top"
@@ -58,6 +63,21 @@ export const WorkCard: React.FC<Props> = async (props: Props) => {
                 text={props.workInfo.companyName}
               />
             </Link>
+            <ol className="flex flex-row flex-wrap items-center gap-1 text-muted-foreground">
+              {employmentPath.map((label, index) => (
+                <li key={label} className="flex flex-row items-center gap-1">
+                  {index > 0 && (
+                    <Icons
+                      iconType="arrowUp"
+                      size="sm"
+                      className="rotate-90 size-3"
+                      aria-hidden
+                    />
+                  )}
+                  <Typography type={"sm"} text={label} />
+                </li>
+              ))}
+            </ol>
           </div>
         </div>
 
@@ -67,8 +87,8 @@ export const WorkCard: React.FC<Props> = async (props: Props) => {
             <Typography
               type={"sm"}
               className="font-medium"
-              text={`${getDate(props.workInfo.from)} - ${getDate(
-                props.workInfo.to
+              text={`${getDate(periods[0].from)} - ${getDate(
+                periods[periods.length - 1].to
               )}`}
             />
           </div>

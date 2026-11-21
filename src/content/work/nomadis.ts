@@ -18,14 +18,30 @@ export default {
     "efcore",
     "capacitor",
   ],
-  from: new Date("2022-01-01"),
-  to: new Date("2023-05-01"),
+  periods: [
+    {
+      type: "internship",
+      from: new Date("2022-01-01"),
+      to: new Date("2022-04-01"),
+    },
+    {
+      type: "internship",
+      from: new Date("2022-05-01"),
+      to: new Date("2022-08-01"),
+    },
+    {
+      type: "partTime",
+      from: new Date("2022-09-01"),
+      to: new Date("2023-05-01"),
+    },
+  ],
   roles: ["fullstack", "backend", "devops"],
   content: {
     en: {
       title: "Full Stack Developer",
       location: "Montreal, QC",
-      shortDescription: "Developed web and mobile applications using modern technologies to deliver scalable solutions",
+      shortDescription:
+        "Developed web and mobile applications using modern technologies to deliver scalable solutions",
       tasks: [
         "Designed and deployed new microservices on Google Cloud Platform (GCP) to extend application features and modernize architecture",
         "Unified Web and Mobile authentication by replacing the internal system with IdentityServer4 synchronized with Okta to centralize access management across all platforms",
@@ -37,7 +53,8 @@ export default {
     fr: {
       title: "Développeur Full Stack",
       location: "Montréal, QC",
-      shortDescription: "Développé et modernisé les systèmes d'authentification et les applications mobiles pour une plateforme d'entreprise",
+      shortDescription:
+        "Développé et modernisé les systèmes d'authentification et les applications mobiles pour une plateforme d'entreprise",
       tasks: [
         "Conception et déploiement de nouveaux microservices sur Google Cloud Platform (GCP) pour étendre les fonctionnalités de l'application et moderniser l'architecture",
         "Unifié l'authentification Web et Mobile en remplaçant le système interne par IdentityServer4 synchronisé avec Okta pour centraliser la gestion des accès sur toutes les plateformes",
