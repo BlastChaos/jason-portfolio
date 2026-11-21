@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 
-/** Height of the fixed menu bar (h-14), plus a little breathing room. */
-const ACTIVATION_OFFSET_PX = 56 + 24;
+/** Extra room below the fixed menu before a section counts as active. */
+const ACTIVATION_MARGIN_PX = 24;
+
+/** The menu height, read from <html>'s scroll-padding (scroll-pt-menu). */
+const getMenuOffset = () =>
+  parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
 
 /**
  * Scroll-spy: the active section is the last one whose top has passed just
@@ -18,10 +22,11 @@ export default function useActiveSection(sectionIds: string[]) {
     let frame = 0;
     const update = () => {
       frame = 0;
+      const activationLine = getMenuOffset() + ACTIVATION_MARGIN_PX;
       let current = sectionIds[0];
       for (const id of sectionIds) {
         const el = document.getElementById(id);
-        if (el && el.getBoundingClientRect().top <= ACTIVATION_OFFSET_PX) {
+        if (el && el.getBoundingClientRect().top <= activationLine) {
           current = id;
         }
       }

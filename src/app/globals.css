@@ -128,6 +128,8 @@
 }
 
 @theme inline {
+  /* Height of the fixed menu bar. Generates h-menu, scroll-pt-menu, etc. */
+  --spacing-menu: 3.5rem;
   --color-background: var(--background);
   --color-secondary-background: var(--secondary-background);
   --color-foreground: var(--foreground);
@@ -311,8 +313,6 @@
 
 html {
   scroll-behavior: smooth;
-  /* Keep anchor targets clear of the fixed menu bar (h-14). */
-  scroll-padding-top: 3.5rem;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -23,7 +23,7 @@ export const Menu: React.FC<Props> = async (props: Props) => {
 
   return (
     <div className="fixed md:flex top-0 z-10 w-full">
-      <Card animationType="none" className="flex flex-row h-14 gap-4 w-full rounded-b-md">
+      <Card animationType="none" className="flex flex-row h-menu gap-4 w-full rounded-b-md">
         <div className="container mx-auto md:px-0 px-2 lg:px-8 flex flex-row items-center">
           <Typography
             text="＜JasonBrutus /＞"
