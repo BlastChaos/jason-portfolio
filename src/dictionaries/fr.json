@@ -11,9 +11,9 @@
   },
   "hero": {
     "work": "Voir mes projets",
-    "contactMe": "Contactez-moi",
+    "contactMe": "Écrivez-moi",
     "introduction": "Salut! Je suis",
-    "description": "Développeur avec plus de 3 ans d’expérience, j’aime explorer de nouvelles technologies et créer des solutions intuitives qui aident les gens à résoudre leurs problèmes.",
+    "description": "Développeur avec plus de {years} ans d’expérience, j’aime explorer de nouvelles technologies et créer des solutions intuitives qui aident les gens à résoudre leurs problèmes.",
     "whoAmI": {
       "fullStack": "Développeur Fullstack",
       "mobile": "Développeur d’applications mobiles",
@@ -32,7 +32,7 @@
     "Education": "Éducation",
     "educationQuote": "L’éducation n’est pas l’apprentissage de faits, mais l’entraînement de l’esprit à penser.",
     "skill": "Skills & Expertise",
-    "skillQuote": "I have no special talent. I am only passionately curious.",
+    "skillQuote": "Je n’ai pas de talent particulier. Je suis seulement passionnément curieux.",
     "contact": "Contactez-moi",
     "contactQuote": "Ma conviction est que la communication est le meilleur moyen de créer des relations solides."
   },
@@ -43,14 +43,15 @@
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "devpost": "DevPost",
-    "ctaButton": "Envoyez-moi un courriel"
+    "ctaButton": "Envoyez-moi un courriel",
+    "copyEmail": "Copier",
+    "emailCopied": "Copié !"
   },
   "aboutMe": {
     "sectionName": "À propos de moi",
-    "quote": "Soyez-vous même, car tous les autres sont déjà pris.",
     "bio": "Biographie",
-    "bioDescription": "Salut ! Je suis un développeur full stack web et mobile avec plus de 3 ans d’expérience dans le domaine. Passionné par l’avancée des nouvelles technologies, particulièrement par l’impact de l’intelligence artificielle dans notre quotidien, j’aime créer des solutions utiles et durables tout en essayant de nouveaux outils stimulants.",
-    "bioDescription1": "Salut! Je suis un développeur full stack web et mobile avec plus de 3 ans d’expérience dans le domaine. Passionné par l’avancée des nouvelles technologies, particulièrement par l’impact de l’intelligence artificielle dans notre quotidien, j’aime créer des solutions utiles et durables tout en essayant de nouveaux outils stimulants.",
+    "bioDescription": "Salut ! Je suis un développeur full stack web et mobile avec plus de {years} ans d’expérience dans le domaine. Passionné par l’avancée des nouvelles technologies, particulièrement par l’impact de l’intelligence artificielle dans notre quotidien, j’aime créer des solutions utiles et durables tout en essayant de nouveaux outils stimulants.",
+    "bioDescription1": "Salut! Je suis un développeur full stack web et mobile avec plus de {years} ans d’expérience dans le domaine. Passionné par l’avancée des nouvelles technologies, particulièrement par l’impact de l’intelligence artificielle dans notre quotidien, j’aime créer des solutions utiles et durables tout en essayant de nouveaux outils stimulants.",
     "bioDescription2": "Récemment, j’ai dirigé le remplacement du système de synchronisation entre une application mobile et la plateforme d’un client en 3 mois, ce qui a réduit les tickets de support de 20 % et amélioré l’expérience utilisateur.",
     "bioDescription3": "J’accorde une grande importance à l’accessibilité, à la testabilité et à la lisibilité du code. Si vous cherchez un collaborateur capable de donner vie à vos projets, n’hésitez pas à me contacter!",
     "hobby1Tittle": "Joueur de Smash Bros",
@@ -63,7 +64,7 @@
   "projects": {
     "school": "École",
     "work": "Travail",
-    "personnal": "Personnel"
+    "personal": "Personnel"
   },
   "workExperience": {
     "present": "Aujourd'hui",
@@ -98,12 +99,12 @@
     "applicationName": "Mon portfolio",
     "openGraph": {
       "title": "Jason Brutus | Portfolio",
-      "description": "Développeur full stack avec plus de 3 ans d'expérience. Passionné par les technologies émergentes et la création de solutions intuitives.",
+      "description": "Développeur full stack avec plus de {years} ans d'expérience. Passionné par les technologies émergentes et la création de solutions intuitives.",
       "siteName": "Jason Brutus Portfolio"
     },
     "twitter": {
       "title": "Jason Brutus | Portfolio",
-      "description": "Développeur full stack avec plus de 3 ans d'expérience"
+      "description": "Développeur full stack avec plus de {years} ans d'expérience"
     }
   },
   "footer": {

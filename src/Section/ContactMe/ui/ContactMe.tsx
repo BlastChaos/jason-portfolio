@@ -4,7 +4,9 @@ import { Icons } from "@/components/ui/icons";
 import { Card } from "@/components/ui/card";
 import { CustomAnimation } from "@/Section/shared/ui/CustomAnimation";
 import Link from "next/link";
+import { CopyEmailButton } from "./CopyEmailButton";
 import {
+  EMAIL_ADDRESS,
   EMAIL_URL,
   LINKEDIN_URL,
   GITHUB_URL,
@@ -86,22 +88,31 @@ export const ContactMe: React.FC<Props> = async (props: Props) => {
                   <Icons iconType={method.icon} size="lg" />
                   <Typography type="h4" text={method.label} />
                 </div>
-                <Link
-                  href={method.href}
-                  target={method.action === "external" ? "_blank" : undefined}
-                  rel={
-                    method.action === "external"
-                      ? "noopener noreferrer"
-                      : undefined
-                  }
-                  className="group"
-                >
-                  <Typography
-                    type="md"
-                    text={removeHttps(method.href)}
-                    className="text-primary group-hover:underline transition-all"
-                  />
-                </Link>
+                <div className="flex flex-row flex-wrap items-center gap-3">
+                  <Link
+                    href={method.href}
+                    target={method.action === "external" ? "_blank" : undefined}
+                    rel={
+                      method.action === "external"
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
+                    className="group"
+                  >
+                    <Typography
+                      type="md"
+                      text={removeHttps(method.href)}
+                      className="text-primary group-hover:underline transition-all"
+                    />
+                  </Link>
+                  {method.action === "mailto" && (
+                    <CopyEmailButton
+                      email={EMAIL_ADDRESS}
+                      copyLabel={contact.copyEmail}
+                      copiedLabel={contact.emailCopied}
+                    />
+                  )}
+                </div>
               </div>
             </Card>
           </CustomAnimation>

@@ -20,7 +20,7 @@ export const WorkCard: React.FC<Props> = async (props: Props) => {
     if (!date) {
       return workExperience.present;
     }
-    return getFormattedDate(date);
+    return getFormattedDate(date, props.lang);
   };
   return (
     <Card

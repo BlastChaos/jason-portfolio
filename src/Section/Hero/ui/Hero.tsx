@@ -6,6 +6,7 @@ import { TextIconButton } from "@/components/ui/button";
 import { Contact } from "./Contact";
 import Link from "next/link";
 import { cn } from "@/utilities/utils";
+import { EMAIL_URL } from "@/Section/ContactMe/utilities/contactInfo";
 import { CustomAnimation } from "@/Section/shared/ui/CustomAnimation";
 
 type Props = {
@@ -50,17 +51,17 @@ export const Hero: React.FC<Props> = async (props: Props) => {
           duration={1}
           className="flex flex-col md:flex-row gap-4"
         >
-          <Link href={`/#contact`}>
+          <Link href={EMAIL_URL}>
             <TextIconButton
               text={hero.contactMe}
-              icon="alternateEmail"
+              icon="mail"
               size={"lg"}
               variant={"default"}
               className="w-full"
             />
           </Link>
 
-          <Link href={`/#projects`}>
+          <Link href={`/${props.lang}#projects`}>
             <TextIconButton
               text={hero.work}
               size={"lg"}

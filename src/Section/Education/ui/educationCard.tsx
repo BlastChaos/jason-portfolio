@@ -18,7 +18,7 @@ export const EducationCard: React.FC<Props> = async (props: Props) => {
       return education.present;
     }
 
-    return getFormattedDate(date);
+    return getFormattedDate(date, props.lang);
   };
   return (
     <Card
