@@ -1,18 +1,10 @@
 import { useEffect, useState } from "react";
 
-/** Extra room below the fixed menu before a section counts as active. */
 const ACTIVATION_MARGIN_PX = 24;
 
-/** The menu height, read from <html>'s scroll-padding (scroll-pt-menu). */
 const getMenuOffset = () =>
   parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
 
-/**
- * Scroll-spy: the active section is the last one whose top has passed just
- * below the fixed menu. Unlike intersection ratios, this has exactly one
- * answer per scroll position, so the highlight never flickers between
- * sections, even ones taller than the viewport.
- */
 export default function useActiveSection(sectionIds: string[]) {
   const [activeSection, setActiveSection] = useState("");
 

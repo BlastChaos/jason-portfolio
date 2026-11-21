@@ -10,7 +10,6 @@ type Props = {
   className?: string;
 };
 
-/** Copies the email address, for visitors without a configured mail client. */
 export const CopyEmailButton: React.FC<Props> = (props: Props) => {
   const [copied, setCopied] = useState(false);
 
@@ -25,7 +24,7 @@ export const CopyEmailButton: React.FC<Props> = (props: Props) => {
       await navigator.clipboard.writeText(props.email);
       setCopied(true);
     } catch {
-      // Clipboard unavailable (insecure context or denied); the address stays visible to copy manually.
+      // Clipboard blocked (non-HTTPS or denied): the address is still shown to copy by hand.
     }
   };
 
