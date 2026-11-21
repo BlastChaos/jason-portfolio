@@ -26,8 +26,8 @@ export const educationInfos: EducationInfo[] = [
     website: "https://www.etsmtl.ca/",
     logo: "/ets/logo.svg",
     schoolName: "École de technologie supérieure",
-    from: new Date("2020-01-01"),
-    to: new Date("2024-01-01"),
+    from: new Date("2020-09-01"),
+    to: new Date("2024-08-01"),
     gpa: {
       currentNumber: 3.79,
       maxNumber: 4.3,
@@ -65,8 +65,8 @@ export const educationInfos: EducationInfo[] = [
     website: "https://www.cmaisonneuve.qc.ca/",
     logo: "/maisonneuve/logo.svg",
     schoolName: "Collège de Maisonneuve",
-    from: new Date("2018-01-01"),
-    to: new Date("2019-11-20"),
+    from: new Date("2018-09-01"),
+    to: new Date("2020-09-01"),
     langInfo: {
       en: {
         tittleName: "DEC – Computer Science and Mathematics",
