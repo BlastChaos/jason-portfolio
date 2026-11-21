@@ -11,9 +11,9 @@
   },
   "hero": {
     "work": "See my projects",
-    "contactMe": "Contact me",
+    "contactMe": "Email me",
     "introduction": "Hey! I'm",
-    "description": "As a developer with 3+ years’ experience, I like exploring new technologies and building intuitive solutions that help people solve problems.",
+    "description": "As a developer with {years}+ years’ experience, I like exploring new technologies and building intuitive solutions that help people solve problems.",
     "whoAmI": {
       "fullStack": "Fullstack Developer",
       "mobile": "Mobile app developer",
@@ -43,13 +43,14 @@
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "devpost": "DevPost",
-    "ctaButton": "Send me an email"
+    "ctaButton": "Send me an email",
+    "copyEmail": "Copy",
+    "emailCopied": "Copied!"
   },
   "aboutMe": {
     "sectionName": "About me",
-    "quote": "Be yourself; everyone else is already taken.",
     "bio": "Biography",
-    "bioDescription1": "Hi! I’m a full-stack web and mobile developer with over 3 years of experience. Passionate about emerging technologies, especially the impact of artificial intelligence on everyday life, I enjoy building useful, sustainable solutions while trying out exciting new tools.",
+    "bioDescription1": "Hi! I’m a full-stack web and mobile developer with over {years} years of experience. Passionate about emerging technologies, especially the impact of artificial intelligence on everyday life, I enjoy building useful, sustainable solutions while trying out exciting new tools.",
     "bioDescription2": "Recently, I led the replacement of the synchronization system between a mobile app and a client’s platform over a three month period, which reduced support tickets by 20% and improved the user experience.",
     "bioDescription3": "I place great importance on accessibility, testability, and readable code. If you’re looking for a collaborator who can bring your projects to life, don’t hesitate to contact me!",
     "hobby1Tittle": "Smash Bros Player",
@@ -62,7 +63,7 @@
   "projects": {
     "school": "School",
     "work": "Work",
-    "personnal": "Personnal"
+    "personal": "Personal"
   },
   "workExperience": {
     "present": "Present",
@@ -97,12 +98,12 @@
     "applicationName": "My portfolio",
     "openGraph": {
       "title": "Jason Brutus | Portfolio",
-      "description": "Full-stack developer with 3+ years of experience. Passionate about emerging technologies and building intuitive solutions.",
+      "description": "Full-stack developer with {years}+ years of experience. Passionate about emerging technologies and building intuitive solutions.",
       "siteName": "Jason Brutus Portfolio"
     },
     "twitter": {
       "title": "Jason Brutus | Portfolio",
-      "description": "Full-stack developer with 3+ years of experience"
+      "description": "Full-stack developer with {years}+ years of experience"
     }
   },
   "footer": {

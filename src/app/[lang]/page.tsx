@@ -13,6 +13,7 @@ import { WorkExperience } from "@/Section/workExperience/ui/workExperience";
 import { Skill } from "@/Section/Skill/ui/Skill";
 import Link from "next/link";
 import { IconButton } from "@/components/ui/button";
+
 export type SectionType = {
   id: string;
   header?: {
@@ -49,16 +50,6 @@ export default async function Home({
       children: <AboutMe lang={lang} />,
     },
     {
-      id: "projects",
-      header: {
-        titleName: headers.project,
-        quote: headers.projectQuote,
-      },
-      icon: "folder",
-      menuName: headers.project,
-      children: <Projects lang={lang} />,
-    },
-    {
       id: "work",
       header: {
         titleName: headers.workExperience,
@@ -69,14 +60,14 @@ export default async function Home({
       children: <WorkExperience lang={lang} />,
     },
     {
-      id: "education",
+      id: "projects",
       header: {
-        titleName: headers.Education,
-        quote: headers.educationQuote,
+        titleName: headers.project,
+        quote: headers.projectQuote,
       },
-      icon: "graduationHat",
-      menuName: menu.education,
-      children: <Education lang={lang} />,
+      icon: "folder",
+      menuName: headers.project,
+      children: <Projects lang={lang} />,
     },
     {
       id: "skill",
@@ -87,6 +78,16 @@ export default async function Home({
       icon: "gear",
       menuName: menu.skill,
       children: <Skill lang={lang} />,
+    },
+    {
+      id: "education",
+      header: {
+        titleName: headers.Education,
+        quote: headers.educationQuote,
+      },
+      icon: "graduationHat",
+      menuName: menu.education,
+      children: <Education lang={lang} />,
     },
     {
       id: "contact",
@@ -115,7 +116,7 @@ export default async function Home({
         ))}
       </div>
       <Link
-        href={`/${lang}#${sections[0].id}`}
+        href={`#${sections[0].id}`}
         className="bottom-5 right-6 z-40 fixed sm:hidden"
       >
         <IconButton

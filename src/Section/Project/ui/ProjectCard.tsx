@@ -28,7 +28,7 @@ export const ProjectCard = async (props: {
       icon: "suitcase",
     },
     personal: {
-      name: projectsDict.personnal,
+      name: projectsDict.personal,
       icon: "folder",
     },
   };

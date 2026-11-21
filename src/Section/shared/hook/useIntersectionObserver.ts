@@ -12,8 +12,8 @@ export function useIntersectionObserver(
         }
       },
       {
-        threshold: 0.2, // Trigger when 20% of the section is visible
-        rootMargin: "-50px 0px", // Start animation slightly after entering viewport
+        threshold: 0,
+        rootMargin: "0px 0px -5% 0px",
       }
     );
 

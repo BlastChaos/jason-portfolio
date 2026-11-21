@@ -26,7 +26,7 @@ export const Section: React.FC<PropsWithChildren<Props>> = (
       >
         {props.header && (
           <div
-            className={`flex justify-center items-center flex-col text-center gap-2 pb-16 transition-all duration-700`}
+            className={`flex justify-center items-center flex-col text-center gap-2 pb-16`}
           >
             <CustomAnimation type="slideUpFadeIn" delay={0.2} duration={0.8}>
               <Typography type={"h2"} text={props.header.titleName} />

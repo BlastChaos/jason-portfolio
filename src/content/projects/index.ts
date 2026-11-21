@@ -6,4 +6,4 @@ import threepiece from "./threepiece";
 import type { ProjectInfo } from "../types";
 
 /** Display order. */
-export const projects: ProjectInfo[] = [portfolio, planifiscale, logbook, chessAi, threepiece];
+export const projects: ProjectInfo[] = [planifiscale, logbook, chessAi, threepiece, portfolio];

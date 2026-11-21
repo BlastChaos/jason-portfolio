@@ -65,7 +65,7 @@ export async function generateMetadata({
 export default async function LangLayout({ children, params }: Props) {
   const { lang } = await params;
   return (
-    <html lang={lang} suppressHydrationWarning>
+    <html lang={lang} className="scroll-pt-menu" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>

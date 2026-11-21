@@ -6,6 +6,7 @@ import { TextIconButton } from "@/components/ui/button";
 import { Contact } from "./Contact";
 import Link from "next/link";
 import { cn } from "@/utilities/utils";
+import { EMAIL_URL } from "@/Section/ContactMe/utilities/contactInfo";
 import { CustomAnimation } from "@/Section/shared/ui/CustomAnimation";
 
 type Props = {
@@ -18,7 +19,7 @@ export const Hero: React.FC<Props> = async (props: Props) => {
   return (
     <div
       className={
-        "flex flex-col md:grid md:grid-cols-2 h-svh pt-14 md:pt-0 gap-6 md:h-[93svh]"
+        "flex flex-col md:grid md:grid-cols-2 h-svh pt-menu md:pt-0 gap-6 md:h-[93svh]"
       }
     >
       <div className="flex flex-col justify-center gap-4 order-2 md:order-1">
@@ -50,17 +51,17 @@ export const Hero: React.FC<Props> = async (props: Props) => {
           duration={1}
           className="flex flex-col md:flex-row gap-4"
         >
-          <Link href={`/#contact`}>
+          <Link href={EMAIL_URL}>
             <TextIconButton
               text={hero.contactMe}
-              icon="alternateEmail"
+              icon="mail"
               size={"lg"}
               variant={"default"}
               className="w-full"
             />
           </Link>
 
-          <Link href={`/#projects`}>
+          <Link href={`#projects`}>
             <TextIconButton
               text={hero.work}
               size={"lg"}

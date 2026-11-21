@@ -12,7 +12,7 @@ type Props = {
 
 export const MenuSection: React.FC<Props> = (props: Props) => {
   return (
-    <Link href={`/#${props.id}`} key={props.id}>
+    <Link href={`#${props.id}`} key={props.id}>
       <div className="group relative flex flex-row gap-2 items-center">
         <Icons iconType={props.icon} size="sm" />
         {props.isActiveSession && (
