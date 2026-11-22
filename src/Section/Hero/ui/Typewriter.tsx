@@ -58,32 +58,48 @@ export const Typewriter: React.FC<Props> = (props: Props) => {
     return () => clearTimeout(timeout);
   }, [currentIndex, displayText, isDeleting, currentTextIndex, props.texts]);
 
+  const cursorClassName = "text-4xl md:text-5xl font-extralight";
+
   return (
-    <div className={`inline items-center whitespace-pre-wrap tracking-tight ${props.className}`}>
-      <Typography
-        type={"h2"}
-        className={"inline font-extralight"}
-        text={displayText.length === 0 ? " " : displayText}
-      />
-      <motion.span
-        variants={{
-          initial: { opacity: 0 },
-          animate: {
-            opacity: 1,
-            transition: {
-              duration: 0.01,
-              repeat: Infinity,
-              repeatDelay: 0.4,
-              repeatType: "reverse",
+    // Every phrase is laid out invisibly in the same grid cell, so the block
+    // keeps the height of the longest one and the page doesn't jump while typing.
+    <div className={`grid tracking-tight ${props.className ?? ""}`}>
+      {props.texts.map((text) => (
+        <div
+          key={text}
+          aria-hidden
+          className="invisible col-start-1 row-start-1 whitespace-pre-wrap"
+        >
+          <Typography type={"h2"} className={"inline font-extralight"} text={text} />
+          <span className={cursorClassName}>{CURSOR_CHAR}</span>
+        </div>
+      ))}
+      <div className="col-start-1 row-start-1 whitespace-pre-wrap">
+        <Typography
+          type={"h2"}
+          className={"inline font-extralight"}
+          text={displayText.length === 0 ? " " : displayText}
+        />
+        <motion.span
+          variants={{
+            initial: { opacity: 0 },
+            animate: {
+              opacity: 1,
+              transition: {
+                duration: 0.01,
+                repeat: Infinity,
+                repeatDelay: 0.4,
+                repeatType: "reverse",
+              },
             },
-          },
-        }}
-        className={"text-4xl md:text-5xl font-extralight"}
-        initial="initial"
-        animate="animate"
-      >
-        {CURSOR_CHAR}
-      </motion.span>
+          }}
+          className={cursorClassName}
+          initial="initial"
+          animate="animate"
+        >
+          {CURSOR_CHAR}
+        </motion.span>
+      </div>
     </div>
   );
 };

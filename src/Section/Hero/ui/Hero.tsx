@@ -18,7 +18,9 @@ export const Hero: React.FC<Props> = async (props: Props) => {
   const texts = Object.values(hero.whoAmI);
   return (
     <div
-      className={"flex flex-col md:grid md:grid-cols-2 h-svh pt-menu md:pt-0 gap-6 md:h-[93svh]"}
+      className={
+        "flex flex-col md:grid md:grid-cols-2 min-h-svh pt-menu pb-12 md:pb-0 md:pt-0 gap-6 md:min-h-[93svh]"
+      }
     >
       <div className="flex flex-col justify-center gap-4 order-2 md:order-1">
         <CustomAnimation type="slideUpFadeIn" delay={0.2} duration={1}>
