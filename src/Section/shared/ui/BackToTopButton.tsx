@@ -9,9 +9,7 @@ type Props = {
 };
 
 const scrollToTop = () => {
-  const reduceMotion = window.matchMedia(
-    "(prefers-reduced-motion: reduce)"
-  ).matches;
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
 };
 
@@ -36,7 +34,7 @@ export const BackToTopButton: React.FC<Props> = (props: Props) => {
       aria-hidden={!visible}
       className={cn(
         "fixed bottom-5 right-6 z-40 sm:hidden rounded-full p-2 w-10 h-10 transition-opacity duration-200",
-        visible ? "opacity-100" : "pointer-events-none opacity-0"
+        visible ? "opacity-100" : "pointer-events-none opacity-0",
       )}
     />
   );

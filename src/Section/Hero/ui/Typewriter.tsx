@@ -70,11 +70,7 @@ export const Typewriter: React.FC<Props> = (props: Props) => {
           aria-hidden
           className="invisible col-start-1 row-start-1 whitespace-pre-wrap"
         >
-          <Typography
-            type={"h2"}
-            className={"inline font-extralight"}
-            text={text}
-          />
+          <Typography type={"h2"} className={"inline font-extralight"} text={text} />
           <span className={cursorClassName}>{CURSOR_CHAR}</span>
         </div>
       ))}
