@@ -9,10 +9,9 @@ import { ContactMe } from "@/Section/ContactMe/ui/ContactMe";
 import { Footer } from "@/Section/Footer/ui/Footer";
 
 import { AboutMe } from "@/Section/AboutMe/ui/AboutMe";
+import { BackToTopButton } from "@/Section/shared/ui/BackToTopButton";
 import { WorkExperience } from "@/Section/workExperience/ui/workExperience";
 import { Skill } from "@/Section/Skill/ui/Skill";
-import Link from "next/link";
-import { IconButton } from "@/components/ui/button";
 
 export type SectionType = {
   id: string;
@@ -111,14 +110,7 @@ export default async function Home({ params }: { params: Promise<{ lang: Locale 
           </Section>
         ))}
       </div>
-      <Link href={`#${sections[0].id}`} className="bottom-5 right-6 z-40 fixed sm:hidden">
-        <IconButton
-          icon="arrowUp"
-          variant="default"
-          size="lg"
-          className="rounded-full p-2 w-10 h-10"
-        />
-      </Link>
+      <BackToTopButton label={menu.backToTop} />
 
       <Footer lang={lang} />
     </div>
