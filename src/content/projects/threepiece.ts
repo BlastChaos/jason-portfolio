@@ -14,11 +14,13 @@ export default {
   content: {
     en: {
       title: "Three Piece - On-Chain Exploration & Trading",
-      shortDescription: "A blockchain game combining exploration, crafting, and trading, with all assets fully owned on-chain.",
+      shortDescription:
+        "A blockchain game combining exploration, crafting, and trading, with all assets fully owned on-chain.",
     },
     fr: {
       title: "Three Piece - Exploration et Commerce On-Chain",
-      shortDescription: "Un jeu blockchain mêlant exploration, artisanat et échanges, avec une propriété d'actifs sécurisée on-chain.",
+      shortDescription:
+        "Un jeu blockchain mêlant exploration, artisanat et échanges, avec une propriété d'actifs sécurisée on-chain.",
     },
   },
 } satisfies ProjectInfo;

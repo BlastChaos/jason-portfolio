@@ -20,17 +20,14 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default:
-          "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90",
+        default: "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90",
         accent: "bg-accent text-accent-foreground shadow-xs hover:bg-accent/90",
         destructive:
           "bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         outline:
           "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
-        secondary:
-          "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
-        ghost:
-          "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
+        secondary: "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
+        ghost: "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
@@ -46,7 +43,7 @@ const buttonVariants = cva(
       variant: "default",
       size: "default",
     },
-  }
+  },
 );
 
 type ButtonProps = ButtonWithAsChild & VariantProps<typeof buttonVariants>;
@@ -89,17 +86,9 @@ type TextIconButtonProps = Omit<ButtonProps, "children" | "asChild"> & {
   icon: IconsType;
 };
 
-function TextIconButton({
-  text,
-  icon,
-  className,
-  ...props
-}: TextIconButtonProps) {
+function TextIconButton({ text, icon, className, ...props }: TextIconButtonProps) {
   return (
-    <Button
-      {...props}
-      className={cn(className, "flex flex-row gap-2 items-center")}
-    >
+    <Button {...props} className={cn(className, "flex flex-row gap-2 items-center")}>
       <Icons
         iconType={icon}
         size="md"

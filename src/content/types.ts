@@ -1,8 +1,7 @@
 import type { Locale } from "@/dictionaries/dictionaries";
 import type { Tag } from "@/Section/shared/utilities/tags";
 
-export type Role =
-  "fullstack" | "frontend" | "backend" | "mobile" | "devops" | "ai";
+export type Role = "fullstack" | "frontend" | "backend" | "mobile" | "devops" | "ai";
 
 export type ProjectType = "school" | "work" | "personal";
 

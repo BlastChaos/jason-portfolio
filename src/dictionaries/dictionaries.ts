@@ -18,7 +18,7 @@ const getPlaceholders = (): Record<string, string> => ({
 function interpolate<T>(value: T, placeholders: Record<string, string>): T {
   if (typeof value === "string") {
     return value.replace(/\{(\w+)\}/g, (match, key: string) =>
-      key in placeholders ? placeholders[key] : match
+      key in placeholders ? placeholders[key] : match,
     ) as T;
   }
   if (Array.isArray(value)) {
@@ -26,10 +26,7 @@ function interpolate<T>(value: T, placeholders: Record<string, string>): T {
   }
   if (value && typeof value === "object") {
     return Object.fromEntries(
-      Object.entries(value).map(([key, item]) => [
-        key,
-        interpolate(item, placeholders),
-      ])
+      Object.entries(value).map(([key, item]) => [key, interpolate(item, placeholders)]),
     ) as T;
   }
   return value;

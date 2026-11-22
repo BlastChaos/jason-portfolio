@@ -17,9 +17,7 @@ export function getYearsOfExperience(
   const totalMs = entries
     .flatMap((entry) => entry.periods)
     .reduce((sum, { type, from, to }) => {
-      const end = to
-        ? Date.UTC(to.getUTCFullYear(), to.getUTCMonth() + 1, 1)
-        : now.getTime();
+      const end = to ? Date.UTC(to.getUTCFullYear(), to.getUTCMonth() + 1, 1) : now.getTime();
       const duration = Math.max(0, end - from.getTime());
       return sum + duration * WEIGHTS[type];
     }, 0);

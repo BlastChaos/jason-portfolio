@@ -9,5 +9,5 @@ export const Gear: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
         strokeWidth="0.024"
       ></path>
     </svg>
-  );    
+  );
 };

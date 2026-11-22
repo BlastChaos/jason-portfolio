@@ -1,16 +1,7 @@
 import { cn } from "@/utilities/utils";
 import React, { JSX } from "react";
 import { type ClassValue } from "clsx";
-export type TypographyType =
-  | "h1"
-  | "h2"
-  | "h3"
-  | "h4"
-  | "h5"
-  | "h6"
-  | "lg"
-  | "md"
-  | "sm";
+export type TypographyType = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "lg" | "md" | "sm";
 
 type PropsInfo = {
   type: keyof JSX.IntrinsicElements;
@@ -39,10 +30,7 @@ export const Typography: React.FC<Props> = (props: Props) => {
   const componentInfo = tagMap[props.type];
   const Component = componentInfo.type;
   return (
-    <Component
-      className={cn(componentInfo.className, props.className)}
-      style={props.style}
-    >
+    <Component className={cn(componentInfo.className, props.className)} style={props.style}>
       {props.text}
     </Component>
   );

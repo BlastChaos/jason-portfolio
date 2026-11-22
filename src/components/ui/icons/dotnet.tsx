@@ -18,10 +18,7 @@ export const Dotnet: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
         fill="#ffffff"
         d="M27.27,41H24.65L15.28,26.46a6.06,6.06,0,0,1-.58-1.14h-.08a18.71,18.71,0,0,1,.1,2.5V41H12.59V22.77h2.77l9.12,14.28q.57.89.74,1.22h.05a19.29,19.29,0,0,1-.13-2.68V22.77h2.13Z"
       />
-      <path
-        fill="#ffffff"
-        d="M41.69,41H32V22.77h9.24V24.7H34.18v6.06h6.58v1.92H34.18V39h7.52Z"
-      />
+      <path fill="#ffffff" d="M41.69,41H32V22.77h9.24V24.7H34.18v6.06h6.58v1.92H34.18V39h7.52Z" />
       <path fill="#ffffff" d="M56,24.7H50.7V41H48.57V24.7H43.33V22.77H56Z" />
     </svg>
   );

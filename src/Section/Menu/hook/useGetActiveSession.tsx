@@ -24,8 +24,7 @@ export default function useActiveSection(sectionIds: string[]) {
       }
       // At the very bottom, short last sections can never reach the offset.
       const atBottom =
-        window.innerHeight + window.scrollY >=
-        document.documentElement.scrollHeight - 2;
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
       if (atBottom) current = sectionIds[sectionIds.length - 1];
       setActiveSection(current);
     };

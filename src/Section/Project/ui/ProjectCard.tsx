@@ -9,16 +9,10 @@ import Image from "next/image";
 import { ProjectInfo, ProjectType } from "@/content/types";
 import { cn } from "@/utilities/utils";
 
-export const ProjectCard = async (props: {
-  project: ProjectInfo;
-  lang: Locale;
-}) => {
+export const ProjectCard = async (props: { project: ProjectInfo; lang: Locale }) => {
   const project = props.project;
   const { projects: projectsDict } = await getDictionary(props.lang);
-  const projectTypesName: Record<
-    ProjectType,
-    { name: string; icon: IconsType }
-  > = {
+  const projectTypesName: Record<ProjectType, { name: string; icon: IconsType }> = {
     school: {
       name: projectsDict.school,
       icon: "graduationHat",
@@ -61,9 +55,7 @@ export const ProjectCard = async (props: {
             <Image
               src={project.icons[0]}
               fill
-              alt={`${
-                project.content[props.lang].title
-              } project preview`}
+              alt={`${project.content[props.lang].title} project preview`}
               className="object-contain p-6 transition-transform duration-500 group-hover:scale-105"
             />
           </Link>
@@ -71,9 +63,7 @@ export const ProjectCard = async (props: {
           <Image
             src={project.icons[0]}
             fill
-            alt={`${
-              project.content[props.lang].title
-            } project preview`}
+            alt={`${project.content[props.lang].title} project preview`}
             className="object-contain p-6 transition-transform duration-500 group-hover:scale-105"
           />
         )}
@@ -91,7 +81,7 @@ export const ProjectCard = async (props: {
                   text={project.content[props.lang].title}
                   className={cn(
                     "font-bold leading-tight transition-colors",
-                    "group-hover:text-primary"
+                    "group-hover:text-primary",
                   )}
                 />
               </Link>

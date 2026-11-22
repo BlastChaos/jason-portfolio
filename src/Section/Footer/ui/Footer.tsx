@@ -26,11 +26,7 @@ export const Footer: React.FC<Props> = async (props: Props) => {
             />
 
             <div className="flex flex-col md:flex-row items-center gap-2">
-              <Typography
-                type="sm"
-                text={footer.builtWith}
-                className="text-muted-foreground"
-              />
+              <Typography type="sm" text={footer.builtWith} className="text-muted-foreground" />
               <div className="flex flex-row gap-2 items-center">
                 <Link
                   href="https://nextjs.org"

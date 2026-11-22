@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 
-export function useIntersectionObserver(
-  ref: React.RefObject<HTMLElement | null>
-) {
+export function useIntersectionObserver(ref: React.RefObject<HTMLElement | null>) {
   const [isIntersecting, setIsIntersecting] = useState(false);
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -14,7 +12,7 @@ export function useIntersectionObserver(
       {
         threshold: 0,
         rootMargin: "0px 0px -5% 0px",
-      }
+      },
     );
 
     const currentRef = ref.current;

@@ -329,18 +329,12 @@ export const Icons: React.FC<Props> = (props: Props) => {
     props.size === "5xl" && "w-52 h-52 md:w-72 md:h-72 lg:w-96 lg:h-96",
     props.size === "4xl" && "w-44 h-44 md:w-72 md:h-72",
 
-    props.className
+    props.className,
   );
 
   if (icon.type === "img") {
     return (
-      <Image
-        alt={icon.alt}
-        src={icon.path}
-        width={9999}
-        height={9999}
-        className={classNameInfo}
-      />
+      <Image alt={icon.alt} src={icon.path} width={9999} height={9999} className={classNameInfo} />
     );
   }
 

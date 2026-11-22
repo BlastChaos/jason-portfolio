@@ -30,16 +30,13 @@ export const Tabs = (props: AnimatedTabsProps) => {
             "relative rounded-[--radius] px-3 py-1.5 text-sm font-medium",
             "text-foreground outline-ring transition",
             "focus-visible:outline-2",
-            props.currentTab === tab.id ? "" : "hover:text-foreground/60"
+            props.currentTab === tab.id ? "" : "hover:text-foreground/60",
           )}
         >
           {props.currentTab === tab.id && (
             <motion.span
               layoutId="bubble"
-              className={cn(
-                "absolute inset-0 z-0 bg-primary rounded-lg",
-                props.bubbleClassName
-              )}
+              className={cn("absolute inset-0 z-0 bg-primary rounded-lg", props.bubbleClassName)}
               transition={{ type: "spring", bounce: 0.3, duration: 0.8 }}
             />
           )}
@@ -48,7 +45,7 @@ export const Tabs = (props: AnimatedTabsProps) => {
             text={tab.label}
             className={cn(
               "relative z-10 transition-colors duration-300",
-              props.currentTab === tab.id && "text-primary-foreground"
+              props.currentTab === tab.id && "text-primary-foreground",
             )}
           />
         </button>

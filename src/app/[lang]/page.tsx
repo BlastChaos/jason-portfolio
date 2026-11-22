@@ -25,11 +25,7 @@ export type SectionType = {
   children: React.ReactNode;
 };
 
-export default async function Home({
-  params,
-}: {
-  params: Promise<{ lang: Locale }>;
-}) {
+export default async function Home({ params }: { params: Promise<{ lang: Locale }> }) {
   const { lang } = await params;
   const { headers, menu } = await getDictionary(lang);
   const sections: SectionType[] = [
@@ -115,10 +111,7 @@ export default async function Home({
           </Section>
         ))}
       </div>
-      <Link
-        href={`#${sections[0].id}`}
-        className="bottom-5 right-6 z-40 fixed sm:hidden"
-      >
+      <Link href={`#${sections[0].id}`} className="bottom-5 right-6 z-40 fixed sm:hidden">
         <IconButton
           icon="arrowUp"
           variant="default"

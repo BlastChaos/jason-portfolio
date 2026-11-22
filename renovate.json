@@ -35,12 +35,17 @@
       "matchPackageNames": ["next", "eslint-config-next", "@next/{/,}**"]
     },
     {
-      "groupName": "eslint",
-      "matchPackageNames": ["eslint", "@eslint/{/,}**", "typescript-eslint", "eslint-plugin-**"]
+      "groupName": "oxc",
+      "matchPackageNames": ["oxlint", "oxfmt"]
     },
     {
       "groupName": "tailwind",
-      "matchPackageNames": ["tailwindcss", "@tailwindcss/{/,}**", "tw-animate-css", "tailwind-merge"]
+      "matchPackageNames": [
+        "tailwindcss",
+        "@tailwindcss/{/,}**",
+        "tw-animate-css",
+        "tailwind-merge"
+      ]
     },
     {
       "groupName": "radix",

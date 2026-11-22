@@ -92,11 +92,7 @@ export const ContactMe: React.FC<Props> = async (props: Props) => {
                   <Link
                     href={method.href}
                     target={method.action === "external" ? "_blank" : undefined}
-                    rel={
-                      method.action === "external"
-                        ? "noopener noreferrer"
-                        : undefined
-                    }
+                    rel={method.action === "external" ? "noopener noreferrer" : undefined}
                     className="group"
                   >
                     <Typography

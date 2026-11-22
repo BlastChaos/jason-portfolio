@@ -1,11 +1,7 @@
 "use client";
 
 import { Icons } from "@/components/ui/icons";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { Typography } from "@/components/ui/typography";
 
 import { useState } from "react";

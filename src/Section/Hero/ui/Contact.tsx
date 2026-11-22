@@ -10,11 +10,7 @@ import Link from "next/link";
 export const Contact: React.FC = () => {
   return (
     <div className="flex flex-row gap-4 md:justify-start justify-center">
-      <Link
-        href={GITHUB_URL}
-        target="_blank"
-        aria-label="Visit my GitHub profile"
-      >
+      <Link href={GITHUB_URL} target="_blank" aria-label="Visit my GitHub profile">
         <IconButton
           variant={"secondary"}
           icon="github"
@@ -24,11 +20,7 @@ export const Contact: React.FC = () => {
         />
       </Link>
 
-      <Link
-        href={LINKEDIN_URL}
-        target="_blank"
-        aria-label="Visit my LinkedIn profile"
-      >
+      <Link href={LINKEDIN_URL} target="_blank" aria-label="Visit my LinkedIn profile">
         <IconButton
           variant={"secondary"}
           icon="linkedin"
@@ -46,11 +38,7 @@ export const Contact: React.FC = () => {
           aria-label="Email"
         />
       </Link>
-      <Link
-        href={DEVPOST_URL}
-        target="_blank"
-        aria-label="Visit my DevPost profile"
-      >
+      <Link href={DEVPOST_URL} target="_blank" aria-label="Visit my DevPost profile">
         <IconButton
           variant={"secondary"}
           icon="devpost"

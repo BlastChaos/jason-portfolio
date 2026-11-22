@@ -67,12 +67,7 @@ export const WorkCard: React.FC<Props> = async (props: Props) => {
               {employmentPath.map((label, index) => (
                 <li key={label} className="flex flex-row items-center gap-1">
                   {index > 0 && (
-                    <Icons
-                      iconType="arrowUp"
-                      size="sm"
-                      className="rotate-90 size-3"
-                      aria-hidden
-                    />
+                    <Icons iconType="arrowUp" size="sm" className="rotate-90 size-3" aria-hidden />
                   )}
                   <Typography type={"sm"} text={label} />
                 </li>
@@ -87,17 +82,12 @@ export const WorkCard: React.FC<Props> = async (props: Props) => {
             <Typography
               type={"sm"}
               className="font-medium"
-              text={`${getDate(periods[0].from)} - ${getDate(
-                periods[periods.length - 1].to
-              )}`}
+              text={`${getDate(periods[0].from)} - ${getDate(periods[periods.length - 1].to)}`}
             />
           </div>
           <div className="flex flex-row gap-1 items-center px-1">
             <Icons iconType={"location"} size={"sm"} />
-            <Typography
-              type={"sm"}
-              text={props.workInfo.content[props.lang].location}
-            />
+            <Typography type={"sm"} text={props.workInfo.content[props.lang].location} />
           </div>
         </div>
       </div>
@@ -114,10 +104,7 @@ export const WorkCard: React.FC<Props> = async (props: Props) => {
         <div className="gap-2 flex flex-col bg-secondary-background/30 p-5 rounded-lg border border-border/50">
           <div className="flex flex-row items-center gap-2 mb-1">
             <div className="h-5 w-1 bg-primary rounded-full"></div>
-            <Typography
-              type={"h5"}
-              text={`${workExperience.keyAchievements}`}
-            />
+            <Typography type={"h5"} text={`${workExperience.keyAchievements}`} />
           </div>
           <ul className="gap-2 flex flex-col ml-1">
             {props.workInfo.content[props.lang].tasks.map((info, index) => (
@@ -125,16 +112,8 @@ export const WorkCard: React.FC<Props> = async (props: Props) => {
                 key={`${props.workInfo.companyName}-task-${index}`}
                 className="flex items-start  gap-2"
               >
-                <Typography
-                  type={"sm"}
-                  text={"●"}
-                  className="text-primary mt-0.5"
-                />
-                <Typography
-                  type={"md"}
-                  text={info}
-                  className="flex-1 leading-relaxed"
-                />
+                <Typography type={"sm"} text={"●"} className="text-primary mt-0.5" />
+                <Typography type={"md"} text={info} className="flex-1 leading-relaxed" />
               </li>
             ))}
           </ul>
@@ -148,10 +127,7 @@ export const WorkCard: React.FC<Props> = async (props: Props) => {
           />
           <div className="gap-2 flex flex-row flex-wrap">
             {props.workInfo.techStack.map((info) => (
-              <TagBadge
-                tag={info}
-                key={`${props.workInfo.companyName}-tag-${info}`}
-              />
+              <TagBadge tag={info} key={`${props.workInfo.companyName}-tag-${info}`} />
             ))}
           </div>
         </div>

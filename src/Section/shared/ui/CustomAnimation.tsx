@@ -31,10 +31,7 @@ export const CustomAnimation: React.FC<PropsWithChildren<Props>> = (
     <div
       ref={sectionRef}
       data-entrance-animation
-      className={cn(
-        !isIntersecting && "motion-safe:invisible",
-        props.className,
-      )}
+      className={cn(!isIntersecting && "motion-safe:invisible", props.className)}
       style={
         isIntersecting
           ? {

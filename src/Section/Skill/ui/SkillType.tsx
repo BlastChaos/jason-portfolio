@@ -8,10 +8,7 @@ type Props = {
 };
 export const SkillType: React.FC<Props> = async (props: Props) => {
   const { skill } = await getDictionary(props.lang);
-  const proficencyInfo: Record<
-    Proficency,
-    { name: string; description: string; color: string }
-  > = {
+  const proficencyInfo: Record<Proficency, { name: string; description: string; color: string }> = {
     proficient: {
       name: skill.proficient,
       description: skill.proficientDescription,

@@ -14,11 +14,13 @@ export default {
   content: {
     en: {
       title: "Chess AI - AI Chess Assistant",
-      shortDescription: "A chrome extension that analyzes, plays and describes moves made in chess.com with the help of AI.",
+      shortDescription:
+        "A chrome extension that analyzes, plays and describes moves made in chess.com with the help of AI.",
     },
     fr: {
       title: "Chess AI - Assistant d'échecs avec IA",
-      shortDescription: "Une extension chrome qui analyse, joue et décrit les coups joués sur chess.com avec l'aide d'IA.",
+      shortDescription:
+        "Une extension chrome qui analyse, joue et décrit les coups joués sur chess.com avec l'aide d'IA.",
     },
   },
 } satisfies ProjectInfo;

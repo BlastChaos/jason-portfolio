@@ -14,11 +14,13 @@ export default {
   content: {
     en: {
       title: "My Portfolio Website",
-      shortDescription: "A modern, responsive portfolio website showcasing my work with smooth animations and multi-language support.",
+      shortDescription:
+        "A modern, responsive portfolio website showcasing my work with smooth animations and multi-language support.",
     },
     fr: {
       title: "Mon Portfolio",
-      shortDescription: "Un portfolio moderne et réactif présentant mon travail, avec animations fluides et support multilingue.",
+      shortDescription:
+        "Un portfolio moderne et réactif présentant mon travail, avec animations fluides et support multilingue.",
     },
   },
 } satisfies ProjectInfo;

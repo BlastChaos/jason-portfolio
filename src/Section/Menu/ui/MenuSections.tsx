@@ -9,10 +9,7 @@ type Props = {
   sections: SectionType[];
 };
 export const MenuSections: React.FC<Props> = (props: Props) => {
-  const sectionIds = useMemo(
-    () => props.sections.map((section) => section.id),
-    [props.sections]
-  );
+  const sectionIds = useMemo(() => props.sections.map((section) => section.id), [props.sections]);
   const activeSection = useGetActiveSession(sectionIds);
   return (
     <div>

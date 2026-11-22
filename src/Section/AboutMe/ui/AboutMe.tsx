@@ -23,7 +23,7 @@ export const AboutMe: React.FC<Props> = async (props: Props) => {
               className={cn(
                 "transition-transform duration-300 hover:scale-105 rounded-4xl border-primary border-8",
                 "object-contain w-full max-w-xs",
-                "rounded-4xl"
+                "rounded-4xl",
               )}
             />
           </CustomAnimation>

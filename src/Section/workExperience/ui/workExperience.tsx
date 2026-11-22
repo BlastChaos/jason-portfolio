@@ -10,12 +10,7 @@ export const WorkExperience: React.FC<Props> = async (props: Props) => {
   return (
     <div className="gap-8 flex flex-col py-6">
       {work.map((job) => (
-        <CustomAnimation
-          type="slideUpFadeIn"
-          delay={0.2}
-          duration={1}
-          key={job.slug}
-        >
+        <CustomAnimation type="slideUpFadeIn" delay={0.2} duration={1} key={job.slug}>
           <WorkCard workInfo={job} lang={props.lang} />
         </CustomAnimation>
       ))}

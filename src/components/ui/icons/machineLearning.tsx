@@ -1,6 +1,4 @@
-export const MachineLearning: React.FC<React.SVGProps<SVGSVGElement>> = (
-  props
-) => {
+export const MachineLearning: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -9,9 +7,7 @@ export const MachineLearning: React.FC<React.SVGProps<SVGSVGElement>> = (
       id="Deepfake-Technology-1--Streamline-Plump"
       {...props}
     >
-      <desc>
-        Deepfake Technology 1 Streamline Icon: https://streamlinehq.com
-      </desc>
+      <desc>Deepfake Technology 1 Streamline Icon: https://streamlinehq.com</desc>
       <g id="deepfake-technology-1--automated-face-head-fake-generated-artificial-intelligence-ai">
         <path
           id="Ellipse 1525"

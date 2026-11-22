@@ -14,11 +14,13 @@ export default {
   content: {
     fr: {
       title: "Planifiscale - Gestion des documents fiscaux",
-      shortDescription: "Une application desktop qui a pour but de faciliter la gestion des documents fiscaux pour les entreprises.",
+      shortDescription:
+        "Une application desktop qui a pour but de faciliter la gestion des documents fiscaux pour les entreprises.",
     },
     en: {
       title: "Planifiscale - Tax income management",
-      shortDescription: "A desktop application that helps companies prepare income tax documents for their clients in Canada.",
+      shortDescription:
+        "A desktop application that helps companies prepare income tax documents for their clients in Canada.",
     },
   },
 } satisfies ProjectInfo;

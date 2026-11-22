@@ -41,11 +41,7 @@ export const EducationCard: React.FC<Props> = async (props: Props) => {
             text={props.educationInfo.langInfo[props.lang].tittleName}
             className="font-bold leading-tight"
           />
-          <a
-            href={props.educationInfo.website}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={props.educationInfo.website} target="_blank" rel="noopener noreferrer">
             <Typography
               type={"md"}
               className={"text-primary hover:underline font-medium"}
@@ -62,17 +58,12 @@ export const EducationCard: React.FC<Props> = async (props: Props) => {
             <Typography
               type={"sm"}
               className="font-medium"
-              text={`${getDate(props.educationInfo.from)} - ${getDate(
-                props.educationInfo.to
-              )}`}
+              text={`${getDate(props.educationInfo.from)} - ${getDate(props.educationInfo.to)}`}
             />
           </div>
           <div className="flex flex-row gap-1 items-center">
             <Icons iconType={"location"} size={"sm"} />
-            <Typography
-              type={"sm"}
-              text={props.educationInfo.langInfo[props.lang].location}
-            />
+            <Typography type={"sm"} text={props.educationInfo.langInfo[props.lang].location} />
           </div>
         </div>
         {props.educationInfo.gpa && (
@@ -104,20 +95,14 @@ export const EducationCard: React.FC<Props> = async (props: Props) => {
               />
             </div>
             <div className="flex flex-row flex-wrap gap-2">
-              {props.educationInfo.langInfo[props.lang].keyCourses.map(
-                (info, index) => (
-                  <div
-                    key={`${props.educationInfo.schoolName}-task-${index}`}
-                    className="bg-background px-2.5 py-1 rounded-md border border-border/50 shadow-sm"
-                  >
-                    <Typography
-                      type={"sm"}
-                      text={`${info}`}
-                      className="text-xs font-medium"
-                    />
-                  </div>
-                )
-              )}
+              {props.educationInfo.langInfo[props.lang].keyCourses.map((info, index) => (
+                <div
+                  key={`${props.educationInfo.schoolName}-task-${index}`}
+                  className="bg-background px-2.5 py-1 rounded-md border border-border/50 shadow-sm"
+                >
+                  <Typography type={"sm"} text={`${info}`} className="text-xs font-medium" />
+                </div>
+              ))}
             </div>
           </div>
         </div>

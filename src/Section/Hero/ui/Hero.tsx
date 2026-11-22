@@ -18,17 +18,11 @@ export const Hero: React.FC<Props> = async (props: Props) => {
   const texts = Object.values(hero.whoAmI);
   return (
     <div
-      className={
-        "flex flex-col md:grid md:grid-cols-2 h-svh pt-menu md:pt-0 gap-6 md:h-[93svh]"
-      }
+      className={"flex flex-col md:grid md:grid-cols-2 h-svh pt-menu md:pt-0 gap-6 md:h-[93svh]"}
     >
       <div className="flex flex-col justify-center gap-4 order-2 md:order-1">
         <CustomAnimation type="slideUpFadeIn" delay={0.2} duration={1}>
-          <Typography
-            type={"lg"}
-            text={hero.introduction}
-            className="text-primary font-medium"
-          />
+          <Typography type={"lg"} text={hero.introduction} className="text-primary font-medium" />
         </CustomAnimation>
 
         <CustomAnimation type="slideUpFadeIn" delay={0.4} duration={1}>
@@ -37,12 +31,7 @@ export const Hero: React.FC<Props> = async (props: Props) => {
         <CustomAnimation type="slideUpFadeIn" delay={0.6} duration={1}>
           <Typewriter texts={texts} />
         </CustomAnimation>
-        <CustomAnimation
-          type="slideUpFadeIn"
-          delay={0.6}
-          duration={1}
-          className="md:w-[77%]"
-        >
+        <CustomAnimation type="slideUpFadeIn" delay={0.6} duration={1} className="md:w-[77%]">
           <Typography type={"md"} text={hero.description} />
         </CustomAnimation>
         <CustomAnimation
@@ -91,7 +80,7 @@ export const Hero: React.FC<Props> = async (props: Props) => {
             "z-10",
             "transition-transform duration-300",
             "hover:scale-105",
-            "animate-[float_4s_ease-in-out_2.4s_infinite]"
+            "animate-[float_4s_ease-in-out_2.4s_infinite]",
           )}
         />
       </div>

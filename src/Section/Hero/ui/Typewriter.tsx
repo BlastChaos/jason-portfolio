@@ -59,9 +59,7 @@ export const Typewriter: React.FC<Props> = (props: Props) => {
   }, [currentIndex, displayText, isDeleting, currentTextIndex, props.texts]);
 
   return (
-    <div
-      className={`inline items-center whitespace-pre-wrap tracking-tight ${props.className}`}
-    >
+    <div className={`inline items-center whitespace-pre-wrap tracking-tight ${props.className}`}>
       <Typography
         type={"h2"}
         className={"inline font-extralight"}

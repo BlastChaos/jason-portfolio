@@ -4,11 +4,7 @@ import { getDictionary, Locale } from "@/dictionaries/dictionaries";
 import { DownloadResume } from "./DownloadResume";
 import { SectionType } from "@/app/[lang]/page";
 import { MenuSections } from "./MenuSections";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-} from "@/components/ui/dropdownMenu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem } from "@/components/ui/dropdownMenu";
 import { DropdownMenuTrigger } from "@/components/ui/dropdownMenu";
 import { IconButton } from "@/components/ui/button";
 import Link from "next/link";
@@ -43,11 +39,7 @@ export const Menu: React.FC<Props> = async (props: Props) => {
               <DropdownMenuContent className="w-dvh ">
                 {props.sections.map((section) => (
                   <DropdownMenuItem key={section.id} asChild>
-                    <Link
-                      href={`#${section.id}`}
-                      key={section.id}
-                      className="flex-1"
-                    >
+                    <Link href={`#${section.id}`} key={section.id} className="flex-1">
                       <div className="group relative flex flex-row gap-2 items-center">
                         <Icons iconType={section.icon} size="md" />
                         <Typography text={section.menuName} type="md" />
@@ -56,11 +48,7 @@ export const Menu: React.FC<Props> = async (props: Props) => {
                   </DropdownMenuItem>
                 ))}
                 <DropdownMenuItem>
-                  <DownloadResume
-                    lang={props.lang}
-                    resumeText={menu.resume}
-                    className="w-full"
-                  />
+                  <DownloadResume lang={props.lang} resumeText={menu.resume} className="w-full" />
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

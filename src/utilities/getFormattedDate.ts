@@ -11,8 +11,5 @@ export function getFormattedDate(date: Date, locale: Locale): string {
     month: "long",
     timeZone: "UTC",
   }).format(date);
-  return (
-    formatted.charAt(0).toLocaleUpperCase(INTL_LOCALES[locale]) +
-    formatted.slice(1)
-  );
+  return formatted.charAt(0).toLocaleUpperCase(INTL_LOCALES[locale]) + formatted.slice(1);
 }
