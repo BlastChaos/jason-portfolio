@@ -4,8 +4,8 @@
     "contact": "Contact",
     "projects": "Projets",
     "about": "Profil",
-    "home": "Home",
-    "resume": "Résumé",
+    "home": "Accueil",
+    "resume": "CV",
     "education": "Éducation",
     "skill": "Compétences"
   },
@@ -13,13 +13,12 @@
     "work": "Voir mes projets",
     "contactMe": "Écrivez-moi",
     "introduction": "Salut! Je suis",
-    "description": "Développeur avec plus de {years} ans d’expérience, j’aime explorer de nouvelles technologies et créer des solutions intuitives qui aident les gens à résoudre leurs problèmes.",
+    "description": "Basé à Montréal, avec plus de {years} ans d’expérience à livrer des applications web et mobiles en production avec React, React Native, TypeScript et Node.js. Depuis peu, je conçois des agents IA intégrés à de vrais produits. Bilingue français et anglais.",
     "whoAmI": {
-      "fullStack": "Développeur Fullstack",
-      "mobile": "Développeur d’applications mobiles",
-      "ai": "Passionné d’IA",
-      "competitive": "Développeur compétitif",
-      "tech": "Explorateur technologique"
+      "fullStack": "Développeur full stack",
+      "mobile": "Développeur React Native",
+      "ai": "Concepteur d’agents IA",
+      "cka": "Certified Kubernetes Administrator"
     }
   },
   "headers": {
@@ -51,9 +50,9 @@
     "sectionName": "À propos de moi",
     "bio": "Biographie",
     "bioDescription": "Salut ! Je suis un développeur full stack web et mobile avec plus de {years} ans d’expérience dans le domaine. Passionné par l’avancée des nouvelles technologies, particulièrement par l’impact de l’intelligence artificielle dans notre quotidien, j’aime créer des solutions utiles et durables tout en essayant de nouveaux outils stimulants.",
-    "bioDescription1": "Salut! Je suis un développeur full stack web et mobile avec plus de {years} ans d’expérience dans le domaine. Passionné par l’avancée des nouvelles technologies, particulièrement par l’impact de l’intelligence artificielle dans notre quotidien, j’aime créer des solutions utiles et durables tout en essayant de nouveaux outils stimulants.",
-    "bioDescription2": "Récemment, j’ai dirigé le remplacement du système de synchronisation entre une application mobile et la plateforme d’un client en 3 mois, ce qui a réduit les tickets de support de 20 % et amélioré l’expérience utilisateur.",
-    "bioDescription3": "J’accorde une grande importance à l’accessibilité, à la testabilité et à la lisibilité du code. Si vous cherchez un collaborateur capable de donner vie à vos projets, n’hésitez pas à me contacter!",
+    "bioDescription1": "Je suis développeur full stack chez Civalgo, où je développe la plateforme web et l’application React Native utilisées chaque semaine par 1 300 personnes. Je m’attache à ce qui rend un logiciel fiable : des temps de chargement rapides, une synchronisation qui ne perd jamais de données et des incidents réglés en minutes plutôt qu’en jours.",
+    "bioDescription2": "Quelques résultats dont je suis fier : le démarrage de l’application mobile réduit de 5 minutes à 3 secondes, les erreurs de synchronisation passées de 1,36 % à 0,21 %, et l’assistant IA de l’entreprise mené d’une idée de hackathon jusqu’en production. En dehors du travail, j’ai cofondé FlyerAlerte, un comparateur de prix d’épicerie au Québec, et j’opère mon propre homelab Kubernetes.",
+    "bioDescription3": "Je suis bilingue français et anglais. Si vous cherchez quelqu’un qui prend une fonctionnalité en charge de bout en bout, de la base de données jusqu’à l’écran, parlons-en.",
     "hobby1Tittle": "Joueur de Smash Bros",
     "hobby1Description": "J'adore jouer à Smash Bros avec mes amis. La stratégie et l'adaptabilité nécessaires pour gagner rendent chaque partie amusante.",
     "hobby2Tittle": "Amateur de musique",
@@ -100,16 +99,16 @@
   },
   "metadata": {
     "title": "Jason Brutus | Portfolio",
-    "description": "Bienvenue sur mon portfolio — présentant mon travail en tant que développeur. N'hésitez pas à me contacter pour des collaborations ou des opportunités.",
+    "description": "Jason Brutus, développeur full stack à Montréal. Plus de {years} ans à livrer des applications React, React Native, TypeScript et Node.js, et des agents IA en production.",
     "applicationName": "Mon portfolio",
     "openGraph": {
       "title": "Jason Brutus | Portfolio",
-      "description": "Développeur full stack avec plus de {years} ans d'expérience. Passionné par les technologies émergentes et la création de solutions intuitives.",
+      "description": "Développeur full stack à Montréal. Plus de {years} ans à livrer des applications web et mobiles, et des agents IA en production.",
       "siteName": "Jason Brutus Portfolio"
     },
     "twitter": {
       "title": "Jason Brutus | Portfolio",
-      "description": "Développeur full stack avec plus de {years} ans d'expérience"
+      "description": "Développeur full stack à Montréal. Plus de {years} ans à livrer des fonctionnalités web, mobiles et IA."
     }
   },
   "footer": {

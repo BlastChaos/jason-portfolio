@@ -13,13 +13,12 @@
     "work": "See my projects",
     "contactMe": "Email me",
     "introduction": "Hey! I'm",
-    "description": "As a developer with {years}+ years’ experience, I like exploring new technologies and building intuitive solutions that help people solve problems.",
+    "description": "Based in Montréal, with {years}+ years shipping production web and mobile apps in React, React Native, TypeScript and Node.js. Lately, I build AI agents that work inside real products. Fluent in French and English.",
     "whoAmI": {
-      "fullStack": "Fullstack Developer",
-      "mobile": "Mobile app developer",
-      "ai": "AI enthusiast",
-      "competitive": "Competitive developer",
-      "tech": "Tech explorer"
+      "fullStack": "Full-stack developer",
+      "mobile": "React Native developer",
+      "ai": "AI agent builder",
+      "cka": "Certified Kubernetes Administrator"
     }
   },
   "headers": {
@@ -50,9 +49,9 @@
   "aboutMe": {
     "sectionName": "About me",
     "bio": "Biography",
-    "bioDescription1": "Hi! I’m a full-stack web and mobile developer with over {years} years of experience. Passionate about emerging technologies, especially the impact of artificial intelligence on everyday life, I enjoy building useful, sustainable solutions while trying out exciting new tools.",
-    "bioDescription2": "Recently, I led the replacement of the synchronization system between a mobile app and a client’s platform over a three month period, which reduced support tickets by 20% and improved the user experience.",
-    "bioDescription3": "I place great importance on accessibility, testability, and readable code. If you’re looking for a collaborator who can bring your projects to life, don’t hesitate to contact me!",
+    "bioDescription1": "I’m a full-stack developer at Civalgo, where I build the web platform and the React Native app that 1,300 people use every week. I care about the parts that make software trustworthy: fast load times, sync that never loses data, and incidents fixed in minutes instead of days.",
+    "bioDescription2": "Some results I’m proud of: mobile cold start cut from 5 minutes to 3 seconds, sync errors down from 1.36% to 0.21%, and the company’s AI assistant taken from a hackathon idea to production. Outside work, I co-founded FlyerAlerte, a Québec grocery price comparison engine, and run my own Kubernetes homelab.",
+    "bioDescription3": "I’m fluent in French and English. If you need someone who owns features end to end, from the database to the screen, let’s talk.",
     "hobby1Tittle": "Smash Bros Player",
     "hobby1Description": "Playing Smash Bros with my friends is always a fun time. The strategy and adaptability needed to compete keep the game entertaining.",
     "hobby2Tittle": "Music Lover",
@@ -99,16 +98,16 @@
   },
   "metadata": {
     "title": "Jason Brutus | Portfolio",
-    "description": "Welcome to my portfolio — showcasing my work as a developer. Feel free to reach out for collaboration or opportunities.",
+    "description": "Jason Brutus, full-stack developer in Montréal. {years}+ years shipping React, React Native, TypeScript and Node.js apps, and AI agents in production.",
     "applicationName": "My portfolio",
     "openGraph": {
       "title": "Jason Brutus | Portfolio",
-      "description": "Full-stack developer with {years}+ years of experience. Passionate about emerging technologies and building intuitive solutions.",
+      "description": "Full-stack developer in Montréal. {years}+ years shipping web and mobile apps, and AI agents in production.",
       "siteName": "Jason Brutus Portfolio"
     },
     "twitter": {
       "title": "Jason Brutus | Portfolio",
-      "description": "Full-stack developer with {years}+ years of experience"
+      "description": "Full-stack developer in Montréal. {years}+ years shipping web, mobile and AI features."
     }
   },
   "footer": {
