@@ -45,8 +45,8 @@ export default {
       shortDescription:
         "Real-time job costing platform for heavy civil contractors. I build the React web platform, the React Native field app and the AI agent behind them.",
       tasks: [
-        "Cut mobile cold start from 5 minutes to 3 seconds by replacing an eager full sync with on-demand reads and React Query caching",
-        "Brought the mobile sync error rate from 1.36% to 0.21% while mutation volume quadrupled, by removing a defect behind more than 80% of failed daily-log updates",
+        "Made the mobile app open in 3 seconds instead of 5 minutes by loading only the data each screen needs, with React Query caching, instead of syncing everything at launch",
+        "Made updates sent from the field app fail 6 times less often (1.36% → 0.21%) while their volume quadrupled, by fixing the defect behind more than 80% of failures",
         "Took the company's AI assistant (voice and text) from a hackathon idea to production, and shipped Civalgo's first MCP server so tools like Claude Code and Cursor can use it",
         "Cut the AI agent's prompt from 30k to under 10k tokens per request with tool namespacing, and its latency on long conversations from 6 seconds to 1",
         "Mitigated a SEV1 outage in 29 minutes with an over-the-air hotfix, and took the 27-second query behind a SEV2 database incident to under one second the same day",
@@ -60,8 +60,8 @@ export default {
       shortDescription:
         "Plateforme de suivi des coûts en temps réel pour les entrepreneurs en génie civil. Je développe la plateforme web React, l’application terrain React Native et l’agent IA qui les relie.",
       tasks: [
-        "Réduit le démarrage de l’application mobile de 5 minutes à 3 secondes en remplaçant une synchronisation complète par des lectures à la demande avec mise en cache React Query",
-        "Fait passer le taux d’erreurs de synchronisation mobile de 1,36 % à 0,21 % alors que le volume de mutations quadruplait, en éliminant un défaut responsable de plus de 80 % des échecs",
+        "Fait passer l’ouverture de l’application mobile de 5 minutes à 3 secondes en chargeant seulement les données dont chaque écran a besoin, avec mise en cache React Query, au lieu de tout synchroniser au démarrage",
+        "Rendu les mises à jour envoyées depuis l’application terrain 6 fois moins susceptibles d’échouer (1,36 % → 0,21 %) alors que leur volume quadruplait, en corrigeant le défaut responsable de plus de 80 % des échecs",
         "Mené l’assistant IA de l’entreprise (voix et texte) d’une idée de hackathon jusqu’en production, et livré le premier serveur MCP de Civalgo pour que des outils comme Claude Code et Cursor puissent l’utiliser",
         "Réduit le prompt de l’agent IA de 30 k à moins de 10 k jetons par requête grâce au regroupement des outils, et sa latence sur les longues conversations de 6 secondes à 1",
         "Atténué une panne SEV1 en 29 minutes avec un correctif déployé à distance, et ramené la requête de 27 secondes à l’origine d’un incident SEV2 sous la seconde le jour même",

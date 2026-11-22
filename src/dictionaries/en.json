@@ -51,7 +51,7 @@
     "sectionName": "About me",
     "bio": "Biography",
     "bioDescription1": "I’m a full-stack developer at Civalgo, where I build the web platform and the React Native app that 1,300 people use every week. I care about the parts that make software trustworthy: fast load times, sync that never loses data, and incidents fixed in minutes instead of days.",
-    "bioDescription2": "Some results I’m proud of: mobile cold start cut from 5 minutes to 3 seconds, sync errors down from 1.36% to 0.21%, and the company’s AI assistant taken from a hackathon idea to production. Outside work, I co-founded FlyerAlerte, a Québec grocery price comparison engine, and run my own Kubernetes homelab.",
+    "bioDescription2": "Some results I’m proud of: the mobile app now opens in 3 seconds instead of 5 minutes, updates sent from the job site fail 6 times less often, and the company’s AI assistant went from a hackathon idea to production. Outside work, I co-founded FlyerAlerte, a Québec grocery price comparison engine, and run my own Kubernetes homelab.",
     "bioDescription3": "I’m fluent in French and English. If you need someone who owns features end to end, from the database to the screen, let’s talk.",
     "hobby1Tittle": "Smash Bros Player",
     "hobby1Description": "Playing Smash Bros with my friends is always a fun time. The strategy and adaptability needed to compete keep the game entertaining.",
