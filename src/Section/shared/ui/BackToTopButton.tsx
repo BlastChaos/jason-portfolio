@@ -8,6 +8,13 @@ type Props = {
   label: string;
 };
 
+const scrollToTop = () => {
+  const reduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+  window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+};
+
 export const BackToTopButton: React.FC<Props> = (props: Props) => {
   const [visible, setVisible] = useState(false);
 
@@ -17,13 +24,6 @@ export const BackToTopButton: React.FC<Props> = (props: Props) => {
     window.addEventListener("scroll", update, { passive: true });
     return () => window.removeEventListener("scroll", update);
   }, []);
-
-  const scrollToTop = () => {
-    const reduceMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
-    window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
-  };
 
   return (
     <IconButton
